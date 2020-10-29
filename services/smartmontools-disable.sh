@@ -1,0 +1,2 @@
+sudo systemctl disable smartmontools
+sudo systemctl stop smartmontools

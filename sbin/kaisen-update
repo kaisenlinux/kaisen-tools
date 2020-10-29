@@ -1,0 +1,7 @@
+#!/bin/bash
+
+set -e
+
+export DEBIAN_FRONTEND=noninteractive
+
+apt update;apt -y --fix-missing full-upgrade || true;apt -y --fix-broken install;apt -y autoremove

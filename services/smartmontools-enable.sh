@@ -1,0 +1,2 @@
+sudo systemctl enable smartmontools
+sudo systemctl start smartmontools

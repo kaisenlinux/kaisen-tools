@@ -1,0 +1,5 @@
+#!/bin/bash
+
+set -e
+
+sensors-detect --auto 1> /dev/null || true
