@@ -1,3 +1,9 @@
+kaisen-tools (1.4+kaisen8) kaisen-packages; urgency=medium
+
+  * Add teamviewerapi launcher on sbin/kaisen-basemenu-purge
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>  Fri, 27 Nov 2020 22:13:14 +0200
+
 kaisen-tools (1.4+kaisen7) kaisen-packages; urgency=medium
 
   * All tools integrated on Kaisen Linux is now here.

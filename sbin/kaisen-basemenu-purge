@@ -59,6 +59,7 @@ rm -f /usr/share/applications/R.desktop || true
 rm -f /usr/share/applications/remote-viewer.desktop || true
 rm -f /usr/share/applications/remmina-file.desktop || true
 rm -f /usr/share/applications/remmina-gnome.desktop || true
+rm -f /usr/share/applications/teamviewerapi.desktop || true
 rm -f /usr/share/applications/terminator.desktop || true
 rm -f /usr/share/applications/timeshift-gtk.desktop || true
 rm -f /usr/share/applications/unetbootin.desktop || true
