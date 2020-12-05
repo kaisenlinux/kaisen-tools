@@ -131,7 +131,6 @@ Depends: progress,
 	 mc,
 	 gtkhash,
 	 strace,
-Replaces: kaisen-basemenu-purge, kaisen-update
 Description: Meta package for miscellaneous useful software (libreoffice, gpg, locate, thunderbird, gimp, vlc, cryptsetup, RAID gestion, VMWare tools...)
 
 Package: kaisen-network-tools

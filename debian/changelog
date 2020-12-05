@@ -1,3 +1,10 @@
+kaisen-tools (1.4+kaisen10) kaisen-packages; urgency=medium
+
+  * Delete replaces in control file
+  * Update compat to 13
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>  Sat, 05 Dec 2020 03:38:29 +0200
+
 kaisen-tools (1.4+kaisen9) kaisen-packages; urgency=medium
 
   * Replace exfatprogs by exfat-utils
