@@ -334,6 +334,7 @@ Depends: ssh,
 	 virtinst,
 	 bridge-utils,
 	 ncat,
+	 puppet,
 Description: Collection of sysadmin tools for Kaisen Linux
 
 Package: kaisen-technicians-tools

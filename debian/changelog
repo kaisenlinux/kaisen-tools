@@ -1,3 +1,10 @@
+kaisen-tools (1.5) kaisen-packages; urgency=medium
+
+  * Add puppet tool
+  * Update to 1.5
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>  Mon, 07 Dec 2020 00:09:22 +0200
+
 kaisen-tools (1.4+kaisen10) kaisen-packages; urgency=medium
 
   * Delete replaces in control file
