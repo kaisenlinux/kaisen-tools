@@ -1,0 +1,6 @@
+#!/bin/bash
+
+set -e
+
+sudo systemctl disable rsync
+sudo systemctl stop rsync

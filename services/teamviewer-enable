@@ -1,0 +1,6 @@
+#!/bin/bash
+
+set -e
+
+sudo systemctl enable teamviewerd
+sudo systemctl start teamviewerd

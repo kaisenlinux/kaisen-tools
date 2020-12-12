@@ -1,0 +1,10 @@
+#!/bin/bash
+
+set -e
+
+sudo systemctl disable vboxweb
+sudo systemctl stop vboxweb
+sudo systemctl disable virtualbox
+sudo systemctl stop virtualbox
+sudo systemctl disable virtualbox-guest-utils
+sudo systemctl stop virtualbox-guest-utils

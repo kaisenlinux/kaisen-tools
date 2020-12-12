@@ -1,0 +1,16 @@
+#!/bin/bash
+
+set -e
+
+sudo systemctl enable nfs-client.target
+sudo systemctl start nfs-client.target
+sudo systemctl enable nfs-kernel-server
+sudo systemctl start nfs-kernel-server
+sudo systemctl enable nfs-server
+sudo systemctl start nfs-server
+sudo systemctl enable portmap
+sudo systemctl start portmap
+sudo systemctl enable rpcbind
+sudo systemctl start rpcbind
+sudo systemctl enable rpcbind.socket
+sudo systemctl start rpcbind.socket

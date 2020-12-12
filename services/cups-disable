@@ -1,0 +1,12 @@
+#!/bin/bash
+
+set -e
+
+sudo systemctl disable cups
+sudo systemctl stop cups
+sudo systemctl disable cups.path
+sudo systemctl stop cups.path
+sudo systemctl disable cups.socket
+sudo systemctl stop cups.socket
+sudo systemctl disable cups-browsed
+sudo systemctl stop cups-browsed

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+set -e
+
+sudo systemctl enable arpwatch
+sudo systemctl start arpwatch

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+set -e
+
+sudo systemctl enable sysstat
+sudo systemctl start sysstat

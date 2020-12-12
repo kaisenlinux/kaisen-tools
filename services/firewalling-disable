@@ -1,0 +1,10 @@
+#!/bin/bash
+
+set -e
+
+sudo systemctl disable iptables
+sudo systemctl stop iptables
+sudo systemctl disable ip6tables
+sudo systemctl stop ip6tables
+sudo systemctl disable netfilter-persistent
+sudo systemctl stop netfilter-persistent

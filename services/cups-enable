@@ -1,0 +1,12 @@
+#!/bin/bash
+
+set -e
+
+sudo systemctl enable cups
+sudo systemctl start cups
+sudo systemctl enable cups.path
+sudo systemctl start cups.path
+sudo systemctl enable cups.socket
+sudo systemctl start cups.socket
+sudo systemctl enable cups-browsed
+sudo systemctl start cups-browsed

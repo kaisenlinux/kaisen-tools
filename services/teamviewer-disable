@@ -1,0 +1,6 @@
+#!/bin/bash
+
+set -e
+
+sudo systemctl disable teamviewerd
+sudo systemctl stop teamviewerd

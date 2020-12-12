@@ -1,0 +1,8 @@
+#!/bin/bash
+
+set -e
+
+sudo systemctl enable docker
+sudo systemctl start docker
+sudo systemctl enable docker.socket
+sudo systemctl start docker.socket

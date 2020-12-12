@@ -1,0 +1,6 @@
+#!/bin/bash
+
+set -e
+
+sudo systemctl disable hddtemp
+sudo systemctl stop hddtemp

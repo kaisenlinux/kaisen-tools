@@ -1,0 +1,6 @@
+#!/bin/bash
+
+set -e
+
+sudo systemctl disable open-vm-tools
+sudo systemctl stop open-vm-tools

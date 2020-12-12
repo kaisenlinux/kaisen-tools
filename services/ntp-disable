@@ -1,0 +1,6 @@
+#!/bin/bash
+
+set -e
+
+sudo systemctl disable ntp
+sudo systemctl stop ntp

@@ -1,0 +1,8 @@
+#!/bin/bash
+
+set -e
+
+sudo systemctl disable avahi-daemon
+sudo systemctl stop avahi-daemon
+sudo systemctl disable avahi-daemon.socket
+sudo systemctl stop avahi-daemon.socket

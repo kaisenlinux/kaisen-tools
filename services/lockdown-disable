@@ -1,0 +1,6 @@
+#!/bin/bash
+
+set -e
+
+sudo systemctl disable lockdown
+sudo systemctl stop lockdown

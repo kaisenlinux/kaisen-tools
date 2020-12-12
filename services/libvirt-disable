@@ -1,0 +1,22 @@
+#!/bin/bash
+
+set -e
+
+sudo systemctl disable libvirtd.service
+sudo systemctl stop libvirtd.service
+sudo systemctl disable virtlockd.socket
+sudo systemctl stop virtlockd.socket
+sudo systemctl disable virtlogd.socket
+sudo systemctl stop virtlogd.socket
+sudo systemctl disable libvirtd.socket
+sudo systemctl stop libvirtd.socket
+sudo systemctl disable libvirtd-ro.socket
+sudo systemctl stop libvirtd-ro.socket
+sudo systemctl disable libvirt-guests.service
+sudo systemctl stop libvirt-guests.service
+sudo systemctl disable libvirtd-admin.socket
+sudo systemctl stop libvirtd-admin.socket
+sudo systemctl disable virtlockd-admin.socket
+sudo systemctl stop virtlockd-admin.socket
+sudo systemctl disable virtlogd-admin.socket
+sudo systemctl stop virtlogd-admin.socket

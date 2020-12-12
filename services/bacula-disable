@@ -1,0 +1,8 @@
+#!/bin/bash
+
+set -e
+
+sudo systemctl disable bacula-fd
+sudo systemctl stop bacula-fd
+sudo systemctl disable bacula-sd
+sudo systemctl stop bacula-sd

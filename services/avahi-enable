@@ -1,0 +1,8 @@
+#!/bin/bash
+
+set -e
+
+sudo systemctl enable avahi-daemon
+sudo systemctl start avahi-daemon
+sudo systemctl enable avahi-daemon.socket
+sudo systemctl start avahi-daemon.socket
