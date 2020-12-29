@@ -393,6 +393,7 @@ Depends: ddrescue-gui,
          safecopy,
          scalpel,
          scrounge-ntfs,
+	 hfsprescue,
 Description: All Kaisen Linux data recovery tools
 
 Package: kaisen-disks-analysis
