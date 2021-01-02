@@ -2,11 +2,18 @@
 
 set -e
 
-sudo systemctl enable cups
-sudo systemctl start cups
-sudo systemctl enable cups.path
-sudo systemctl start cups.path
-sudo systemctl enable cups.socket
-sudo systemctl start cups.socket
-sudo systemctl enable cups-browsed
-sudo systemctl start cups-browsed
+RED='\e[1;31m'
+
+if [[ "$EUID" -ne "0" ]]; then
+        echo -e $RED "Run this script as root or with sudo command."
+        exit 1
+fi
+
+systemctl enable cups
+systemctl start cups
+systemctl enable cups.path
+systemctl start cups.path
+systemctl enable cups.socket
+systemctl start cups.socket
+systemctl enable cups-browsed
+systemctl start cups-browsed

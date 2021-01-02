@@ -2,9 +2,16 @@
 
 set -e
 
-sudo systemctl enable lxcfs
-sudo systemctl start lxcfs
-sudo systemctl enable lxc-net
-sudo systemctl start lxc-net
-sudo systemctl enable lxc
-sudo systemctl start lxc
+RED='\e[1;31m'
+
+if [[ "$EUID" -ne "0" ]]; then
+        echo -e $RED "Run this script as root or with sudo command."
+        exit 1
+fi
+
+systemctl enable lxcfs
+systemctl start lxcfs
+systemctl enable lxc-net
+systemctl start lxc-net
+systemctl enable lxc
+systemctl start lxc

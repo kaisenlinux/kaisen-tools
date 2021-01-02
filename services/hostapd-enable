@@ -2,5 +2,12 @@
 
 set -e
 
-sudo systemctl unmask hostapd
-sudo systemctl enable hostapd
+RED='\e[1;31m'
+
+if [[ "$EUID" -ne "0" ]]; then
+        echo -e $RED "Run this script as root or with sudo command."
+        exit 1
+fi
+
+systemctl unmask hostapd
+systemctl enable hostapd

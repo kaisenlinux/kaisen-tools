@@ -2,5 +2,12 @@
 
 set -e
 
-sudo systemctl disable o2cb
-sudo systemctl stop o2cb
+RED='\e[1;31m'
+
+if [[ "$EUID" -ne "0" ]]; then
+        echo -e $RED "Run this script as root or with sudo command."
+        exit 1
+fi
+
+systemctl disable o2cb
+systemctl stop o2cb

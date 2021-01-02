@@ -2,9 +2,16 @@
 
 set -e
 
-sudo systemctl enable iptables
-sudo systemctl start iptables
-sudo systemctl enable ip6tables
-sudo systemctl start ip6tables
-sudo systemctl enable netfilter-persistent
-sudo systemctl start netfilter-persistent
+RED='\e[1;31m'
+
+if [[ "$EUID" -ne "0" ]]; then
+        echo -e $RED "Run this script as root or with sudo command."
+        exit 1
+fi
+
+systemctl enable iptables
+systemctl start iptables
+systemctl enable ip6tables
+systemctl start ip6tables
+systemctl enable netfilter-persistent
+systemctl start netfilter-persistent

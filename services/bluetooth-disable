@@ -2,7 +2,14 @@
 
 set -e
 
-sudo systemctl disable bluetooth
-sudo systemctl stop bluetooth
-sudo systemctl disable blueman-mechanism
-sudo systemctl stop blueman-mechanism
+RED='\e[1;31m'
+
+if [[ "$EUID" -ne "0" ]]; then
+        echo -e $RED "Run this script as root or with sudo command."
+        exit 1
+fi
+
+systemctl disable bluetooth
+systemctl stop bluetooth
+systemctl disable blueman-mechanism
+systemctl stop blueman-mechanism

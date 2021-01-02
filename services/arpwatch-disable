@@ -2,5 +2,12 @@
 
 set -e
 
-sudo systemctl disable arpwatch
-sudo systemctl stop arpwatch
+RED='\e[1;31m'
+
+if [[ "$EUID" -ne "0" ]]; then
+        echo -e $RED "Run this script as root or with sudo command."
+        exit 1
+fi
+
+systemctl disable arpwatch
+systemctl stop arpwatch

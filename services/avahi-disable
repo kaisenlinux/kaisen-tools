@@ -2,7 +2,14 @@
 
 set -e
 
-sudo systemctl disable avahi-daemon
-sudo systemctl stop avahi-daemon
-sudo systemctl disable avahi-daemon.socket
-sudo systemctl stop avahi-daemon.socket
+RED='\e[1;31m'
+
+if [[ "$EUID" -ne "0" ]]; then
+        echo -e $RED "Run this script as root or with sudo command."
+        exit 1
+fi
+
+systemctl disable avahi-daemon
+systemctl stop avahi-daemon
+systemctl disable avahi-daemon.socket
+systemctl stop avahi-daemon.socket

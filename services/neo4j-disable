@@ -2,5 +2,12 @@
 
 set -e
 
-sudo systemctl disable neo4j
-sudo systemctl stop neo4j
+RED='\e[1;31m'
+
+if [[ "$EUID" -ne "0" ]]; then
+        echo -e $RED "Run this script as root or with sudo command."
+        exit 1
+fi
+
+systemctl disable neo4j
+systemctl stop neo4j

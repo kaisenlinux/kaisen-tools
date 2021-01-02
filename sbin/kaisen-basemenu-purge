@@ -45,6 +45,8 @@ rm -f /usr/share/applications/mc.desktop || true
 rm -f /usr/share/applications/mcedit.desktop || true
 rm -f /usr/share/applications/mutt.desktop || true
 rm -f /usr/share/applications/minicom.desktop || true
+rm -f /usr/share/applications/kde4/nmapsi4-admin.desktop || true
+rm -f /usr/share/applications/kde4/nmapsi4.desktop || true
 rm -f /usr/share/applications/ophcrack.desktop || true
 rm -f /usr/share/applications/org.bleachbit.BleachBit.desktop || true
 rm -f /usr/share/applications/org.gnome.baobab.desktop || true

@@ -2,9 +2,16 @@
 
 set -e
 
-sudo systemctl enable clamav-daemon
-sudo systemctl start clamav-daemon
-sudo systemctl enable clamav-freshclam
-sudo systemctl start clamav-freshclam
-sudo systemctl enable clamav-milter
-sudo systemctl start clamav-milter
+RED='\e[1;31m'
+
+if [[ "$EUID" -ne "0" ]]; then
+        echo -e $RED "Run this script as root or with sudo command."
+        exit 1
+fi
+
+systemctl enable clamav-daemon
+systemctl start clamav-daemon
+systemctl enable clamav-freshclam
+systemctl start clamav-freshclam
+systemctl enable clamav-milter
+systemctl start clamav-milter

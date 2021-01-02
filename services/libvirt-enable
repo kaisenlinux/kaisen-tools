@@ -2,21 +2,28 @@
 
 set -e
 
-sudo systemctl enable libvirtd.service
-sudo systemctl start libvirtd.service
-sudo systemctl enable virtlockd.socket
-sudo systemctl start virtlockd.socket
-sudo systemctl enable virtlogd.socket
-sudo systemctl start virtlogd.socket
-sudo systemctl enable libvirtd.socket
-sudo systemctl start libvirtd.socket
-sudo systemctl enable libvirtd-ro.socket
-sudo systemctl start libvirtd-ro.socket
-sudo systemctl enable libvirt-guests.service
-sudo systemctl start libvirt-guests.service
-sudo systemctl enable libvirtd-admin.socket
-sudo systemctl start libvirtd-admin.socket
-sudo systemctl enable virtlockd-admin.socket
-sudo systemctl start virtlockd-admin.socket
-sudo systemctl enable virtlogd-admin.socket
-sudo systemctl start virtlogd-admin.socket
+RED='\e[1;31m'
+
+if [[ "$EUID" -ne "0" ]]; then
+        echo -e $RED "Run this script as root or with sudo command."
+        exit 1
+fi
+
+systemctl enable libvirtd.service
+systemctl start libvirtd.service
+systemctl enable virtlockd.socket
+systemctl start virtlockd.socket
+systemctl enable virtlogd.socket
+systemctl start virtlogd.socket
+systemctl enable libvirtd.socket
+systemctl start libvirtd.socket
+systemctl enable libvirtd-ro.socket
+systemctl start libvirtd-ro.socket
+systemctl enable libvirt-guests.service
+systemctl start libvirt-guests.service
+systemctl enable libvirtd-admin.socket
+systemctl start libvirtd-admin.socket
+systemctl enable virtlockd-admin.socket
+systemctl start virtlockd-admin.socket
+systemctl enable virtlogd-admin.socket
+systemctl start virtlogd-admin.socket

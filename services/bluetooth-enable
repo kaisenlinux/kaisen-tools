@@ -2,7 +2,14 @@
 
 set -e
 
-sudo systemctl enable bluetooth
-sudo systemctl start bluetooth
-sudo systemctl enable blueman-mechanism
-sudo systemctl start blueman-mechanism
+RED='\e[1;31m'
+
+if [[ "$EUID" -ne "0" ]]; then
+        echo -e $RED "Run this script as root or with sudo command."
+        exit 1
+fi
+
+systemctl enable bluetooth
+systemctl start bluetooth
+systemctl enable blueman-mechanism
+systemctl start blueman-mechanism

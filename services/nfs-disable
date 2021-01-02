@@ -2,15 +2,22 @@
 
 set -e
 
-sudo systemctl disable nfs-client.target
-sudo systemctl stop nfs-client.target
-sudo systemctl disable nfs-kernel-server
-sudo systemctl stop nfs-kernel-server
-sudo systemctl disable nfs-server
-sudo systemctl stop nfs-server
-sudo systemctl disable portmap
-sudo systemctl stop portmap
-sudo systemctl disable rpcbind
-sudo systemctl stop rpcbind
-sudo systemctl disable rpcbind.socket
-sudo systemctl stop rpcbind.socket
+RED='\e[1;31m'
+
+if [[ "$EUID" -ne "0" ]]; then
+        echo -e $RED "Run this script as root or with sudo command."
+        exit 1
+fi
+
+systemctl disable nfs-client.target
+systemctl stop nfs-client.target
+systemctl disable nfs-kernel-server
+systemctl stop nfs-kernel-server
+systemctl disable nfs-server
+systemctl stop nfs-server
+systemctl disable portmap
+systemctl stop portmap
+systemctl disable rpcbind
+systemctl stop rpcbind
+systemctl disable rpcbind.socket
+systemctl stop rpcbind.socket

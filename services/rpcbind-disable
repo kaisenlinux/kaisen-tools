@@ -2,7 +2,14 @@
 
 set -e
 
-sudo systemctl disable rpcbind
-sudo systemctl stop rpcbind
-sudo systemctl disable rpcbind.socket
-sudo systemctl stop rpcbind.socket
+RED='\e[1;31m'
+
+if [[ "$EUID" -ne "0" ]]; then
+        echo -e $RED "Run this script as root or with sudo command."
+        exit 1
+fi
+
+systemctl disable rpcbind
+systemctl stop rpcbind
+systemctl disable rpcbind.socket
+systemctl stop rpcbind.socket

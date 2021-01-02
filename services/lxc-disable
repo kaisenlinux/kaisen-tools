@@ -2,9 +2,16 @@
 
 set -e
 
-sudo systemctl disable lxcfs
-sudo systemctl stop lxcfs
-sudo systemctl disable lxc-net
-sudo systemctl stop lxc-net
-sudo systemctl disable lxc
-sudo systemctl stop lxc
+RED='\e[1;31m'
+
+if [[ "$EUID" -ne "0" ]]; then
+        echo -e $RED "Run this script as root or with sudo command."
+        exit 1
+fi
+
+systemctl disable lxcfs
+systemctl stop lxcfs
+systemctl disable lxc-net
+systemctl stop lxc-net
+systemctl disable lxc
+systemctl stop lxc

@@ -2,7 +2,14 @@
 
 set -e
 
-sudo systemctl disable bacula-fd
-sudo systemctl stop bacula-fd
-sudo systemctl disable bacula-sd
-sudo systemctl stop bacula-sd
+RED='\e[1;31m'
+
+if [[ "$EUID" -ne "0" ]]; then
+        echo -e $RED "Run this script as root or with sudo command."
+        exit 1
+fi
+
+systemctl disable bacula-fd
+systemctl stop bacula-fd
+systemctl disable bacula-sd
+systemctl stop bacula-sd

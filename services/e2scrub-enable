@@ -2,7 +2,14 @@
 
 set -e
 
-sudo systemctl enable e2scrub_reap
-sudo systemctl start e2scrub_reap
-sudo systemctl enable e2scrub_all.timer
-sudo systemctl start e2scrub_all.timer
+RED='\e[1;31m'
+
+if [[ "$EUID" -ne "0" ]]; then
+        echo -e $RED "Run this script as root or with sudo command."
+        exit 1
+fi
+
+systemctl enable e2scrub_reap
+systemctl start e2scrub_reap
+systemctl enable e2scrub_all.timer
+systemctl start e2scrub_all.timer

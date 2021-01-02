@@ -2,7 +2,14 @@
 
 set -e
 
-sudo systemctl enable docker
-sudo systemctl start docker
-sudo systemctl enable docker.socket
-sudo systemctl start docker.socket
+RED='\e[1;31m'
+
+if [[ "$EUID" -ne "0" ]]; then
+        echo -e $RED "Run this script as root or with sudo command."
+        exit 1
+fi
+
+systemctl enable docker
+systemctl start docker
+systemctl enable docker.socket
+systemctl start docker.socket

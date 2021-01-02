@@ -2,7 +2,14 @@
 
 set -e
 
-sudo systemctl enable rpcbind
-sudo systemctl start rpcbind
-sudo systemctl enable rpcbind.socket
-sudo systemctl start rpcbind.socket
+RED='\e[1;31m'
+
+if [[ "$EUID" -ne "0" ]]; then
+        echo -e $RED "Run this script as root or with sudo command."
+        exit 1
+fi
+
+systemctl enable rpcbind
+systemctl start rpcbind
+systemctl enable rpcbind.socket
+systemctl start rpcbind.socket

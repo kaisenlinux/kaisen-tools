@@ -2,10 +2,17 @@
 
 set -e
 
-sudo systemctl disable clamav-daemon
-sudo systemctl stop clamav-daemon
-sudo systemctl disable clamav-freshclam
-sudo systemctl stop clamav-freshclam
-sudo systemctl disable clamav-milter
-sudo systemctl stop clamav-milter
+RED='\e[1;31m'
+
+if [[ "$EUID" -ne "0" ]]; then
+        echo -e $RED "Run this script as root or with sudo command."
+        exit 1
+fi
+
+systemctl disable clamav-daemon
+systemctl stop clamav-daemon
+systemctl disable clamav-freshclam
+systemctl stop clamav-freshclam
+systemctl disable clamav-milter
+systemctl stop clamav-milter
 

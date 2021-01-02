@@ -2,9 +2,16 @@
 
 set -e
 
-sudo systemctl disable vboxweb
-sudo systemctl stop vboxweb
-sudo systemctl disable virtualbox
-sudo systemctl stop virtualbox
-sudo systemctl disable virtualbox-guest-utils
-sudo systemctl stop virtualbox-guest-utils
+RED='\e[1;31m'
+
+if [[ "$EUID" -ne "0" ]]; then
+        echo -e $RED "Run this script as root or with sudo command."
+        exit 1
+fi
+
+systemctl disable vboxweb
+systemctl stop vboxweb
+systemctl disable virtualbox
+systemctl stop virtualbox
+systemctl disable virtualbox-guest-utils
+systemctl stop virtualbox-guest-utils

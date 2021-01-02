@@ -2,15 +2,22 @@
 
 set -e
 
-sudo systemctl enable nfs-client.target
-sudo systemctl start nfs-client.target
-sudo systemctl enable nfs-kernel-server
-sudo systemctl start nfs-kernel-server
-sudo systemctl enable nfs-server
-sudo systemctl start nfs-server
-sudo systemctl enable portmap
-sudo systemctl start portmap
-sudo systemctl enable rpcbind
-sudo systemctl start rpcbind
-sudo systemctl enable rpcbind.socket
-sudo systemctl start rpcbind.socket
+RED='\e[1;31m'
+
+if [[ "$EUID" -ne "0" ]]; then
+        echo -e $RED "Run this script as root or with sudo command."
+        exit 1
+fi
+
+systemctl enable nfs-client.target
+systemctl start nfs-client.target
+systemctl enable nfs-kernel-server
+systemctl start nfs-kernel-server
+systemctl enable nfs-server
+systemctl start nfs-server
+systemctl enable portmap
+systemctl start portmap
+systemctl enable rpcbind
+systemctl start rpcbind
+systemctl enable rpcbind.socket
+systemctl start rpcbind.socket

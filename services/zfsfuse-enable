@@ -2,4 +2,11 @@
 
 set -e
 
-sudo systemctl enable zfs-fuse
+RED='\e[1;31m'
+
+if [[ "$EUID" -ne "0" ]]; then
+        echo -e $RED "Run this script as root or with sudo command."
+        exit 1
+fi
+
+systemctl enable zfs-fuse

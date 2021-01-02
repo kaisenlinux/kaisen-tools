@@ -2,7 +2,14 @@
 
 set -e
 
-sudo systemctl enable avahi-daemon
-sudo systemctl start avahi-daemon
-sudo systemctl enable avahi-daemon.socket
-sudo systemctl start avahi-daemon.socket
+RED='\e[1;31m'
+
+if [[ "$EUID" -ne "0" ]]; then
+        echo -e $RED "Run this script as root or with sudo command."
+        exit 1
+fi
+
+systemctl enable avahi-daemon
+systemctl start avahi-daemon
+systemctl enable avahi-daemon.socket
+systemctl start avahi-daemon.socket

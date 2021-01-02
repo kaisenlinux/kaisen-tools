@@ -2,5 +2,12 @@
 
 set -e
 
-sudo systemctl enable open-vm-tools
-sudo systemctl start open-vm-tools
+RED='\e[1;31m'
+
+if [[ "$EUID" -ne "0" ]]; then
+        echo -e $RED "Run this script as root or with sudo command."
+        exit 1
+fi
+
+systemctl enable open-vm-tools
+systemctl start open-vm-tools

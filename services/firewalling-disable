@@ -2,9 +2,16 @@
 
 set -e
 
-sudo systemctl disable iptables
-sudo systemctl stop iptables
-sudo systemctl disable ip6tables
-sudo systemctl stop ip6tables
-sudo systemctl disable netfilter-persistent
-sudo systemctl stop netfilter-persistent
+RED='\e[1;31m'
+
+if [[ "$EUID" -ne "0" ]]; then
+        echo -e $RED "Run this script as root or with sudo command."
+        exit 1
+fi
+
+systemctl disable iptables
+systemctl stop iptables
+systemctl disable ip6tables
+systemctl stop ip6tables
+systemctl disable netfilter-persistent
+systemctl stop netfilter-persistent

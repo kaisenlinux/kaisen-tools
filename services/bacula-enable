@@ -2,7 +2,14 @@
 
 set -e
 
-sudo systemctl enable bacula-fd
-sudo systemctl start bacula-fd
-sudo systemctl enable bacula-sd
+RED='\e[1;31m'
+
+if [[ "$EUID" -ne "0" ]]; then
+        echo -e $RED "Run this script as root or with sudo command."
+        exit 1
+fi
+
+systemctl enable bacula-fd
+systemctl start bacula-fd
+systemctl enable bacula-sd
 
