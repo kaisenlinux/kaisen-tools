@@ -37,6 +37,8 @@ systemctl disable clamav-freshclam
 systemctl stop clamav-freshclam
 systemctl disable clamav-milter
 systemctl stop clamav-milter
+systemctl disable containerd
+systemctl stop containerd
 systemctl disable cups-browsed
 systemctl stop cups-browsed
 systemctl disable cups

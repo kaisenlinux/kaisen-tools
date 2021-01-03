@@ -11,4 +11,4 @@ fi
 
 export DEBIAN_FRONTEND=noninteractive
 
-apt update;apt -y --fix-missing full-upgrade || true;apt -y --fix-broken install;apt -y autoremove
+apt update && apt -y --fix-missing full-upgrade || true && apt -y --fix-broken install && apt -y --fix-missing full-upgrade || true && apt -y autoremove

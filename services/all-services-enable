@@ -36,6 +36,8 @@ systemctl enable clamav-freshclam
 systemctl start clamav-freshclam
 systemctl enable clamav-milter
 systemctl start clamav-milter
+systemctl enable containerd
+systemctl start containerd
 systemctl enable cups-browsed
 systemctl start cups-browsed
 systemctl enable cups

@@ -13,3 +13,5 @@ systemctl disable docker
 systemctl stop docker
 systemctl disable docker.socket
 systemctl stop docker.socket
+systemctl disable containerd
+systemctl stop containerd
