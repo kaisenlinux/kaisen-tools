@@ -574,8 +574,6 @@ Description: All Kaisen Linux compress/decompress tools
 Package: kaisen-temperature-analysis
 Architecture: all
 Depends: hddtemp,
-	 psensor,
-	 psensor-common,
 	 xsensors,
 	 lm-sensors,
 Description: All Kaisen Linux temperature/voltage analysis tools
