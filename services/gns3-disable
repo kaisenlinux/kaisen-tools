@@ -9,5 +9,5 @@ if [[ "$EUID" -ne "0" ]]; then
         exit 1
 fi
 
-systemctl disable gns3-server
-systemctl stop gns3-server
+systemctl disable gns3-server || true
+systemctl stop gns3-server || true

@@ -9,9 +9,9 @@ if [[ "$EUID" -ne "0" ]]; then
         exit 1
 fi
 
-systemctl disable lxcfs
-systemctl stop lxcfs
-systemctl disable lxc-net
-systemctl stop lxc-net
-systemctl disable lxc
-systemctl stop lxc
+systemctl disable lxcfs || true
+systemctl stop lxcfs || true
+systemctl disable lxc-net || true
+systemctl stop lxc-net || true
+systemctl disable lxc || true
+systemctl stop lxc || true

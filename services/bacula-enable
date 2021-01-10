@@ -9,7 +9,7 @@ if [[ "$EUID" -ne "0" ]]; then
         exit 1
 fi
 
-systemctl enable bacula-fd
-systemctl start bacula-fd
-systemctl enable bacula-sd
+systemctl enable bacula-fd || true
+systemctl start bacula-fd || true
+systemctl enable bacula-sd || true
 

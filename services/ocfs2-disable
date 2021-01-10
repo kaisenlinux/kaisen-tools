@@ -9,5 +9,5 @@ if [[ "$EUID" -ne "0" ]]; then
         exit 1
 fi
 
-systemctl disable ocfs2
-systemctl stop ocfs2
+systemctl disable ocfs2 || true
+systemctl stop ocfs2 || true

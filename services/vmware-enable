@@ -9,5 +9,5 @@ if [[ "$EUID" -ne "0" ]]; then
         exit 1
 fi
 
-systemctl enable open-vm-tools
-systemctl start open-vm-tools
+systemctl enable open-vm-tools || true
+systemctl start open-vm-tools || true

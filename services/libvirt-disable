@@ -9,21 +9,21 @@ if [[ "$EUID" -ne "0" ]]; then
         exit 1
 fi
 
-systemctl disable libvirtd.service
-systemctl stop libvirtd.service
-systemctl disable virtlockd.socket
-systemctl stop virtlockd.socket
-systemctl disable virtlogd.socket
-systemctl stop virtlogd.socket
-systemctl disable libvirtd.socket
-systemctl stop libvirtd.socket
-systemctl disable libvirtd-ro.socket
-systemctl stop libvirtd-ro.socket
-systemctl disable libvirt-guests.service
-systemctl stop libvirt-guests.service
-systemctl disable libvirtd-admin.socket
-systemctl stop libvirtd-admin.socket
-systemctl disable virtlockd-admin.socket
-systemctl stop virtlockd-admin.socket
-systemctl disable virtlogd-admin.socket
-systemctl stop virtlogd-admin.socket
+systemctl disable libvirtd.service || true
+systemctl stop libvirtd.service || true
+systemctl disable virtlockd.socket || true
+systemctl stop virtlockd.socket || true
+systemctl disable virtlogd.socket || true
+systemctl stop virtlogd.socket || true
+systemctl disable libvirtd.socket || true
+systemctl stop libvirtd.socket || true
+systemctl disable libvirtd-ro.socket || true
+systemctl stop libvirtd-ro.socket || true
+systemctl disable libvirt-guests.service || true
+systemctl stop libvirt-guests.service || true
+systemctl disable libvirtd-admin.socket || true
+systemctl stop libvirtd-admin.socket || true
+systemctl disable virtlockd-admin.socket || true
+systemctl stop virtlockd-admin.socket || true
+systemctl disable virtlogd-admin.socket || true
+systemctl stop virtlogd-admin.socket || true

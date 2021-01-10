@@ -9,5 +9,5 @@ if [[ "$EUID" -ne "0" ]]; then
         exit 1
 fi
 
-systemctl enable arpwatch
-systemctl start arpwatch
+systemctl enable arpwatch || true
+systemctl start arpwatch || true

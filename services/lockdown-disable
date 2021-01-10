@@ -9,5 +9,5 @@ if [[ "$EUID" -ne "0" ]]; then
         exit 1
 fi
 
-systemctl disable lockdown
-systemctl stop lockdown
+systemctl disable lockdown || true
+systemctl stop lockdown || true

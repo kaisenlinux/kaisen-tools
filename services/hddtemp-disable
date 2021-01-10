@@ -9,5 +9,5 @@ if [[ "$EUID" -ne "0" ]]; then
         exit 1
 fi
 
-systemctl disable hddtemp
-systemctl stop hddtemp
+systemctl disable hddtemp || true
+systemctl stop hddtemp || true

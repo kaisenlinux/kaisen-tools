@@ -9,15 +9,15 @@ if [[ "$EUID" -ne "0" ]]; then
         exit 1
 fi
 
-systemctl disable nfs-client.target
-systemctl stop nfs-client.target
-systemctl disable nfs-kernel-server
-systemctl stop nfs-kernel-server
-systemctl disable nfs-server
-systemctl stop nfs-server
-systemctl disable portmap
-systemctl stop portmap
-systemctl disable rpcbind
-systemctl stop rpcbind
-systemctl disable rpcbind.socket
-systemctl stop rpcbind.socket
+systemctl disable nfs-client.target || true
+systemctl stop nfs-client.target || true
+systemctl disable nfs-kernel-server || true
+systemctl stop nfs-kernel-server || true
+systemctl disable nfs-server || true
+systemctl stop nfs-server || true
+systemctl disable portmap || true
+systemctl stop portmap || true
+systemctl disable rpcbind || true
+systemctl stop rpcbind || true
+systemctl disable rpcbind.socket || true
+systemctl stop rpcbind.socket || true

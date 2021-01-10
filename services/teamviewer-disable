@@ -9,5 +9,5 @@ if [[ "$EUID" -ne "0" ]]; then
         exit 1
 fi
 
-systemctl disable teamviewerd
-systemctl stop teamviewerd
+systemctl disable teamviewerd || true
+systemctl stop teamviewerd || true

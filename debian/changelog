@@ -1,3 +1,12 @@
+kaisen-tools (1.5+kaisen6) kaisen-packages; urgency=medium
+
+  * Add || true in services/*
+  * Move content services/etcsetserial* in services/setserial*
+  * Move irqbalance to kaisen-miscellaneous-tools
+  * Delete services/rpcbind*
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>  Sat, 09 Jan 2021 23:14:08 +0200
+
 kaisen-tools (1.5+kaisen5) kaisen-packages; urgency=medium
 
   * Remove psensor tool (amd64 arch will be maintained)

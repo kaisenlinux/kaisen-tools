@@ -9,137 +9,137 @@ if [[ "$EUID" -ne "0" ]]; then
         exit 1
 fi
 
-systemctl enable 2ping
-systemctl start 2ping
-systemctl enable anydesk
-systemctl start anydesk
-systemctl enable arpalert
-systemctl start arpalert
-systemctl enable arpwatch
-systemctl start arpwatch
-systemctl enable avahi-daemon
-systemctl start avahi-daemon
-systemctl enable bacula-fd
-systemctl start bacula-fd
-systemctl enable bacula-sd
-systemctl enable bettercap
-systemctl start bettercap
-systemctl enable bluetooth
-systemctl start bluetooth
-systemctl enable blueman-mechanism
-systemctl start blueman-mechanism
-systemctl enable ceph-fuse.target
-systemctl start ceph-fuse.target
-systemctl enable clamav-daemon
-systemctl start clamav-daemon
-systemctl enable clamav-freshclam
-systemctl start clamav-freshclam
-systemctl enable clamav-milter
-systemctl start clamav-milter
-systemctl enable containerd
-systemctl start containerd
-systemctl enable cups-browsed
-systemctl start cups-browsed
-systemctl enable cups
-systemctl start cups
-systemctl enable cups.path
-systemctl start cups.path
-systemctl enable cups.socket
-systemctl start cups.socket
-systemctl enable docker
-systemctl start docker
-systemctl enable docker.socket
-systemctl start docker.socket
-systemctl enable e2scrub_reap
-systemctl start e2scrub_reap
-systemctl enable e2scrub_all.timer
-systemctl start e2scrub_all.timer
-systemctl enable etc-setserial
-systemctl start etc-setserial
-systemctl enable iptables
-systemctl start iptables
-systemctl enable ip6tables
-systemctl start ip6tables
-systemctl enable netfilter-persistent
-systemctl start netfilter-persistent
-systemctl enable gns3-server
-systemctl start gns3-server
-systemctl enable hddtemp
-systemctl start hddtemp
-systemctl unmask hostapd
-systemctl enable hostapd
-systemctl enable irqbalance
-systemctl start irqbalance
-systemctl enable libvirtd.service
-systemctl start libvirtd.service
-systemctl enable virtlockd.socket
-systemctl start virtlockd.socket
-systemctl enable virtlogd.socket
-systemctl start virtlogd.socket
-systemctl enable libvirtd.socket
-systemctl start libvirtd.socket
-systemctl enable libvirtd-ro.socket
-systemctl start libvirtd-ro.socket
-systemctl enable libvirt-guests.service
-systemctl start libvirt-guests.service
-systemctl enable libvirtd-admin.socket
-systemctl start libvirtd-admin.socket
-systemctl enable virtlockd-admin.socket
-systemctl start virtlockd-admin.socket
-systemctl enable virtlogd-admin.socket
-systemctl start virtlogd-admin.socket
-systemctl enable lm-sensors
-systemctl start lm-sensors
-systemctl enable lockdown
-systemctl start lockdown
-systemctl enable lxcfs
-systemctl start lxcfs
-systemctl enable lxc-net
-systemctl start lxc-net
-systemctl enable lxc
-systemctl start lxc
-systemctl enable neo4j
-systemctl start neo4j
-systemctl enable nfs-client.target
-systemctl start nfs-client.target
-systemctl enable nfs-kernel-server
-systemctl start nfs-kernel-server
-systemctl enable nfs-server
-systemctl start nfs-server
-systemctl enable portmap
-systemctl start portmap
-systemctl enable rpcbind
-systemctl start rpcbind
-systemctl enable rpcbind.socket
-systemctl start rpcbind.socket
-systemctl enable ntp
-systemctl start ntp
-systemctl enable o2cb
-systemctl start o2cb
-systemctl enable ocfs2
-systemctl start ocfs2
-systemctl enable openvpn
-systemctl start openvpn
-systemctl enable rpcbind
-systemctl start rpcbind
-systemctl enable rpcbind.socket
-systemctl start rpcbind.socket
-systemctl enable rsync
-systemctl start rsync
-systemctl enable setserial
-systemctl start setserial
-systemctl enable smartmontools
-systemctl start smartmontools
-systemctl enable ssh
-systemctl start ssh
-systemctl enable sysstat
-systemctl start sysstat
-systemctl enable teamviewerd
-systemctl start teamviewerd
-systemctl enable vboxweb
-systemctl enable virtualbox
-systemctl enable virtualbox-guest-utils
-systemctl start virtualbox-guest-utils
-systemctl enable open-vm-tools
-systemctl start open-vm-tools
-systemctl enable zfs-fuse
+systemctl enable 2ping || true
+systemctl start 2ping || true
+systemctl enable anydesk || true
+systemctl start anydesk || true
+systemctl enable arpalert || true
+systemctl start arpalert || true
+systemctl enable arpwatch || true
+systemctl start arpwatch || true
+systemctl enable avahi-daemon || true
+systemctl start avahi-daemon || true
+systemctl enable bacula-fd || true
+systemctl start bacula-fd || true
+systemctl enable bacula-sd || true
+systemctl enable bettercap || true
+systemctl start bettercap || true
+systemctl enable bluetooth || true
+systemctl start bluetooth || true
+systemctl enable blueman-mechanism || true
+systemctl start blueman-mechanism || true
+systemctl enable ceph-fuse.target || true
+systemctl start ceph-fuse.target || true
+systemctl enable clamav-daemon || true
+systemctl start clamav-daemon || true
+systemctl enable clamav-freshclam || true
+systemctl start clamav-freshclam || true
+systemctl enable clamav-milter || true
+systemctl start clamav-milter || true
+systemctl enable containerd || true
+systemctl start containerd || true
+systemctl enable cups-browsed || true
+systemctl start cups-browsed || true
+systemctl enable cups || true
+systemctl start cups || true
+systemctl enable cups.path || true
+systemctl start cups.path || true
+systemctl enable cups.socket || true
+systemctl start cups.socket || true
+systemctl enable docker || true
+systemctl start docker || true
+systemctl enable docker.socket || true
+systemctl start docker.socket || true
+systemctl enable e2scrub_reap || true
+systemctl start e2scrub_reap || true
+systemctl enable e2scrub_all.timer || true
+systemctl start e2scrub_all.timer || true
+systemctl enable etc-setserial || true
+systemctl start etc-setserial || true
+systemctl enable iptables || true
+systemctl start iptables || true
+systemctl enable ip6tables || true
+systemctl start ip6tables || true
+systemctl enable netfilter-persistent || true
+systemctl start netfilter-persistent || true
+systemctl enable gns3-server || true
+systemctl start gns3-server || true
+systemctl enable hddtemp || true
+systemctl start hddtemp || true
+systemctl unmask hostapd || true
+systemctl enable hostapd || true
+systemctl enable irqbalance || true
+systemctl start irqbalance || true
+systemctl enable libvirtd.service || true
+systemctl start libvirtd.service || true
+systemctl enable virtlockd.socket || true
+systemctl start virtlockd.socket || true
+systemctl enable virtlogd.socket || true
+systemctl start virtlogd.socket || true
+systemctl enable libvirtd.socket || true
+systemctl start libvirtd.socket || true
+systemctl enable libvirtd-ro.socket || true
+systemctl start libvirtd-ro.socket || true
+systemctl enable libvirt-guests.service || true
+systemctl start libvirt-guests.service || true
+systemctl enable libvirtd-admin.socket || true
+systemctl start libvirtd-admin.socket || true
+systemctl enable virtlockd-admin.socket || true
+systemctl start virtlockd-admin.socket || true
+systemctl enable virtlogd-admin.socket || true
+systemctl start virtlogd-admin.socket || true
+systemctl enable lm-sensors || true
+systemctl start lm-sensors || true
+systemctl enable lockdown || true
+systemctl start lockdown || true
+systemctl enable lxcfs || true
+systemctl start lxcfs || true
+systemctl enable lxc-net || true
+systemctl start lxc-net || true
+systemctl enable lxc || true
+systemctl start lxc || true
+systemctl enable neo4j || true
+systemctl start neo4j || true
+systemctl enable nfs-client.target || true
+systemctl start nfs-client.target || true
+systemctl enable nfs-kernel-server || true
+systemctl start nfs-kernel-server || true
+systemctl enable nfs-server || true
+systemctl start nfs-server || true
+systemctl enable portmap || true
+systemctl start portmap || true
+systemctl enable rpcbind || true
+systemctl start rpcbind || true
+systemctl enable rpcbind.socket || true
+systemctl start rpcbind.socket || true
+systemctl enable ntp || true
+systemctl start ntp || true
+systemctl enable o2cb || true
+systemctl start o2cb || true
+systemctl enable ocfs2 || true
+systemctl start ocfs2 || true
+systemctl enable openvpn || true
+systemctl start openvpn || true
+systemctl enable rpcbind || true
+systemctl start rpcbind || true
+systemctl enable rpcbind.socket || true
+systemctl start rpcbind.socket || true
+systemctl enable rsync || true
+systemctl start rsync || true
+systemctl enable setserial || true
+systemctl start setserial || true
+systemctl enable smartmontools || true
+systemctl start smartmontools || true
+systemctl enable ssh || true
+systemctl start ssh || true
+systemctl enable sysstat || true
+systemctl start sysstat || true
+systemctl enable teamviewerd || true
+systemctl start teamviewerd || true
+systemctl enable vboxweb || true
+systemctl enable virtualbox || true
+systemctl enable virtualbox-guest-utils || true
+systemctl start virtualbox-guest-utils || true
+systemctl enable open-vm-tools || true
+systemctl start open-vm-tools || true
+systemctl enable zfs-fuse || true

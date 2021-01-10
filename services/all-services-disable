@@ -9,141 +9,141 @@ if [[ "$EUID" -ne "0" ]]; then
         exit 1
 fi
 
-systemctl disable 2ping
-systemctl stop 2ping
-systemctl disable anydesk
-systemctl stop anydesk
-systemctl disable arpalert
-systemctl stop arpalert
-systemctl disable arpwatch
-systemctl stop arpwatch
-systemctl disable avahi-daemon
-systemctl stop avahi-daemon
-systemctl disable bacula-fd
-systemctl stop bacula-fd
-systemctl disable bacula-sd
-systemctl stop bacula-sd
-systemctl disable bettercap
-systemctl stop bettercap
-systemctl disable bluetooth
-systemctl stop bluetooth
-systemctl disable blueman-mechanism
-systemctl stop blueman-mechanism
-systemctl disable ceph-fuse.target
-systemctl stop ceph-fuse.target
-systemctl disable clamav-daemon
-systemctl stop clamav-daemon
-systemctl disable clamav-freshclam
-systemctl stop clamav-freshclam
-systemctl disable clamav-milter
-systemctl stop clamav-milter
-systemctl disable containerd
-systemctl stop containerd
-systemctl disable cups-browsed
-systemctl stop cups-browsed
-systemctl disable cups
-systemctl stop cups
-systemctl disable cups.path
-systemctl stop cups.path
-systemctl disable cups.socket
-systemctl stop cups.socket
-systemctl disable docker
-systemctl stop docker
-systemctl disable docker.socket
-systemctl stop docker.socket
-systemctl disable e2scrub_reap
-systemctl stop e2scrub_reap
-systemctl disable e2scrub_all.timer
-systemctl stop e2scrub_all.timer
-systemctl disable etc-setserial
-systemctl stop etc-setserial
-systemctl disable iptables
-systemctl stop iptables
-systemctl disable ip6tables
-systemctl stop ip6tables
-systemctl disable netfilter-persistent
-systemctl stop netfilter-persistent
-systemctl disable gns3-server
-systemctl stop gns3-server
-systemctl disable hddtemp
-systemctl stop hddtemp
-systemctl disable hostapd
-systemctl stop hostapd
-systemctl disable irqbalance
-systemctl stop irqbalance
-systemctl disable libvirtd.service
-systemctl stop libvirtd.service
-systemctl disable virtlockd.socket
-systemctl stop virtlockd.socket
-systemctl disable virtlogd.socket
-systemctl stop virtlogd.socket
-systemctl disable libvirtd.socket
-systemctl stop libvirtd.socket
-systemctl disable libvirtd-ro.socket
-systemctl stop libvirtd-ro.socket
-systemctl disable libvirt-guests.service
-systemctl stop libvirt-guests.service
-systemctl disable libvirtd-admin.socket
-systemctl stop libvirtd-admin.socket
-systemctl disable virtlockd-admin.socket
-systemctl stop virtlockd-admin.socket
-systemctl disable virtlogd-admin.socket
-systemctl stop virtlogd-admin.socket
-systemctl disable lm-sensors
-systemctl stop lm-sensors
-systemctl disable lockdown
-systemctl stop lockdown
-systemctl disable lxcfs
-systemctl stop lxcfs
-systemctl disable lxc-net
-systemctl stop lxc-net
-systemctl disable lxc
-systemctl stop lxc
-systemctl disable neo4j
-systemctl stop neo4j
-systemctl disable nfs-client.target
-systemctl stop nfs-client.target
-systemctl disable nfs-kernel-server
-systemctl stop nfs-kernel-server
-systemctl disable nfs-server
-systemctl stop nfs-server
-systemctl disable portmap
-systemctl stop portmap
-systemctl disable rpcbind
-systemctl stop rpcbind
-systemctl disable rpcbind.socket
-systemctl stop rpcbind.socket
-systemctl disable ntp
-systemctl stop ntp
-systemctl disable o2cb
-systemctl stop o2cb
-systemctl disable ocfs2
-systemctl stop ocfs2
-systemctl disable openvpn
-systemctl stop openvpn
-systemctl disable rpcbind
-systemctl stop rpcbind
-systemctl disable rpcbind.socket
-systemctl stop rpcbind.socket
-systemctl disable rsync
-systemctl stop rsync
-systemctl disable setserial
-systemctl stop setserial
-systemctl disable smartmontools
-systemctl stop smartmontools
-systemctl disable ssh
-systemctl stop ssh
-systemctl disable sysstat
-systemctl stop sysstat
-systemctl disable teamviewerd
-systemctl stop teamviewerd
-systemctl disable vboxweb
-systemctl stop vboxweb
-systemctl disable virtualbox
-systemctl stop virtualbox
-systemctl disable virtualbox-guest-utils
-systemctl stop virtualbox-guest-utils
-systemctl disable open-vm-tools
-systemctl stop open-vm-tools
-systemctl disable zfs-fuse
-systemctl stop zfs-fuse
+systemctl disable 2ping || true
+systemctl stop 2ping || true
+systemctl disable anydesk || true
+systemctl stop anydesk || true
+systemctl disable arpalert || true
+systemctl stop arpalert || true
+systemctl disable arpwatch || true
+systemctl stop arpwatch || true
+systemctl disable avahi-daemon || true
+systemctl stop avahi-daemon || true
+systemctl disable bacula-fd || true
+systemctl stop bacula-fd || true
+systemctl disable bacula-sd || true
+systemctl stop bacula-sd || true
+systemctl disable bettercap || true
+systemctl stop bettercap || true
+systemctl disable bluetooth || true
+systemctl stop bluetooth || true
+systemctl disable blueman-mechanism || true
+systemctl stop blueman-mechanism || true
+systemctl disable ceph-fuse.target || true
+systemctl stop ceph-fuse.target || true
+systemctl disable clamav-daemon || true
+systemctl stop clamav-daemon || true
+systemctl disable clamav-freshclam || true
+systemctl stop clamav-freshclam || true
+systemctl disable clamav-milter || true
+systemctl stop clamav-milter || true
+systemctl disable containerd || true
+systemctl stop containerd || true
+systemctl disable cups-browsed || true
+systemctl stop cups-browsed || true
+systemctl disable cups || true
+systemctl stop cups || true
+systemctl disable cups.path || true
+systemctl stop cups.path || true
+systemctl disable cups.socket || true
+systemctl stop cups.socket || true
+systemctl disable docker || true
+systemctl stop docker || true
+systemctl disable docker.socket || true
+systemctl stop docker.socket || true
+systemctl disable e2scrub_reap || true
+systemctl stop e2scrub_reap || true
+systemctl disable e2scrub_all.timer || true
+systemctl stop e2scrub_all.timer || true
+systemctl disable etc-setserial || true
+systemctl stop etc-setserial || true
+systemctl disable iptables || true
+systemctl stop iptables || true
+systemctl disable ip6tables || true
+systemctl stop ip6tables || true
+systemctl disable netfilter-persistent || true
+systemctl stop netfilter-persistent || true
+systemctl disable gns3-server || true
+systemctl stop gns3-server || true
+systemctl disable hddtemp || true
+systemctl stop hddtemp || true
+systemctl disable hostapd || true
+systemctl stop hostapd || true
+systemctl disable irqbalance || true
+systemctl stop irqbalance || true
+systemctl disable libvirtd.service || true
+systemctl stop libvirtd.service || true
+systemctl disable virtlockd.socket || true
+systemctl stop virtlockd.socket || true
+systemctl disable virtlogd.socket || true
+systemctl stop virtlogd.socket || true
+systemctl disable libvirtd.socket || true
+systemctl stop libvirtd.socket || true
+systemctl disable libvirtd-ro.socket || true
+systemctl stop libvirtd-ro.socket || true
+systemctl disable libvirt-guests.service || true
+systemctl stop libvirt-guests.service || true
+systemctl disable libvirtd-admin.socket || true
+systemctl stop libvirtd-admin.socket || true
+systemctl disable virtlockd-admin.socket || true
+systemctl stop virtlockd-admin.socket || true
+systemctl disable virtlogd-admin.socket || true
+systemctl stop virtlogd-admin.socket || true
+systemctl disable lm-sensors || true
+systemctl stop lm-sensors || true
+systemctl disable lockdown || true
+systemctl stop lockdown || true
+systemctl disable lxcfs || true
+systemctl stop lxcfs || true
+systemctl disable lxc-net || true
+systemctl stop lxc-net || true
+systemctl disable lxc || true
+systemctl stop lxc || true
+systemctl disable neo4j || true
+systemctl stop neo4j || true
+systemctl disable nfs-client.target || true
+systemctl stop nfs-client.target || true
+systemctl disable nfs-kernel-server || true
+systemctl stop nfs-kernel-server || true
+systemctl disable nfs-server || true
+systemctl stop nfs-server || true
+systemctl disable portmap || true
+systemctl stop portmap || true
+systemctl disable rpcbind || true
+systemctl stop rpcbind || true
+systemctl disable rpcbind.socket || true
+systemctl stop rpcbind.socket || true
+systemctl disable ntp || true
+systemctl stop ntp || true
+systemctl disable o2cb || true
+systemctl stop o2cb || true
+systemctl disable ocfs2 || true
+systemctl stop ocfs2 || true
+systemctl disable openvpn || true
+systemctl stop openvpn || true
+systemctl disable rpcbind || true
+systemctl stop rpcbind || true
+systemctl disable rpcbind.socket || true
+systemctl stop rpcbind.socket || true
+systemctl disable rsync || true
+systemctl stop rsync || true
+systemctl disable setserial || true
+systemctl stop setserial || true
+systemctl disable smartmontools || true
+systemctl stop smartmontools || true
+systemctl disable ssh || true
+systemctl stop ssh || true
+systemctl disable sysstat || true
+systemctl stop sysstat || true
+systemctl disable teamviewerd || true
+systemctl stop teamviewerd || true
+systemctl disable vboxweb || true
+systemctl stop vboxweb || true
+systemctl disable virtualbox || true
+systemctl stop virtualbox || true
+systemctl disable virtualbox-guest-utils || true
+systemctl stop virtualbox-guest-utils || true
+systemctl disable open-vm-tools || true
+systemctl stop open-vm-tools || true
+systemctl disable zfs-fuse || true
+systemctl stop zfs-fuse || true

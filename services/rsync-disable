@@ -9,5 +9,5 @@ if [[ "$EUID" -ne "0" ]]; then
         exit 1
 fi
 
-systemctl disable rsync
-systemctl stop rsync
+systemctl disable rsync || true
+systemctl stop rsync || true

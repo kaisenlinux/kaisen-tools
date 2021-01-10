@@ -9,5 +9,5 @@ if [[ "$EUID" -ne "0" ]]; then
         exit 1
 fi
 
-systemctl disable lm-sensors
-systemctl stop lm-sensors
+systemctl disable lm-sensors || true
+systemctl stop lm-sensors || true

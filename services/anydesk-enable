@@ -9,5 +9,5 @@ if [[ "$EUID" -ne "0" ]]; then
         exit 1
 fi
 
-systemctl enable anydesk
-systemctl start anydesk
+systemctl enable anydesk || true
+systemctl start anydesk || true

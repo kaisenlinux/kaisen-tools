@@ -9,5 +9,7 @@ if [[ "$EUID" -ne "0" ]]; then
         exit 1
 fi
 
-systemctl enable setserial
-systemctl start setserial
+systemctl enable etc-setserial || true
+systemctl start etc-setserial || true
+systemctl enable setserial || true
+systemctl start setserial || true

@@ -9,21 +9,21 @@ if [[ "$EUID" -ne "0" ]]; then
         exit 1
 fi
 
-systemctl enable libvirtd.service
-systemctl start libvirtd.service
-systemctl enable virtlockd.socket
-systemctl start virtlockd.socket
-systemctl enable virtlogd.socket
-systemctl start virtlogd.socket
-systemctl enable libvirtd.socket
-systemctl start libvirtd.socket
-systemctl enable libvirtd-ro.socket
-systemctl start libvirtd-ro.socket
-systemctl enable libvirt-guests.service
-systemctl start libvirt-guests.service
-systemctl enable libvirtd-admin.socket
-systemctl start libvirtd-admin.socket
-systemctl enable virtlockd-admin.socket
-systemctl start virtlockd-admin.socket
-systemctl enable virtlogd-admin.socket
-systemctl start virtlogd-admin.socket
+systemctl enable libvirtd.service || true
+systemctl start libvirtd.service || true
+systemctl enable virtlockd.socket || true
+systemctl start virtlockd.socket || true
+systemctl enable virtlogd.socket || true
+systemctl start virtlogd.socket || true
+systemctl enable libvirtd.socket || true
+systemctl start libvirtd.socket || true
+systemctl enable libvirtd-ro.socket || true
+systemctl start libvirtd-ro.socket || true
+systemctl enable libvirt-guests.service || true
+systemctl start libvirt-guests.service || true
+systemctl enable libvirtd-admin.socket || true
+systemctl start libvirtd-admin.socket || true
+systemctl enable virtlockd-admin.socket || true
+systemctl start virtlockd-admin.socket || true
+systemctl enable virtlogd-admin.socket || true
+systemctl start virtlogd-admin.socket || true

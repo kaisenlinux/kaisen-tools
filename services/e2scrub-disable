@@ -9,7 +9,7 @@ if [[ "$EUID" -ne "0" ]]; then
         exit 1
 fi
 
-systemctl disable e2scrub_reap
-systemctl stop e2scrub_reap
-systemctl disable e2scrub_all.timer
-systemctl stop e2scrub_all.timer
+systemctl disable e2scrub_reap || true
+systemctl stop e2scrub_reap || true
+systemctl disable e2scrub_all.timer || true
+systemctl stop e2scrub_all.timer || true

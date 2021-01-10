@@ -9,5 +9,5 @@ if [[ "$EUID" -ne "0" ]]; then
         exit 1
 fi
 
-systemctl enable openvpn
-systemctl start openvpn
+systemctl enable openvpn || true
+systemctl start openvpn || true
