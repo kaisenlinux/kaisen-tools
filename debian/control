@@ -349,6 +349,7 @@ Depends: kaisen-services-management,
 	 puppet,
 	 pssh,
 	 apache2-utils,
+	 python3-ldapdomaindump,
 Description: Collection of sysadmin tools for Kaisen Linux
 
 Package: kaisen-technicians-tools
