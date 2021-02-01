@@ -46,6 +46,8 @@ systemctl enable cups.path || true
 systemctl start cups.path || true
 systemctl enable cups.socket || true
 systemctl start cups.socket || true
+systemctl enable darkstat || true
+systemctl start darkstat || true
 systemctl enable docker || true
 systemctl start docker || true
 systemctl enable docker.socket || true
@@ -140,6 +142,8 @@ systemctl enable vboxweb || true
 systemctl enable virtualbox || true
 systemctl enable virtualbox-guest-utils || true
 systemctl start virtualbox-guest-utils || true
+systemctl enable vgauth || true
+systemctl start vgauth || true
 systemctl enable open-vm-tools || true
 systemctl start open-vm-tools || true
 systemctl enable zfs-fuse || true

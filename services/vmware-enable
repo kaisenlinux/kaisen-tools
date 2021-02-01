@@ -11,3 +11,5 @@ fi
 
 systemctl enable open-vm-tools || true
 systemctl start open-vm-tools || true
+systemctl enable vgauth || true
+systemctl start vgauth || true

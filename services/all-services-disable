@@ -47,6 +47,8 @@ systemctl disable cups.path || true
 systemctl stop cups.path || true
 systemctl disable cups.socket || true
 systemctl stop cups.socket || true
+systemctl disable darkstat || true
+systemctl stop darkstat || true
 systemctl disable docker || true
 systemctl stop docker || true
 systemctl disable docker.socket || true
@@ -143,6 +145,8 @@ systemctl disable virtualbox || true
 systemctl stop virtualbox || true
 systemctl disable virtualbox-guest-utils || true
 systemctl stop virtualbox-guest-utils || true
+systemctl disable vgauth || true
+systemctl stop vgauth || true
 systemctl disable open-vm-tools || true
 systemctl stop open-vm-tools || true
 systemctl disable zfs-fuse || true
