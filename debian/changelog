@@ -1,3 +1,10 @@
+kaisen-tools (1.5+kaisen9) kaisen-packages; urgency=medium
+
+  * Add spice daemons on services scripts
+  * Add spice, qemu-agent and virt-viewer tools
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>  Sat, 06 Feb 2021 08:09:36 +0200
+
 kaisen-tools (1.5+kaisen8) kaisen-packages; urgency=medium
 
   * Add darkstat service

@@ -350,6 +350,11 @@ Depends: kaisen-services-management,
 	 pssh,
 	 apache2-utils,
 	 python3-ldapdomaindump,
+	 xserver-xorg-video-qxl,
+	 qemu-guest-agent,
+	 spice-vdagent,
+	 spice-webdavd,
+	 virt-viewer,
 Description: Collection of sysadmin tools for Kaisen Linux
 
 Package: kaisen-technicians-tools
