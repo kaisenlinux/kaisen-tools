@@ -27,9 +27,3 @@ systemctl disable virtlockd-admin.socket || true
 systemctl stop virtlockd-admin.socket || true
 systemctl disable virtlogd-admin.socket || true
 systemctl stop virtlogd-admin.socket || true
-systemctl disable spice-vdagentd.service || true
-systemctl stop spice-vdagentd.service || true
-systemctl disable spice-vdagentd.socket || true
-systemctl stop spice-vdagentd.socket || true
-systemctl disable spice-webdavd.service || true
-systemctl stop spice-webdavd.service || true

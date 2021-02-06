@@ -27,9 +27,3 @@ systemctl enable virtlockd-admin.socket || true
 systemctl start virtlockd-admin.socket || true
 systemctl enable virtlogd-admin.socket || true
 systemctl start virtlogd-admin.socket || true
-systemctl enable spice-vdagentd.service || true
-systemctl start spice-vdagentd.service || true
-systemctl enable spice-vdagentd.socket || true
-systemctl start spice-vdagentd.socket || true
-systemctl enable spice-webdavd.service || true
-systemctl start spice-webdavd.service || true
