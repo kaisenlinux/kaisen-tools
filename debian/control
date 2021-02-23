@@ -1,11 +1,10 @@
 Source: kaisen-tools
 Priority: optional
 Section: kaisen-metapackages
-Maintainer: Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>
-Uploaders: Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>
-Standards-Version: 4.5.0
+Maintainer: Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>
+Standards-Version: 4.5.1
 Build-Depends: debhelper
-Homepage: https://kaisen-linux.org
+Homepage: https://kaisenlinux.org
 
 Package: kaisen-filesystems
 Architecture: all

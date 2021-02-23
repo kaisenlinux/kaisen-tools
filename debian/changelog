@@ -1,3 +1,10 @@
+kaisen-tools (1.5+kaisen11) kaisen-packages; urgency=medium
+
+  * Add sed script in postinst to update all Kaisen Linux repositories
+  * Update control file
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Tue, 23 Feb 2021 01:02:16 +0200
+
 kaisen-tools (1.5+kaisen10) kaisen-packages; urgency=medium
 
   * Separation of spice and libvirt
