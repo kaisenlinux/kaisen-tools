@@ -1,7 +1,0 @@
-#!/bin/bash
-
-set -e
-
-#Temp sed on sources.list to change repository domain
-sed -i 's/kaisendeb.lf.je\/kaisen/deb.kaisenlinux.org/g' /etc/apt/sources.list 2> /dev/null || true
-sed -i 's/kaisendeb.lf.je\/kaisen/deb.kaisenlinux.org/g' /etc/apt/sources.list.d/* 2> /dev/null || true
