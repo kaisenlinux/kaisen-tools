@@ -11,8 +11,6 @@ fi
 
 systemctl enable 2ping || true
 systemctl start 2ping || true
-systemctl enable anydesk || true
-systemctl start anydesk || true
 systemctl enable arpalert || true
 systemctl start arpalert || true
 systemctl enable arpwatch || true
@@ -142,8 +140,6 @@ systemctl enable ssh || true
 systemctl start ssh || true
 systemctl enable sysstat || true
 systemctl start sysstat || true
-systemctl enable teamviewerd || true
-systemctl start teamviewerd || true
 systemctl enable vboxweb || true
 systemctl enable virtualbox || true
 systemctl enable virtualbox-guest-utils || true

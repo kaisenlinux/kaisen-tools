@@ -368,7 +368,6 @@ Depends: kaisen-services-management,
 	 kaisen-partitioning-erase,
 	 kaisen-password-tools,
 	 kaisen-pst-tools,
-	 kaisen-remote-maintenance,
 	 kaisen-temperature-analysis,
 	 kaisen-usb-boot,
 	 kaisen-various-analysis,
@@ -529,13 +528,6 @@ Depends: kaisen-services-management,
 	 pff-tools,
          pst-utils,
 Description: All Kaisen Linux PST tools
-
-Package: kaisen-remote-maintenance
-Architecture: all
-Depends: kaisen-services-management,
-	 anydesk,
-         teamviewer,
-Description: All Kaisen Linux remote maintenance tools
 
 Package: kaisen-usb-boot
 Architecture: all

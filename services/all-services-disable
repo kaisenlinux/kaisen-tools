@@ -11,8 +11,6 @@ fi
 
 systemctl disable 2ping || true
 systemctl stop 2ping || true
-systemctl disable anydesk || true
-systemctl stop anydesk || true
 systemctl disable arpalert || true
 systemctl stop arpalert || true
 systemctl disable arpwatch || true
@@ -143,8 +141,6 @@ systemctl disable ssh || true
 systemctl stop ssh || true
 systemctl disable sysstat || true
 systemctl stop sysstat || true
-systemctl disable teamviewerd || true
-systemctl stop teamviewerd || true
 systemctl disable vboxweb || true
 systemctl stop vboxweb || true
 systemctl disable virtualbox || true
