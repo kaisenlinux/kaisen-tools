@@ -588,6 +588,8 @@ Depends: kaisen-services-management,
 	 hddtemp,
 	 xsensors,
 	 lm-sensors,
+	 psensor,
+	 psensor-common,
 Description: All Kaisen Linux temperature/voltage analysis tools
 
 Package: kaisen-services-management
