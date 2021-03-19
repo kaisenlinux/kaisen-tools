@@ -8,8 +8,7 @@ Homepage: https://kaisenlinux.org
 
 Package: kaisen-filesystems
 Architecture: all
-Depends: kaisen-services-management,
-	 dosfstools,
+Depends: dosfstools,
 	 f2fs-tools,
 	 nilfs-tools,
 	 ocfs2-tools,
@@ -49,8 +48,7 @@ Description: Adding a lot filesystems tools for improving systems support on Kai
 
 Package: kaisen-firmwares
 Architecture: all
-Depends: kaisen-services-management,
-	 firmware-adi,
+Depends: firmware-adi,
          firmware-bnx2,
          firmware-ivtv,
          firmware-qlogic,
@@ -84,8 +82,7 @@ Description: GPU/Sound/Wi-Fi/Bluetooth firmwares (improve hardware compatibility
 
 Package: kaisen-miscellaneous
 Architecture: all
-Depends: kaisen-services-management,
-	 progress,
+Depends: progress,
 	 pv,
 	 less,
 	 mlocate,
@@ -141,8 +138,7 @@ Description: Meta package for miscellaneous useful software (libreoffice, gpg, l
 
 Package: kaisen-network-tools
 Architecture: all
-Depends: kaisen-services-management,
-	 isc-dhcp-common,
+Depends: isc-dhcp-common,
 	 dhcpdump,
 	 dhcping,
 	 dnsutils,
@@ -252,8 +248,7 @@ Description: All network tools (DHCP, DNS analysis, monitoring, TCP analysis...)
 
 Package: kaisen-sysadmin-tools
 Architecture: all
-Depends: kaisen-services-management,
-	 ssh,
+Depends: ssh,
 	 rdesktop,
 	 grdesktop,
 	 freerdp2-x11,
@@ -358,8 +353,7 @@ Description: Collection of sysadmin tools for Kaisen Linux
 
 Package: kaisen-technicians-tools
 Architecture: all
-Depends: kaisen-services-management,
-	 kaisen-cloning,
+Depends: kaisen-cloning,
 	 kaisen-data-protection,
 	 kaisen-data-recovery,
 	 kaisen-disks-analysis,
@@ -377,8 +371,7 @@ Description: All techicians tools (Data recovery, disks analysis, password tools
 
 Package: kaisen-cloning
 Architecture: all
-Depends: kaisen-services-management,
-	 clonezilla,
+Depends: clonezilla,
          dcfldd,
          fsarchiver,
          guymager,
@@ -418,8 +411,7 @@ Description: All Kaisen Linux data recovery tools
 
 Package: kaisen-disks-analysis
 Architecture: all
-Depends: kaisen-services-management,
-	 e2fsprogs,
+Depends: e2fsprogs,
          baobab,
          bonnie++,
          diskscan,
@@ -439,8 +431,7 @@ Description: All Kaisen Linux disks analysis tools
 
 Package: kaisen-hardware
 Architecture: all
-Depends: kaisen-services-management,
-	 cpulimit,
+Depends: cpulimit,
          discover,
          discover-data,
          dmidecode,
@@ -463,8 +454,7 @@ Description: All Kaisen Linux hardware tools
 
 Package: kaisen-mount
 Architecture: all
-Depends: kaisen-services-management,
-	 dislocker,
+Depends: dislocker,
          xmount,
          zulumount-cli,
          zulumount-gui,
@@ -524,8 +514,7 @@ Description: All Kaisen Linux password tools
 
 Package: kaisen-pst-tools
 Architecture: all
-Depends: kaisen-services-management,
-	 pff-tools,
+Depends: pff-tools,
          pst-utils,
 Description: All Kaisen Linux PST tools
 
@@ -549,8 +538,7 @@ Description: All Kaisen Linux various analysis tools
 
 Package: kaisen-virus-analysis
 Architecture: all
-Depends: kaisen-services-management,
-	 chkrootkit,
+Depends: chkrootkit,
          clamdscan,
          clamtk,
          rkhunter,
@@ -584,8 +572,7 @@ Description: All Kaisen Linux compress/decompress tools
 
 Package: kaisen-temperature-analysis
 Architecture: all
-Depends: kaisen-services-management,
-	 hddtemp,
+Depends: hddtemp,
 	 xsensors,
 	 lm-sensors,
 	 psensor,
