@@ -1,3 +1,11 @@
+kaisen-tools (1.5+kaisen17) kaisen-packages; urgency=medium
+
+  * Timeshift and cryptsetup-nuke-password is now installed with kaisen-sysadmin-tools
+  * Tools in metapackages are marked as recommended and no longer as dependencies
+  * Create kaisen-miscellaneous postinst to define vim editor by default
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Fri, 26 Mar 2021 22:06:09 +0200
+
 kaisen-tools (1.5+kaisen16) kaisen-packages; urgency=medium
 
   * Adding tools:
