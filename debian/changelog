@@ -1,3 +1,9 @@
+kaisen-tools (1.5+kaisen19) kaisen-packages; urgency=medium
+
+  * Adding inxi on kaisen-hardware metapackage
+
+ -- Arnaud Cormier - Magiknono <magiknono@kaisenlinux.org>  Sat, 27 Mar 2021 22:36:20 +0200
+
 kaisen-tools (1.5+kaisen18) kaisen-packages; urgency=medium
 
   * Adding kaisen-documentation and kaisen-manpages on kaisen-miscallenous metapackage

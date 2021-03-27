@@ -457,6 +457,7 @@ Recommends: cpulimit,
             memtester,
             gfio,
             flashrom,
+	    inxi,
 Suggests: kaisen-temperature-analysis
 Description: All Kaisen Linux hardware tools
 
