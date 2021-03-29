@@ -1,0 +1,15 @@
+#!/bin/bash
+
+set -e
+
+RED='\e[1;31m'
+
+if [[ "$EUID" -ne "0" ]]; then
+        echo -e $RED "Run this script as root or with sudo command."
+        exit 1
+fi
+
+systemctl disable snapper-cleanup.timer || true
+systemctl stop snapper-cleanup.timer || true
+systemctl disable snapper-cleanup.service || true
+systemctl stop snapper-cleanup.service || true

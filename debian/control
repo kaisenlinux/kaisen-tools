@@ -18,6 +18,7 @@ Recommends: dosfstools,
 	    apt-btrfs-snapshot,
 	    btrfsmaintenance,
 	    btrbk,
+	    snapper,
 	    gfs2-utils,
 	    hfsplus,
 	    hfsprogs,
@@ -358,6 +359,7 @@ Recommends: ssh,
 	    timeshift,
 	    cryptsetup-nuke-password,
 	    btrbk,
+	    snapper,
 Description: Collection of sysadmin tools for Kaisen Linux
 
 Package: kaisen-technicians-tools

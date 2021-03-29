@@ -1,0 +1,15 @@
+#!/bin/bash
+
+set -e
+
+RED='\e[1;31m'
+
+if [[ "$EUID" -ne "0" ]]; then
+        echo -e $RED "Run this script as root or with sudo command."
+        exit 1
+fi
+
+systemctl enable btrfs-balance.service || true
+systemctl start btrfs-balance.service || true
+systemctl enable btrfs-balance.timer || true
+systemctl start btrfs-balance.timer || true
