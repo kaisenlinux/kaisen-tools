@@ -357,6 +357,7 @@ Recommends: ssh,
 	    virt-viewer,
 	    timeshift,
 	    cryptsetup-nuke-password,
+	    btrbk,
 Description: Collection of sysadmin tools for Kaisen Linux
 
 Package: kaisen-technicians-tools
