@@ -360,6 +360,7 @@ Recommends: ssh,
 	    cryptsetup-nuke-password,
 	    btrbk,
 	    snapper,
+	    terraform,
 Description: Collection of sysadmin tools for Kaisen Linux
 
 Package: kaisen-technicians-tools
