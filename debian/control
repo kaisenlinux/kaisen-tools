@@ -46,6 +46,7 @@ Recommends: dosfstools,
 	    cifs-utils,
 	    apfs-fuse,
 	    apfsutil,
+	    ecryptfs-utils,
 Description: Adding a lot filesystems tools for improving systems support on Kaisen Linux
 
 Package: kaisen-firmwares
