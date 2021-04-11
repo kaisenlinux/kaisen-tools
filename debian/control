@@ -362,6 +362,7 @@ Recommends: ssh,
 	    btrbk,
 	    snapper,
 	    terraform,
+	    ssh-askpass,
 Description: Collection of sysadmin tools for Kaisen Linux
 
 Package: kaisen-technicians-tools
