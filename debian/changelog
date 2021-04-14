@@ -1,3 +1,9 @@
+kaisen-tools (1.6+kaisen3) kaisen-packages; urgency=medium
+
+  * Adding sshpass
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Wed, 14 Apr 2021 13:18:17 +0200
+
 kaisen-tools (1.6+kaisen2) kaisen-packages; urgency=medium
 
   * Adding ssh-askpass

@@ -363,6 +363,7 @@ Recommends: ssh,
 	    snapper,
 	    terraform,
 	    ssh-askpass,
+	    sshpass,
 Description: Collection of sysadmin tools for Kaisen Linux
 
 Package: kaisen-technicians-tools
