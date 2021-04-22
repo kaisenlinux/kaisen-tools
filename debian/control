@@ -6,19 +6,18 @@ Standards-Version: 4.5.1
 Build-Depends: debhelper
 Homepage: https://kaisenlinux.org
 
+#Filesystems metapackage
 Package: kaisen-filesystems
 Architecture: all
-Recommends: dosfstools,
+Recommends: cryptsetup,
+	    dosfstools,
 	    f2fs-tools,
 	    nilfs-tools,
 	    ocfs2-tools,
 	    btrfs-compsize,
 	    btrfs-heatmap,
 	    btrfs-progs,
-	    apt-btrfs-snapshot,
 	    btrfsmaintenance,
-	    btrbk,
-	    snapper,
 	    gfs2-utils,
 	    hfsplus,
 	    hfsprogs,
@@ -47,8 +46,16 @@ Recommends: dosfstools,
 	    apfs-fuse,
 	    apfsutil,
 	    ecryptfs-utils,
+	    libbde-utils,
+	    dislocker,
+	    libfvde-utils,
+	    libvhdi-utils,
+            libvmdk-utils,
+	    libfsntfs-utils,
+	    kaisen-btrfs-snapshots,
 Description: Adding a lot filesystems tools for improving systems support on Kaisen Linux
 
+#Firmwares metapackage
 Package: kaisen-firmwares
 Architecture: all
 Recommends: firmware-adi,
@@ -83,6 +90,7 @@ Recommends: firmware-adi,
             bluez-firmware,
 Description: GPU/Sound/Wi-Fi/Bluetooth firmwares (improve hardware compatibility)
 
+#Miscellaneous tools metapackage
 Package: kaisen-miscellaneous
 Architecture: all
 Recommends: progress,
@@ -98,6 +106,8 @@ Recommends: progress,
 	    dmsetup,
 	    lvm2,
 	    cryptsetup,
+	    curl,
+	    wget,
 	    git,
 	    gpg-agent,
 	    libreoffice,
@@ -115,8 +125,6 @@ Recommends: progress,
 	    mdadm,
 	    memtest86+,
 	    neofetch,
-	    open-vm-tools,
-	    open-vm-tools-desktop,
 	    qbittorrent,
 	    vlc,
 	    gimp,
@@ -139,233 +147,376 @@ Recommends: progress,
 	    tree,
 	    vim,
 	    locales-all,
+	    codium,
+            cups,
+            hexedit,
+	    cryptsetup-nuke-password,
 	    kaisen-documentation,
 	    kaisen-manpages,
+	    kaisen-virtualization-guests,
 Description: Meta package for miscellaneous useful software (libreoffice, gpg, locate, thunderbird, gimp, vlc, cryptsetup, RAID gestion, VMWare tools...)
 
+#Network tools section
 Package: kaisen-network-tools
 Architecture: all
-Recommends: isc-dhcp-common,
-	    dhcpdump,
-	    dhcping,
-	    dnsutils,
-	    dnstop,
-	    mdns-scan,
-	    whois,
-	    ethstatus,
-	    ethtool,
-	    iptables-persistent,
-	    iptstate,
-	    net-tools,
-	    ipcalc,
-	    iptraf,
-	    sipcalc,
-	    arpalert,
-	    arp-scan,
-	    arptables,
-	    arpwatch,
-	    macchanger,
-	    cbm,
-	    etherape,
-	    ifstat,
-	    iftop,
-	    iotop,
-	    iperf,
-	    iperf3,
-	    kismet,
-	    nethogs,
-	    sockstat,
-	    netsed,
-	    ngrep,
-	    pcapfix,
-	    tshark,
-	    wireshark,
-	    cu,
-	    picocom,
-	    minicom,
-	    screen,
-	    setserial,
-	    statserial,
-	    tmux,
-	    bettercap,
-	    bettercap-caplets,
-	    bettercap-ui,
-	    driftnet,
-	    ettercap-graphical,
-	    hping3,
-	    lft,
-	    mitmproxy,
-	    mtr-tiny,
-	    nast,
-	    netdiscover,
-	    netsniff-ng,
-	    nmap,
-	    iputils-arping,
-	    iputils-tracepath,
-	    traceroute,
-	    ssldump,
-	    sslsplit,
-	    masscan,
-	    scapy,
-	    socat,
-	    ssmping,
-	    tcpdump,
-	    tcpflow,
-	    tcpreplay,
-	    tcpstat,
-	    tcptrace,
-	    tcptraceroute,
-	    tcpxtract,
-	    udpcast,
-	    aircrack-ng,
-	    hostapd,
-	    iw,
-	    rfkill,
-	    2ping,
+Recommends: kaisen-network-uncategorized,
+	    kaisen-dhcp-tools,
+	    kaisen-dns-tools,
+	    kaisen-ethernet-tools,
+	    kaisen-firewall-tools,
+	    kaisen-gns3,
+	    kaisen-layer4-tools,
+	    kaisen-layer3-tools,
+	    kaisen-layer2-tools,
+	    kaisen-network-monitoring,
+	    kaisen-pcap-tools,
+	    kaisen-portconsole-tools,
+	    kaisen-network-scanners,
+	    kaisen-tls-tools,
+	    kaisen-vpn-tools,
+	    kaisen-wifi-tools,
+Description: All network tools (DHCP, DNS analysis, monitoring, TCP analysis...) for Kaisen Linux
+
+Package: kaisen-network-uncategorized
+Architecture: all
+Recommends: 2ping,
 	    atftp,
 	    cdpr,
 	    comgt,
 	    ifenslave,
-	    logrotate,
 	    ndisc6,
 	    ntpdate,
-	    openvpn,
+	    socat,
+            ssmping,
 	    wakeonlan,
 	    wondershaper,
-	    netperfmeter,
+Description: All uncategorized network tools for Kaisen Linux
+
+Package: kaisen-dhcp-tools
+Architecture: all
+Recommends: isc-dhcp-client,
+	    isc-dhcp-common,
+	    dhcpdump,
+	    dhcping,
+Description: All DHCP tools for Kaisen Linux
+
+Package: kaisen-dns-tools
+Architecture: all
+Recommends: dnsutils,
 	    dnsenum,
-	    ipv6calc,
+	    dnstop,
+	    mdns-scan,
+	    whois,
+Description: All DNS tools for Kaisen Linux
+
+Package: kaisen-ethernet-tools
+Architecture: all
+Recommends: ethstatus,
+	    ethtool,
 	    packeth,
-	    wireguard,
-	    sslsniff,
-	    dsniff,
-	    sslscan,
-	    packetsender,
-	    wget,
-	    telnet,
-	    netcat,
-	    netcat-openbsd,
+Description: All Ethernet tools for Kaisen Linux
+
+Package: kaisen-firewall-tools
+Architecture: all
+Recommends: iptables-persistent,
+	    iptstate,
+Description: All firewall tools for Kaisen Linux
+
+Package: kaisen-gns3
+Architecture: all
+Recommends: dynamips,
 	    gns3-gui,
 	    gns3-server,
-	    ndiff,
-	    darkstat,
-	    hunt,
-	    nmapsi4,
-	    sslyze,
-Description: All network tools (DHCP, DNS analysis, monitoring, TCP analysis...) for Kaisen Linux
+	    ubridge,
+	    vpcs,
+Description: GNS3 packaging for Kaisen Linux
 
+Package: kaisen-layer4-tools
+Architecture: all
+Recommends: netcat,
+	    netcat-openbsd,
+	    tcpreplay,
+	    tcpflow,
+	    tcptrace,
+	    tcptraceroute,
+	    packetsender,
+	    udpcast,
+	    dsniff,
+Description: All layer 4 OSI tools for Kaisen Linux
+
+Package: kaisen-layer3-tools
+Architecture: all
+Recommends: net-tools,
+	    ipcalc,
+	    sipcalc,
+	    iproute2,
+	    iptraf-ng,
+	    iptraf,
+	    ipv6calc,
+Description: All layer 3 OSI tools for Kaisen Linux
+
+Package: kaisen-layer2-tools
+Architecture: all
+Recommends: arp-scan,
+	    arpalert,
+	    iputils-arping,
+	    arptables,
+	    arpwatch,
+	    macchanger,
+Description: All layer 2 OSI tools for Kaisen Linux
+
+Package: kaisen-network-monitoring
+Architecture: all
+Recommends: cbm,
+	    etherape,
+	    ifstat,
+	    iftop,
+	    iperf,
+	    iperf3,
+	    kismet,
+	    nethogs,
+	    netperfmeter,
+	    sockstat,
+	    tcpstat,
+Description: All network monitoring tools for Kaisen Linux
+
+Package: kaisen-pcap-tools
+Architecture: all
+Recommends: darkstat,
+	    hunt,
+	    netsed,
+	    ngrep,
+	    pcapfix,
+	    scapy,
+	    python3-scapy,
+	    tcpdump,
+	    tcpreplay,
+	    tcpxtract,
+	    tshark,
+	    wireshark,
+Description: All PCAP tools for Kaisen Linux
+
+Package: kaisen-portconsole-tools
+Architecture: all
+Recommends: cu,
+	    minicom,
+	    picocom,
+	    screen,
+	    setserial,
+	    statserial,
+Description: All port console tools for Kaisen Linux
+
+Package: kaisen-network-scanners
+Architecture: all
+Recommends: arp-scan,
+	    bettercap,
+	    bettercap-caplets,
+            bettercap-ui,
+	    driftnet,
+	    dsniff,
+	    ettercap-graphical,
+	    hping3,
+	    lft,
+	    masscan,
+	    mitmproxy,
+	    mtr-tiny,
+	    nast,
+	    ndiff,
+	    netdiscover,
+	    netsniff-ng,
+	    net-tools,
+	    ncat,
+	    nmap,
+	    nmapsi4,
+	    scapy,
+	    python3-scapy,
+	    telnet,
+	    iputils-tracepath,
+	    traceroute,
+Description: All network scanners for Kaisen Linux
+
+Package: kaisen-tls-tools
+Architecture: all
+Recommends: ssldump,
+	    sslscan,
+	    sslsniff,
+	    sslsplit,
+	    sslyze,
+Description: All SSL/TLS tools for Kaisen Linux
+
+Package: kaisen-vpn-tools
+Architecture: all
+Recommends: openvpn,
+	    wireguard,
+Description: All VPN tools for Kaisen Linux
+
+Package: kaisen-wifi-tools
+Architecture: all
+Recommends: aircrack-ng,
+	    hostapd,
+	    iw,
+	    kismet,
+	    rfkill,
+Description: All Wi-Fi tools for Kaisen Linux
+
+#Sysadmin tools section
 Package: kaisen-sysadmin-tools
 Architecture: all
-Recommends: ssh,
-	    rdesktop,
-	    grdesktop,
-	    freerdp2-x11,
-	    dirvish,
-	    automysqlbackup,
-	    autopostgresqlbackup,
-	    bacula-bscan,
-	    bacula-client,
-	    bacula-common,
-	    bacula-common-sqlite3,
-	    bacula-console,
-	    bacula-console-qt,
-	    bacula-fd,
-	    bacula-sd,
-	    dump,
-	    duplicity,
-	    restic,
-	    rsbackup,
-	    docker,
-	    docker-compose,
-	    docker.io,
-	    filezilla,
-	    gftp,
-	    lftp,
-	    cabextract,
-	    powershell,
-	    codium,
-	    cups,
-	    curl,
-	    wget,
-	    hexedit,
-	    htop,
+Recommends: kaisen-sysadmin-uncategorized,
+	    kaisen-remote-administration,
+	    kaisen-backup-tools,
+	    kaisen-ftp-clients,
+	    kaisen-btrfs-snapshots,
+	    kaisen-microsoft-tools,
+	    kaisen-sysops-tools,
+	    kaisen-virtualization-tools,
+	    kaisen-virtualization-guests,
+Description: Collection of sysadmin tools for Kaisen Linux
+
+Package: kaisen-sysadmin-uncategorized
+Architecture: all
+Recommends: htop,
 	    lsof,
-	    rsync,
-	    virtualbox,
-	    virtualbox-qt,
-	    virtualbox-dkms,
-	    virtualbox-guest-dkms,
-            virtualbox-guest-source,
-            virtualbox-guest-utils,
-            virtualbox-guest-x11,
-	    virtualbox-source,
-	    virtualbox-guest-additions-iso,
 	    xca,
-	    backup2l,
-	    clusterssh,
-	    zsync,
-	    vbackup,
-	    zbackup,
-	    duply,
-	    zssh,
-	    lxc,
-	    lxctl,
-	    kubernetes-client,
-	    ansible,
-	    vagrant,
-	    vagrant-lxc,
-	    vagrant-sshfs,
-	    jmeter,
-	    jmeter-ftp,
-	    jmeter-tcp,
-	    grsync,
-	    remmina,
-	    remmina-plugin-exec,
-	    remmina-plugin-kwallet,
-	    remmina-plugin-nx,
-	    remmina-plugin-spice,
-	    remmina-plugin-www,
-	    remmina-plugin-xdmcp,
-	    awscli,
 	    krb5-config,
 	    krb5-pkinit,
 	    krb5-user,
 	    krb5-locales,
-	    azure-cli,
-	    packer,
-	    bloodhound,
 	    ctop,
-	    virt-manager,
-	    qemu,
-	    qemu-system,
-	    qemu-system-x86,
-	    qemu-system-gui,
-	    qemu-efi,
-	    qemu-utils,
-	    kvmtool,
-	    libvirt-clients,
-	    libvirt-daemon-system,
-	    virtinst,
-	    bridge-utils,
-	    ncat,
-	    puppet,
-	    pssh,
 	    apache2-utils,
-	    python3-ldapdomaindump,
-	    xserver-xorg-video-qxl,
-	    qemu-guest-agent,
-	    spice-vdagent,
-	    spice-webdavd,
-	    virt-viewer,
-	    timeshift,
 	    cryptsetup-nuke-password,
-	    btrbk,
-	    snapper,
-	    terraform,
 	    ssh-askpass,
 	    sshpass,
-Description: Collection of sysadmin tools for Kaisen Linux
+	    logrotate,
+Description: All uncategorized sysadmin tools for Kaisen Linux
 
+Package: kaisen-remote-administration
+Architecture: all
+Recommends: virt-viewer,
+	    rdesktop,
+            grdesktop,
+	    freerdp2-x11,
+	    ssh,
+	    pssh,
+	    clusterssh,
+	    tmux,
+	    zssh,
+	    remmina,
+            remmina-plugin-exec,
+            remmina-plugin-kwallet,
+            remmina-plugin-nx,
+            remmina-plugin-spice,
+            remmina-plugin-www,
+            remmina-plugin-xdmcp,
+Description: All remote administration tools for Kaisen Linux
+
+Package: kaisen-backup-tools
+Architecture: all
+Recommends: dirvish,
+            automysqlbackup,
+            autopostgresqlbackup,
+            bacula-bscan,
+            bacula-client,
+            bacula-common,
+            bacula-common-sqlite3,
+            bacula-console,
+            bacula-console-qt,
+            bacula-fd,
+            bacula-sd,
+            dump,
+            duplicity,
+            restic,
+            rsbackup,
+	    rsync,
+	    backup2l,
+            zsync,
+            vbackup,
+            zbackup,
+            duply,
+	    grsync,
+Description: All backup tools for Kaisen Linux
+
+Package: kaisen-ftp-clients
+Architecture: all
+Recommends: filezilla,
+            gftp,
+            lftp,
+Description: All FTP clients for Kaisen Linux
+
+Package: kaisen-btrfs-snapshots
+Architecture: all
+Recommends: apt-btrfs-snapshot,
+	    timeshift,
+	    btrbk,
+            snapper,
+Description: All tools to take snapshots with BTRFS
+
+Package: kaisen-microsoft-tools
+Architecture: all
+Recommends: bloodhound,
+	    python3-ldapdomaindump,
+	    cabextract,
+            powershell,
+Description: All tools for Microsoft technologies for Kaisen Linux
+
+Package: kaisen-sysops-tools
+Architecture: all
+Recommends: docker,
+            docker-compose,
+            docker.io,
+	    ansible,
+	    lxc,
+	    lxctl,
+	    kubernetes-client,
+            vagrant,
+            vagrant-lxc,
+            vagrant-sshfs,
+            jmeter,
+            jmeter-ftp,
+            jmeter-tcp,
+            awscli,
+	    azure-cli,
+            packer,
+	    puppet,
+	    terraform,
+Description: All SysOps tools for Kaisen Linux
+
+Package: kaisen-virtualization-tools
+Architecture: all
+Recommends: virtualbox,
+            virtualbox-qt,
+            virtualbox-dkms,
+	    virtualbox-source,
+	    virt-manager,
+            qemu,
+            qemu-system,
+            qemu-system-x86,
+            qemu-system-gui,
+            qemu-efi,
+            qemu-utils,
+            kvmtool,
+            libvirt-clients,
+            libvirt-daemon-system,
+            virtinst,
+	    virt-viewer,
+Description: All hypervisors and their administration tools for Kaisen Linux
+
+Package: kaisen-virtualization-guests
+Architecture: all
+Recommends: virtualbox-guest-dkms,
+            virtualbox-guest-source,
+            virtualbox-guest-utils,
+            virtualbox-guest-x11,
+            virtualbox-guest-additions-iso,
+            open-vm-tools,
+            open-vm-tools-desktop,
+	    xserver-xorg-video-qxl,
+            qemu-guest-agent,
+            spice-vdagent,
+            spice-webdavd,
+Description: All hypervisors guests additions for Kaisen Linux
+
+#Technicians tools section
 Package: kaisen-technicians-tools
 Architecture: all
 Recommends: kaisen-cloning,
@@ -474,17 +625,9 @@ Recommends: dislocker,
             xmount,
             zulumount-cli,
             zulumount-gui,
-            libbde-utils,
-            apfs-fuse,
-	    apfsutil,
-            libfsntfs-utils,
-            libfvde-utils,
-            libvhdi-utils,
-            libvmdk-utils,
             archivemount,
             fuse-zip,
             fusesmb,
-	    sshfs,
 	    fuseiso,
 	    veracrypt,
 Description: All Kaisen Linux mount tools
@@ -598,5 +741,6 @@ Description: All Kaisen Linux temperature/voltage analysis tools
 Package: kaisen-services-management
 Architecture: all
 Priority: standard
-Depends: systemd, sudo
+Depends: systemd,
+	 sudo,
 Description: Management additionnals services (launchers in services menu)
