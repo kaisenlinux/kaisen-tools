@@ -1,3 +1,13 @@
+kaisen-tools (1.6+kaisen5) kaisen-testing; urgency=medium
+
+  * Remove kaisen-virtualization-guests
+  * Install kaisen-virtulizations-guests tool with kaisen-virtualization-tools
+    because virtualization-guests are installed by default with netinst and
+    installed by default with official live
+  * Add hyperv-daemon tool on kaisen-virtualization-tools
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Wed, 28 Apr 2021 14:46:24 +0200
+
 kaisen-tools (1.6+kaisen4) kaisen-testing; urgency=medium
 
   * Create new metapackages
