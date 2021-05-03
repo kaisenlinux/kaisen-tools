@@ -1,3 +1,10 @@
+kaisen-tools (1.6+kaisen6) kaisen-packages; urgency=medium
+
+  * Add s3fs for kaisen-sysops-tools and kaisen-filesystems metapackages
+  * Add fuse3 for kaisen-mount and kaisen-filesystems metapackages
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Mon, 03 May 2021 06:18:49 +0200
+
 kaisen-tools (1.6+kaisen5) kaisen-testing; urgency=medium
 
   * Remove kaisen-virtualization-guests
