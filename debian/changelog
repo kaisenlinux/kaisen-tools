@@ -1,3 +1,9 @@
+kaisen-tools (1.6+kaisen7) kaisen-packages; urgency=medium
+
+  * Add fdupes tool
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Sun, 16 May 2021 00:26:42 +0200
+
 kaisen-tools (1.6+kaisen6) kaisen-packages; urgency=medium
 
   * Add s3fs for kaisen-sysops-tools and kaisen-filesystems metapackages

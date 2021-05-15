@@ -692,6 +692,7 @@ Recommends: dstat,
             qtop,
             rdfind,
             tree,
+	    fdupes,
 Description: All Kaisen Linux various analysis tools
 
 Package: kaisen-virus-analysis
