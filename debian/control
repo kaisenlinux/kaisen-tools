@@ -155,7 +155,7 @@ Recommends: progress,
 	    cryptsetup-nuke-password,
 	    kaisen-documentation,
 	    kaisen-manpages,
-Description: Meta package for miscellaneous useful software (libreoffice, gpg, locate, thunderbird, gimp, vlc, cryptsetup, RAID gestion, VMWare tools...)
+Description: Meta package for miscellaneous useful software (libreoffice, gpg, locate, thunderbird, gimp, vlc, cryptsetup, RAID gestion...)
 
 #Network tools section
 Package: kaisen-network-tools
@@ -254,6 +254,8 @@ Recommends: net-tools,
 	    iptraf-ng,
 	    iptraf,
 	    ipv6calc,
+	    traceroute,
+	    iputils-tracepath,
 Description: All layer 3 OSI tools for Kaisen Linux
 
 Package: kaisen-layer2-tools
@@ -486,8 +488,9 @@ Package: kaisen-virtualization-tools
 Architecture: all
 Recommends: virtualbox,
             virtualbox-qt,
-            virtualbox-dkms,
+	    virtualbox-dkms,
 	    virtualbox-source,
+	    virtualbox-guest-additions-iso,
 	    virt-manager,
             qemu,
             qemu-system,
@@ -500,19 +503,7 @@ Recommends: virtualbox,
             libvirt-daemon-system,
             virtinst,
 	    virt-viewer,
-	    virtualbox-guest-dkms,
-            virtualbox-guest-source,
-            virtualbox-guest-utils,
-            virtualbox-guest-x11,
-            virtualbox-guest-additions-iso,
-            open-vm-tools,
-            open-vm-tools-desktop,
-            xserver-xorg-video-qxl,
-            qemu-guest-agent,
-            spice-vdagent,
-            spice-webdavd,
-	    hyperv-daemons,
-Description: All hypervisors and their administration tools for Kaisen Linux
+Description: All hypervisors tools for Kaisen Linux
 
 #Technicians tools section
 Package: kaisen-technicians-tools

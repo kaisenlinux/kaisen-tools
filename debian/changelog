@@ -1,3 +1,10 @@
+kaisen-tools (1.6+kaisen8) kaisen-packages; urgency=medium
+
+  * Remove guests additions tools (included directly on kaisen-build)
+  * Add iputils-tracepath and traceroute on the kaisen-layer3-tools metapackage
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Fri, 21 May 2021 02:02:12 +0200
+
 kaisen-tools (1.6+kaisen7) kaisen-packages; urgency=medium
 
   * Add fdupes tool
