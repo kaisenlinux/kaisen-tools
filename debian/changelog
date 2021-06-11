@@ -1,3 +1,9 @@
+kaisen-tools (1.6+kaisen10) kaisen-packages; urgency=medium
+
+  * Remove kvmtool
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Fri, 11 Jun 2021 16:03:16 +0200
+
 kaisen-tools (1.6+kaisen9) kaisen-packages; urgency=medium
 
   * Fix typo
