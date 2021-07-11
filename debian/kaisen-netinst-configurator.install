@@ -1,4 +1,0 @@
-kaisen-netinst-configurator/packages-list usr/share/kaisen-netinst-configurator
-kaisen-netinst-configurator/kaisen-netinst-configurator usr/sbin
-kaisen-netinst-configurator/kaisen-netinst-configurator-launcher usr/bin
-kaisen-netinst-configurator/kaisen-netinst-configurator-launcher.desktop etc/xdg/autostart

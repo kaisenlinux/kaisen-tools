@@ -1,9 +1,0 @@
-[Desktop Entry]
-Name=Kaisen NETINST configurator
-Exec=terminator -e "bash -c '/usr/bin/kaisen-netinst-configurator-launcher;/bin/bash'"
-Hidden=false
-Type=Application
-X-KDE-Autostart-enabled=true
-X-LXDE-Autostart-enabled=true
-X-MATE-Autostart-enabled=true
-X-XFCE-Autostart-enabled=true
