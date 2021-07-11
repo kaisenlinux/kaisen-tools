@@ -1,0 +1,294 @@
+#!/bin/bash
+
+set -e
+
+YELLOW='\e[0;33m'
+GREEN='\e[1;32m'
+RED='\e[1;31m'
+
+detectvirt=$(systemd-detect-virt || true)
+
+if [[ $EUID -ne 0 ]]; then
+	echo -e $RED "Run this script as root or with the sudo command."
+	exit 1
+fi
+
+https-default-repositories() {
+echo -e $YELLOW "Change default repositories to HTTPS...";tput init;
+
+sed -i 's/deb http:\/\/deb.kaisenlinux.org/deb https:\/\/deb.kaisenlinux.org/g' /etc/apt/sources.list
+sed -i 's/deb-src http:\/\/deb.kaisenlinux.org/deb-src https:\/\/deb.kaisenlinux.org/g' /etc/apt/sources.list
+apt update
+
+echo -e $GREEN "Done.";tput init;
+}
+
+package-installer() {
+echo -e $YELLOW "Application of tasks for installing Kaisen Linux packages and metapackages...";tput init;
+mv -f /usr/share/tasksel/descs/debian-tasks.desc /usr/share/tasksel/descs/debian-tasks.desc.orig
+cp -f /usr/share/kaisen-netinst-configurator/packages-list /usr/share/tasksel/descs/debian-tasks.desc
+
+echo -e $GREEN "Launch of tasksel...";tput init;
+tasksel || true
+
+echo -e $YELLOW "Reapplication of the default tasks of tasksel...";tput init;
+mv -f /usr/share/tasksel/descs/debian-tasks.desc.orig /usr/share/tasksel/descs/debian-tasks.desc
+echo -e $GREEN "Done.";tput init;
+}
+
+virtualbox-guests() {
+if [ $detectvirt = oracle ]; then
+        echo -e $YELLOW "Kaisen is installed on VirtualBox. Install all VirtualBox guests...";tput init;
+        apt install -y virtualbox-guest-dkms virtualbox-guest-source virtualbox-guest-utils virtualbox-guest-x11
+fi
+echo -e $GREEN "Done.";tput init;
+}
+
+qemu-guests() {
+if [ $detectvirt = kvm ]; then
+        echo -e $YELLOW "Kaisen is installed on QEMU. Install all QEMU guests...";tput init;
+        apt install -y xserver-xorg-video-qxl qemu-guest-agent spice-vdagent spice-webdavd
+fi
+echo -e $GREEN "Done.";tput init;
+}
+
+disable-services() {
+echo -e $YELLOW "Deactivation of additionals installed services...";tput init;
+if [ -e /opt/services/all-services-disable ] && [ -x /opt/services/all-services-disable ]; then
+	/opt/services/all-services-disable
+else
+	systemctl disable 2ping || true
+	systemctl stop 2ping || true
+	systemctl disable arpalert || true
+	systemctl stop arpalert || true
+	systemctl disable arpwatch || true
+	systemctl stop arpwatch || true
+	systemctl disable avahi-daemon || true
+	systemctl stop avahi-daemon || true
+	systemctl disable bacula-fd || true
+	systemctl stop bacula-fd || true
+	systemctl disable bacula-sd || true
+	systemctl stop bacula-sd || true
+	systemctl disable bettercap || true
+	systemctl stop bettercap || true
+	systemctl disable bluetooth || true
+	systemctl stop bluetooth || true
+	systemctl disable blueman-mechanism || true
+	systemctl stop blueman-mechanism || true
+	systemctl disable btrbk.timer || true
+	systemctl stop btrbk.timer || true
+	systemctl disable btrbk.service || true
+	systemctl stop btrbk.service || true
+	systemctl disable btrfs-balance.service || true
+	systemctl stop btrfs-balance.service || true
+	systemctl disable btrfs-balance.timer || true
+	systemctl stop btrfs-balance.timer || true
+	systemctl disable btrfs-defrag.service || true
+	systemctl stop btrfs-defrag.service || true
+	systemctl disable btrfs-defrag.timer || true
+	systemctl stop btrfs-defrag.timer || true
+	systemctl disable btrfsmaintenance-refresh.path || true
+	systemctl stop btrfsmaintenance-refresh.path || true
+	systemctl disable btrfsmaintenance-refresh.service || true
+	systemctl stop btrfsmaintenance-refresh.service || true
+	systemctl disable btrfs-scrub.timer || true
+	systemctl stop btrfs-scrub.timer || true
+	systemctl disable btrfs-scrub.service || true
+	systemctl stop btrfs-scrub.service || true
+	systemctl disable btrfs-trim.timer || true
+	systemctl stop btrfs-trim.timer || true
+	systemctl disable btrfs-trim.service || true
+	systemctl stop btrfs-trim.service || true
+	systemctl disable ceph-fuse.target || true
+	systemctl stop ceph-fuse.target || true
+	systemctl disable clamav-daemon || true
+	systemctl stop clamav-daemon || true
+	systemctl disable clamav-freshclam || true
+	systemctl stop clamav-freshclam || true
+	systemctl disable clamav-milter || true
+	systemctl stop clamav-milter || true
+	systemctl disable containerd || true
+	systemctl stop containerd || true
+	systemctl disable cups-browsed || true
+	systemctl stop cups-browsed || true
+	systemctl disable cups || true
+	systemctl stop cups || true
+	systemctl disable cups.path || true
+	systemctl stop cups.path || true
+	systemctl disable cups.socket || true
+	systemctl stop cups.socket || true
+	systemctl disable darkstat || true
+	systemctl stop darkstat || true
+	systemctl disable docker || true
+	systemctl stop docker || true
+	systemctl disable docker.socket || true
+	systemctl stop docker.socket || true
+	systemctl disable e2scrub_reap || true
+	systemctl stop e2scrub_reap || true
+	systemctl disable e2scrub_all.timer || true
+	systemctl stop e2scrub_all.timer || true
+	systemctl disable etc-setserial || true
+	systemctl stop etc-setserial || true
+	systemctl disable iptables || true
+	systemctl stop iptables || true
+	systemctl disable ip6tables || true
+	systemctl stop ip6tables || true
+	systemctl disable netfilter-persistent || true
+	systemctl stop netfilter-persistent || true
+	systemctl disable gns3-server || true
+	systemctl stop gns3-server || true
+	systemctl disable hddtemp || true
+	systemctl stop hddtemp || true
+	systemctl disable hostapd || true
+	systemctl stop hostapd || true
+	systemctl disable irqbalance || true
+	systemctl stop irqbalance || true
+	systemctl disable libvirtd.service || true
+	systemctl stop libvirtd.service || true
+	systemctl disable virtlockd.socket || true
+	systemctl stop virtlockd.socket || true
+	systemctl disable virtlogd.socket || true
+	systemctl stop virtlogd.socket || true
+	systemctl disable libvirtd.socket || true
+	systemctl stop libvirtd.socket || true
+	systemctl disable libvirtd-ro.socket || true
+	systemctl stop libvirtd-ro.socket || true
+	systemctl disable libvirt-guests.service || true
+	systemctl stop libvirt-guests.service || true
+	systemctl disable libvirtd-admin.socket || true
+	systemctl stop libvirtd-admin.socket || true
+	systemctl disable virtlockd-admin.socket || true
+	systemctl stop virtlockd-admin.socket || true
+	systemctl disable virtlogd-admin.socket || true
+	systemctl stop virtlogd-admin.socket || true
+	systemctl disable spice-vdagentd.service || true
+	systemctl stop spice-vdagentd.service || true
+	systemctl disable spice-vdagentd.socket || true
+	systemctl stop spice-vdagentd.socket || true
+	systemctl disable spice-webdavd.service || true
+	systemctl stop spice-webdavd.service || true
+	systemctl disable lm-sensors || true
+	systemctl stop lm-sensors || true
+	systemctl disable lockdown || true
+	systemctl stop lockdown || true
+	systemctl disable lxcfs || true
+	systemctl stop lxcfs || true
+	systemctl disable lxc-net || true
+	systemctl stop lxc-net || true
+	systemctl disable lxc || true
+	systemctl stop lxc || true
+	systemctl disable mlocate.timer || true
+	systemctl stop mlocate.timer || true
+	systemctl disable mlocate.service || true
+	systemctl stop mlocate.service || true
+	systemctl disable neo4j || true
+	systemctl stop neo4j || true
+	systemctl disable nfs-client.target || true
+	systemctl stop nfs-client.target || true
+	systemctl disable nfs-kernel-server || true
+	systemctl stop nfs-kernel-server || true
+	systemctl disable nfs-server || true
+	systemctl stop nfs-server || true
+	systemctl disable portmap || true
+	systemctl stop portmap || true
+	systemctl disable rpcbind || true
+	systemctl stop rpcbind || true
+	systemctl disable rpcbind.socket || true
+	systemctl stop rpcbind.socket || true
+	systemctl disable ntp || true
+	systemctl stop ntp || true
+	systemctl disable o2cb || true
+	systemctl stop o2cb || true
+	systemctl disable ocfs2 || true
+	systemctl stop ocfs2 || true
+	systemctl disable openvpn || true
+	systemctl stop openvpn || true
+	systemctl disable rpcbind || true
+	systemctl stop rpcbind || true
+	systemctl disable rpcbind.socket || true
+	systemctl stop rpcbind.socket || true
+	systemctl disable rsync || true
+	systemctl stop rsync || true
+	systemctl disable setserial || true
+	systemctl stop setserial || true
+	systemctl disable smartmontools || true
+	systemctl stop smartmontools || true
+	systemctl disable snapper-boot.timer || true
+	systemctl stop snapper-boot.timer || true
+	systemctl disable snapper-boot.service || true
+	systemctl stop snapper-boot.service || true
+	systemctl disable snapper-cleanup.timer || true
+	systemctl stop snapper-cleanup.timer || true
+	systemctl disable snapper-cleanup.service || true
+	systemctl stop snapper-cleanup.service || true
+	systemctl disable snapperd || true
+	systemctl stop snapperd || true
+	systemctl disable snapper-timeline.timer || true
+	systemctl stop snapper-timeline.timer || true
+	systemctl disable snapper-timeline.service || true
+	systemctl stop snapper-timeline.service || true
+	systemctl disable ssh || true
+	systemctl stop ssh || true
+	systemctl disable sysstat || true
+	systemctl stop sysstat || true
+	systemctl disable vboxweb || true
+	systemctl stop vboxweb || true
+	systemctl disable virtualbox || true
+	systemctl stop virtualbox || true
+	systemctl disable virtualbox-guest-utils || true
+	systemctl stop virtualbox-guest-utils || true
+	systemctl disable vgauth || true
+	systemctl stop vgauth || true
+	systemctl disable open-vm-tools || true
+	systemctl stop open-vm-tools || true
+	systemctl disable zfs-fuse || true
+	systemctl stop zfs-fuse || true
+fi
+echo -e $GREEN "Done.";tput init;
+}
+
+install-kernel-headers() {
+echo -e $YELLOW "Install kernel headers...";tput init;
+apt install -y linux-headers-$(uname -r)
+echo -e $GREEN "Done.";tput init;
+}
+
+virtualbox-autoload-module() {
+if [ -e /usr/lib/modules/[0-9]*.[0-9]*.[0-9]*-kaisen[0-9]*-amd64/updates/vboxdrv.ko ] && [ -e /var/lib/dkms/virtualbox/[0-9]*.[0-9]*.[0-9]*/[0-9]*.[0-9]*.[0-9]*-kaisen[0-9]*-amd64/x86_64/module/vboxdrv.ko ]; then
+	echo -e $YELLOW "Auto load VirtualBox module at boot";tput init;
+	echo "vboxdrv" > /etc/modules-load.d/virtualbox.conf
+	echo -e $GREEN "The vboxdrv module has been added for launch at boot.";tput init;
+fi
+}
+
+remove-launcher() {
+if [ -e /etc/xdg/autostart/kaisen-netinst-configurator.desktop ] && [ -e /usr/bin/kaisen-netinst-configurator-launcher ]; then
+	rm -f /etc/xdg/autostart/kaisen-netinst-configurator.desktop
+	rm -f /usr/bin/kaisen-netinst-configurator-launcher
+fi
+}
+
+remove-configurator() {
+while [[ $OPTION != "y" && $OPTION != "n" ]]; do
+	read -rp "$(echo -e $YELLOW "Would you like to delete the configurator? [y/n]")" OPTION;tput init;
+done
+echo ""
+
+if [[ $OPTION = "y" ]]; then
+	echo -e $YELLOW "Removing the configurator...";tput init;
+	apt remove --purge -y kaisen-netinst-configurator
+	echo -e $GREEN "The configurator has been deleted.";tput init;
+else
+	echo -e $GREEN "Ok, the configurator is always installed.";tput init;
+fi
+}
+
+https-default-repositories
+package-installer
+virtualbox-guests
+qemu-guests
+disable-services
+install-kernel-headers
+virtualbox-autoload-module
+remove-launcher
+remove-configurator
