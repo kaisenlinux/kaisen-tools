@@ -24,7 +24,7 @@ echo -e $GREEN "Done.";tput init;
 }
 
 package-installer() {
-echo -e $YELLOW "Application of tasks for installing Kaisen Linux packages and metapackages...";tput init;
+echo -e $YELLOW "Application of tasks to installing Kaisen Linux packages and metapackages...";tput init;
 mv -f /usr/share/tasksel/descs/debian-tasks.desc /usr/share/tasksel/descs/debian-tasks.desc.orig
 cp -f /usr/share/kaisen-netinst-configurator/packages-list /usr/share/tasksel/descs/debian-tasks.desc
 
@@ -257,7 +257,7 @@ virtualbox-autoload-module() {
 if [ -e /usr/lib/modules/[0-9]*.[0-9]*.[0-9]*-kaisen[0-9]*-amd64/updates/vboxdrv.ko ] && [ -e /var/lib/dkms/virtualbox/[0-9]*.[0-9]*.[0-9]*/[0-9]*.[0-9]*.[0-9]*-kaisen[0-9]*-amd64/x86_64/module/vboxdrv.ko ]; then
 	echo -e $YELLOW "Auto load VirtualBox module at boot";tput init;
 	echo "vboxdrv" > /etc/modules-load.d/virtualbox.conf
-	echo -e $GREEN "The vboxdrv module has been added for launch at boot.";tput init;
+	echo -e $GREEN "The vboxdrv module has been added to launch at boot.";tput init;
 fi
 }
 

@@ -604,6 +604,7 @@ Recommends: cpulimit,
             gfio,
             flashrom,
 	    	inxi,
+	    cpu-x,
 Suggests: kaisen-temperature-analysis
 Description: All Kaisen Linux hardware tools
 
