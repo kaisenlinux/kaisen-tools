@@ -1,3 +1,21 @@
+Task: documentation
+Relevance: 8
+Description: Install offline documentation
+ This task installs kaisen-documentation.
+Key:
+  kaisen-documentation
+Section: user
+Test-new-install: mark show
+
+Task: manpages
+Relevance: 9
+Description: Install offline manpages
+ This task installs kaisen-manpages.
+Key:
+  kaisen-manpages
+Section: user
+Test-new-install: mark show
+
 Task: filesystems
 Relevance: 4
 Description: Adding more than filesystems support (XFS, NILFS, F2FS...)
@@ -67,7 +85,7 @@ Test-new-install: mark show
 Task: network-firewall
 Parent: network
 Relevance: 4
-Description: Install only firewall tools (iptstate, iptables-persistent...)
+Description: Install only firewall tools (iptstate and iptables-persistent)
  This task installs kaisen-firewall-tools.
 Key: 
   kaisen-firewall-tools
@@ -177,7 +195,7 @@ Test-new-install: mark show
 Task: network-vpn
 Parent: network
 Relevance: 15
-Description: Install only VPN clients (openvpn, wireguard)
+Description: Install only VPN clients (openvpn and wireguard)
  This task installs kaisen-vpn-tools.
 Key: 
   kaisen-vpn-tools
@@ -285,7 +303,7 @@ Test-new-install: mark show
 Task: sysadmin-virtualization
 Parent: sysadmin
 Relevance: 9
-Description: Install only virtualization and guests additions (Virtualbox, QEMU, VMWare...)
+Description: Install only virtualization tools (Virtualbox and QEMU)
  This task installs kaisen-virtualization.
 Key: 
   kaisen-virtualization-tools

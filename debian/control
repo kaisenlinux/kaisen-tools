@@ -153,8 +153,6 @@ Recommends: progress,
             cups,
             hexedit,
 	    	cryptsetup-nuke-password,
-	    	kaisen-documentation,
-	    	kaisen-manpages,
 Description: Meta package for miscellaneous useful software (libreoffice, gpg, locate, thunderbird, gimp, vlc, cryptsetup, RAID gestion...)
 
 #Network tools section

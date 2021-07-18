@@ -1,3 +1,12 @@
+kaisen-tools (1.7) kaisen-packages; urgency=medium
+
+  * Remove kaisen-documentation and kaisen-packages
+    in kaisen-miscellaneous
+  * Fix echo in kaisen-netinst-configurator script
+  * Package is now in 1.7
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Sun, 18 Jul 2021 14:36:11 +0200
+
 kaisen-tools (1.6+kaisen12) kaisen-packages; urgency=medium
 
   * Add cpu-x tool

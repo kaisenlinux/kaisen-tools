@@ -23,6 +23,22 @@ apt update
 echo -e $GREEN "Done.";tput init;
 }
 
+virtualbox-guests() {
+if [ $detectvirt = oracle ]; then
+        echo -e $YELLOW "Kaisen is installed on VirtualBox. Install all VirtualBox guests...";tput init;
+        apt install -y virtualbox-guest-dkms virtualbox-guest-source virtualbox-guest-utils virtualbox-guest-x11
+        echo -e $GREEN "Done.";tput init;
+fi
+}
+
+qemu-guests() {
+if [ $detectvirt = kvm ]; then
+        echo -e $YELLOW "Kaisen is installed on QEMU. Install all QEMU guests...";tput init;
+        apt install -y xserver-xorg-video-qxl qemu-guest-agent spice-vdagent spice-webdavd
+        echo -e $GREEN "Done.";tput init;
+fi
+}
+
 package-installer() {
 echo -e $YELLOW "Application of tasks to installing Kaisen Linux packages and metapackages...";tput init;
 mv -f /usr/share/tasksel/descs/debian-tasks.desc /usr/share/tasksel/descs/debian-tasks.desc.orig
@@ -33,22 +49,6 @@ tasksel || true
 
 echo -e $YELLOW "Reapplication of the default tasks of tasksel...";tput init;
 mv -f /usr/share/tasksel/descs/debian-tasks.desc.orig /usr/share/tasksel/descs/debian-tasks.desc
-echo -e $GREEN "Done.";tput init;
-}
-
-virtualbox-guests() {
-if [ $detectvirt = oracle ]; then
-        echo -e $YELLOW "Kaisen is installed on VirtualBox. Install all VirtualBox guests...";tput init;
-        apt install -y virtualbox-guest-dkms virtualbox-guest-source virtualbox-guest-utils virtualbox-guest-x11
-fi
-echo -e $GREEN "Done.";tput init;
-}
-
-qemu-guests() {
-if [ $detectvirt = kvm ]; then
-        echo -e $YELLOW "Kaisen is installed on QEMU. Install all QEMU guests...";tput init;
-        apt install -y xserver-xorg-video-qxl qemu-guest-agent spice-vdagent spice-webdavd
-fi
 echo -e $GREEN "Done.";tput init;
 }
 
@@ -262,10 +262,8 @@ fi
 }
 
 remove-launcher() {
-if [ -e /etc/xdg/autostart/kaisen-netinst-configurator.desktop ] && [ -e /usr/bin/kaisen-netinst-configurator-launcher ]; then
-	rm -f /etc/xdg/autostart/kaisen-netinst-configurator.desktop
+	rm -f /etc/xdg/autostart/kaisen-netinst-configurator-launcher.desktop
 	rm -f /usr/bin/kaisen-netinst-configurator-launcher
-fi
 }
 
 remove-configurator() {
@@ -279,14 +277,14 @@ if [[ $OPTION = "y" ]]; then
 	apt remove --purge -y kaisen-netinst-configurator
 	echo -e $GREEN "The configurator has been deleted.";tput init;
 else
-	echo -e $GREEN "Ok, the configurator is always installed.";tput init;
+	echo -e $GREEN "Ok, the configurator is still installed.";tput init;
 fi
 }
 
 https-default-repositories
-package-installer
 virtualbox-guests
 qemu-guests
+package-installer
 disable-services
 install-kernel-headers
 virtualbox-autoload-module
