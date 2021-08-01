@@ -1,3 +1,10 @@
+kaisen-tools (1.8) kaisen-packages; urgency=medium
+
+  * Update package at 1.8
+  * Remove kaisen-netinst-configurator package
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Mon, 02 Aug 2021 00:27:56 +0200
+
 kaisen-tools (1.7) kaisen-packages; urgency=medium
 
   * Remove kaisen-documentation and kaisen-packages

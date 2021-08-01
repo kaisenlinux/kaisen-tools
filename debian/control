@@ -732,13 +732,6 @@ Depends: systemd,
 	 	 sudo,
 Description: Management additionnals services (launchers in services menu)
 
-Package: kaisen-netinst-configurator
-Architecture: all
-Priority: standard
-Depends: tasksel,
-	 tasksel-data,
-Description: Kaisen Linux NETINST configurator (packages installer and other settings)
-
 Package: kaisen-cli-tools
 Architecture: all
 Priority: standard
