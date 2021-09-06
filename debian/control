@@ -611,6 +611,7 @@ Recommends: cpulimit,
             flashrom,
 	    	inxi,
 	    cpu-x,
+	    sysstat,
 Suggests: kaisen-temperature-analysis
 Description: All Kaisen Linux hardware tools
 

@@ -1,3 +1,9 @@
+kaisen-tools (1.8+kaisen3) kaisen-packages; urgency=medium
+
+  * Add ssystat package in kaisen-hardware metapackage
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Mon, 06 Sep 2021 14:15:35 +0200
+
 kaisen-tools (1.8+kaisen2) kaisen-packages; urgency=medium
 
   * Change exfat-utils in exfatprogs in the cli-tools metapackage
