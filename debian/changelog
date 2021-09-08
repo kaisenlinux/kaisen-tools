@@ -1,3 +1,10 @@
+kaisen-tools (1.8+kaisen4) kaisen-packages; urgency=medium
+
+  * Remove lockdown tool and service
+  * Add sysstat tool in kaisen-cli-tools
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Wed, 08 Sep 2021 14:26:37 +0200
+
 kaisen-tools (1.8+kaisen3) kaisen-packages; urgency=medium
 
   * Add ssystat package in kaisen-hardware metapackage

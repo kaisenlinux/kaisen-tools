@@ -120,8 +120,6 @@ systemctl enable spice-webdavd.service || true
 systemctl start spice-webdavd.service || true
 systemctl enable lm-sensors || true
 systemctl start lm-sensors || true
-systemctl enable lockdown || true
-systemctl start lockdown || true
 systemctl enable lxcfs || true
 systemctl start lxcfs || true
 systemctl enable lxc-net || true
