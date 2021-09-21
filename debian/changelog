@@ -1,3 +1,9 @@
+kaisen-tools (1.8+kaisen5) kaisen-packages; urgency=medium
+
+  * Add k6 tool in kaisen-sysops-tools package
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Tue, 21 Sep 2021 07:54:04 +0200
+
 kaisen-tools (1.8+kaisen4) kaisen-packages; urgency=medium
 
   * Remove lockdown tool and service

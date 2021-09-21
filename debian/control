@@ -486,6 +486,7 @@ Recommends: docker,
 	    	puppet,
 	    	terraform,
 	    	s3fs,
+		k6,
 Description: All SysOps tools for Kaisen Linux
 
 Package: kaisen-virtualization-tools
