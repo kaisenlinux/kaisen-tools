@@ -373,7 +373,6 @@ Recommends: kaisen-sysadmin-uncategorized,
 	    	kaisen-remote-administration,
 	    	kaisen-backup-tools,
 	    	kaisen-ftp-clients,
-	    	kaisen-btrfs-snapshots,
 	    	kaisen-microsoft-tools,
 	    	kaisen-sysops-tools,
 	    	kaisen-virtualization-tools,
@@ -487,6 +486,10 @@ Recommends: docker,
 	    	terraform,
 	    	s3fs,
 		k6,
+		k9s,
+	        helm,
+		podman,
+		buildah,
 Description: All SysOps tools for Kaisen Linux
 
 Package: kaisen-virtualization-tools
@@ -740,6 +743,12 @@ Priority: standard
 Depends: systemd,
 	 	 sudo,
 Description: Management additionnals services (launchers in services menu)
+
+Package: kaisen-update
+Architecture: all
+Priority: optional
+Depends: apt
+Description: Automatic Kaisen Linux update
 
 Package: kaisen-cli-tools
 Architecture: all

@@ -193,3 +193,9 @@ systemctl disable open-vm-tools || true
 systemctl stop open-vm-tools || true
 systemctl disable zfs-fuse || true
 systemctl stop zfs-fuse || true
+systemctl disable podman || true
+systemctl stop podman || true
+systemctl disable podman-auto-update || true
+systemctl stop podman-auto-update || true
+systemctl disable podman.socket || true
+systemctl stop podman.socket || true

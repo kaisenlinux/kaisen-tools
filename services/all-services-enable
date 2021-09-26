@@ -189,3 +189,9 @@ systemctl start vgauth || true
 systemctl enable open-vm-tools || true
 systemctl start open-vm-tools || true
 systemctl enable zfs-fuse || true
+systemctl enable podman || true
+systemctl start podman || true
+systemctl enable podman-auto-update || true
+systemctl start podman-auto-update || true
+systemctl enable podman.socket || true
+systemctl start podman.socket || true
