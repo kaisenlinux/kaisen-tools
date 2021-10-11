@@ -1,3 +1,22 @@
+kaisen-tools (1.8+kaisen7) kaisen-packages; urgency=medium
+
+  * Remove kaisen-various-analysis metapackage (tools added in miscellaneous
+    metapackage)
+  * Remove vlc, libreoffice, thunderbird, hexchat, qbittorrent, gtkhash, ifenslave,
+    apt-transport-https, software-properties-common, remmina-plugin-nx,
+    remmina-plugin-xdmcp and gimp tools
+  * Remove cryptsetup-nuke-password in kaisen-sysadmin-uncategorized metapackage
+    and kaisen-miscellaneous metapackage
+  * Move dmraid, dmsetup, lvm2, cryptsetup, mdadm tools in kaisen-filesystems
+  * Move memtest86+ in kaisen-hardware metapackage
+  * Move htop and lsof in kaisen-miscellaneous metapackage
+  * Move all tools in kaisen-mount metapackage in kaisen-filesystems metapackage
+  * Remove kaisen-mount metapackage
+  * Move all tools in kaisen-zip metapackage in kaisen-miscellaneous
+  * Remove kaisen-zip metapackage
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Mon, 11 Oct 2021 03:07:46 +0200
+
 kaisen-tools (1.8+kaisen6) kaisen-packages; urgency=medium
 
   * Add tools in kaisen-sysops-tools package :
