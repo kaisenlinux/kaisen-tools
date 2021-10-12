@@ -41,7 +41,6 @@ Recommends: cryptsetup,
 	        fuse-zip,
 	    	fuseiso,
 	        fusesmb,
-	    	sshfs,
 	    	squashfuse,
 	    	glusterfs-client,
 	    	udfclient,
@@ -51,7 +50,6 @@ Recommends: cryptsetup,
 		xmount,
 		archivemount,
 	    	tmfs,
-	    	s3fs,
 	    	cifs-utils,
 	    	apfs-fuse,
 	    	apfsutil,
@@ -62,7 +60,6 @@ Recommends: cryptsetup,
 	    	libvhdi-utils,
         	libvmdk-utils,
 	    	libfsntfs-utils,
-	    	kaisen-btrfs-snapshots,
 Description: Adding a lot filesystems tools for improving systems support on Kaisen Linux
 
 #Firmwares metapackage
@@ -384,7 +381,6 @@ Recommends: xca,
 	    	apache2-utils,
 	    	ssh-askpass,
 	    	sshpass,
-	    	logrotate,
 Description: All uncategorized sysadmin tools for Kaisen Linux
 
 Package: kaisen-remote-administration

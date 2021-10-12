@@ -1,3 +1,11 @@
+kaisen-tools (1.8+kaisen8) kaisen-packages; urgency=medium
+
+  * Remove kaisen-btrfs-snapshots, s3fs and sshfs in
+    kaisen-filesystems metapackage
+  * Remove logrotate in kaisen-sysadmin-uncategorized
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Mon, 11 Oct 2021 22:44:19 +0200
+
 kaisen-tools (1.8+kaisen7) kaisen-packages; urgency=medium
 
   * Remove kaisen-various-analysis metapackage (tools added in miscellaneous
