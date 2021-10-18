@@ -2,9 +2,11 @@ Source: kaisen-tools
 Priority: optional
 Section: kaisen-metapackages
 Maintainer: Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>
-Standards-Version: 4.5.1
+Standards-Version: 4.6.1
 Build-Depends: debhelper
 Homepage: https://kaisenlinux.org
+Vcs-Git: https://gitlab.com/kaisenlinux/packages/kaisen-tools.git
+Vcs-Browser: https://gitlab.com/kaisenlinux/packages/kaisen-tools
 
 #Filesystems metapackage
 Package: kaisen-filesystems
@@ -153,12 +155,48 @@ Recommends: progress,
             zstd,
 Description: Meta package for miscellaneous useful software (lsof, htop, git, gpg-agent, codium, vim, tree, less...)
 
+#Devops et cloud tools
+Package: kaisen-sysops-tools
+Architecture: all
+Recommends: docker,
+            docker-compose,
+            docker.io,
+                ansible,
+                lxc,
+                lxctl,
+                kubernetes-client,
+            vagrant,
+            vagrant-lxc,
+            vagrant-sshfs,
+            jmeter,
+            jmeter-ftp,
+            jmeter-tcp,
+            awscli,
+                azure-cli,
+            packer,
+                puppet,
+                terraform,
+                s3fs,
+                k6,
+                k9s,
+                helm,
+                podman,
+                buildah,
+Description: All DevOps and Cloud tools for Kaisen Linux
+
+#BTRFS snapshots section
+Package: kaisen-btrfs-snapshots
+Architecture: all
+Recommends: apt-btrfs-snapshot,
+                timeshift,
+                btrbk,
+            snapper,
+Description: All tools to take snapshots with BTRFS
+
 #Network tools section
 Package: kaisen-network-tools
 Architecture: all
 Recommends: kaisen-network-uncategorized,
-	    	kaisen-dhcp-tools,
-	    	kaisen-dns-tools,
 	    	kaisen-ethernet-tools,
 	    	kaisen-gns3,
 	    	kaisen-layer4-tools,
@@ -168,7 +206,6 @@ Recommends: kaisen-network-uncategorized,
 	    	kaisen-pcap-tools,
 	    	kaisen-portconsole-tools,
 	    	kaisen-network-scanners,
-	    	kaisen-tls-tools,
 	    	kaisen-vpn-tools,
 	    	kaisen-wifi-tools,
 Description: All network tools (DHCP, DNS analysis, monitoring, TCP analysis...) for Kaisen Linux
@@ -186,23 +223,6 @@ Recommends: 2ping,
 	    	wakeonlan,
 	    	wondershaper,
 Description: All uncategorized network tools for Kaisen Linux
-
-Package: kaisen-dhcp-tools
-Architecture: all
-Recommends: isc-dhcp-client,
-	    	isc-dhcp-common,
-	    	dhcpdump,
-	    	dhcping,
-Description: All DHCP tools for Kaisen Linux
-
-Package: kaisen-dns-tools
-Architecture: all
-Recommends: dnsutils,
-	    	dnsenum,
-	    	dnstop,
-	    	mdns-scan,
-	    	whois,
-Description: All DNS tools for Kaisen Linux
 
 Package: kaisen-ethernet-tools
 Architecture: all
@@ -326,15 +346,6 @@ Recommends: arp-scan,
 	    	traceroute,
 Description: All network scanners for Kaisen Linux
 
-Package: kaisen-tls-tools
-Architecture: all
-Recommends: ssldump,
-	    	sslscan,
-	    	sslsniff,
-	    	sslsplit,
-	    	sslyze,
-Description: All SSL/TLS tools for Kaisen Linux
-
 Package: kaisen-vpn-tools
 Architecture: all
 Recommends: openvpn,
@@ -360,6 +371,9 @@ Recommends: kaisen-sysadmin-uncategorized,
 	    	kaisen-microsoft-tools,
 	    	kaisen-sysops-tools,
 	    	kaisen-virtualization-tools,
+		kaisen-dhcp-tools,
+                kaisen-dns-tools,
+		kaisen-tls-tools,
 Description: Collection of sysadmin tools for Kaisen Linux
 
 Package: kaisen-sysadmin-uncategorized
@@ -428,14 +442,6 @@ Recommends: filezilla,
             lftp,
 Description: All FTP clients for Kaisen Linux
 
-Package: kaisen-btrfs-snapshots
-Architecture: all
-Recommends: apt-btrfs-snapshot,
-	    	timeshift,
-	    	btrbk,
-            snapper,
-Description: All tools to take snapshots with BTRFS
-
 Package: kaisen-microsoft-tools
 Architecture: all
 Recommends: bloodhound,
@@ -443,34 +449,6 @@ Recommends: bloodhound,
 	    	cabextract,
             powershell,
 Description: All tools for Microsoft technologies for Kaisen Linux
-
-Package: kaisen-sysops-tools
-Architecture: all
-Recommends: docker,
-            docker-compose,
-            docker.io,
-	    	ansible,
-	    	lxc,
-	    	lxctl,
-	    	kubernetes-client,
-            vagrant,
-            vagrant-lxc,
-            vagrant-sshfs,
-            jmeter,
-            jmeter-ftp,
-            jmeter-tcp,
-            awscli,
-	    	azure-cli,
-            packer,
-	    	puppet,
-	    	terraform,
-	    	s3fs,
-		k6,
-		k9s,
-	        helm,
-		podman,
-		buildah,
-Description: All SysOps tools for Kaisen Linux
 
 Package: kaisen-virtualization-tools
 Architecture: all
@@ -492,6 +470,32 @@ Recommends: virtualbox,
             virtinst,
 	    	virt-viewer,
 Description: All hypervisors tools for Kaisen Linux
+
+Package: kaisen-tls-tools
+Architecture: all
+Recommends: ssldump,
+                sslscan,
+                sslsniff,
+                sslsplit,
+                sslyze,
+Description: All SSL/TLS tools for Kaisen Linux
+
+Package: kaisen-dhcp-tools
+Architecture: all
+Recommends: isc-dhcp-client,
+                isc-dhcp-common,
+                dhcpdump,
+                dhcping,
+Description: All DHCP tools for Kaisen Linux
+
+Package: kaisen-dns-tools
+Architecture: all
+Recommends: dnsutils,
+                dnsenum,
+                dnstop,
+                mdns-scan,
+                whois,
+Description: All DNS tools for Kaisen Linux
 
 #Technicians tools section
 Package: kaisen-technicians-tools
