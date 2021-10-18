@@ -86,6 +86,8 @@ systemctl enable ip6tables || true
 systemctl start ip6tables || true
 systemctl enable netfilter-persistent || true
 systemctl start netfilter-persistent || true
+systemctl enable nftables || true
+systemctl start nftables || true
 systemctl enable gns3-server || true
 systemctl start gns3-server || true
 systemctl enable hddtemp || true

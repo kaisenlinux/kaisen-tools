@@ -15,3 +15,5 @@ systemctl disable ip6tables || true
 systemctl stop ip6tables || true
 systemctl disable netfilter-persistent || true
 systemctl stop netfilter-persistent || true
+systemctl disable nftables || true
+systemctl stop nftables || true

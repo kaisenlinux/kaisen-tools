@@ -15,3 +15,5 @@ systemctl enable ip6tables || true
 systemctl start ip6tables || true
 systemctl enable netfilter-persistent || true
 systemctl start netfilter-persistent || true
+systemctl enable nftables || true
+systemctl start nftables || true

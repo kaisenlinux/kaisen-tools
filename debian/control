@@ -160,7 +160,6 @@ Recommends: kaisen-network-uncategorized,
 	    	kaisen-dhcp-tools,
 	    	kaisen-dns-tools,
 	    	kaisen-ethernet-tools,
-	    	kaisen-firewall-tools,
 	    	kaisen-gns3,
 	    	kaisen-layer4-tools,
 	    	kaisen-layer3-tools,
@@ -211,12 +210,6 @@ Recommends: ethstatus,
 	    	ethtool,
 	    	packeth,
 Description: All Ethernet tools for Kaisen Linux
-
-Package: kaisen-firewall-tools
-Architecture: all
-Recommends: iptables-persistent,
-	    	iptstate,
-Description: All firewall tools for Kaisen Linux
 
 Package: kaisen-gns3
 Architecture: all
@@ -380,6 +373,7 @@ Recommends: xca,
 	    	apache2-utils,
 	    	ssh-askpass,
 	    	sshpass,
+		iptables-persistent,
 Description: All uncategorized sysadmin tools for Kaisen Linux
 
 Package: kaisen-remote-administration
