@@ -490,11 +490,11 @@ Description: All DHCP tools for Kaisen Linux
 
 Package: kaisen-dns-tools
 Architecture: all
-Recommends: dnsutils,
-                dnsenum,
-                dnstop,
-                mdns-scan,
-                whois,
+Recommends: dnsenum,
+	    dnstop,
+	    mdns-scan,
+	    whois,
+	    dnsutils,
 Description: All DNS tools for Kaisen Linux
 
 #Technicians tools section

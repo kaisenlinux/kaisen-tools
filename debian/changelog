@@ -1,3 +1,9 @@
+kaisen-tools (1.8+kaisen13) kaisen-packages; urgency=medium
+
+  * Fix dnsutils not installed with kaisen-dns-tools
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Sun, 24 Oct 2021 18:15:23 +0200
+
 kaisen-tools (1.8+kaisen12) kaisen-packages; urgency=medium
 
   * Reorganize control file
