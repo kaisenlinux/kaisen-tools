@@ -494,7 +494,7 @@ Recommends: dnsenum,
 	    dnstop,
 	    mdns-scan,
 	    whois,
-	    dnsutils,
+	    bind9-dnsutils,
 Description: All DNS tools for Kaisen Linux
 
 #Technicians tools section

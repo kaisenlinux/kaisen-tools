@@ -1,3 +1,9 @@
+kaisen-tools (1.8+kaisen14) kaisen-packages; urgency=medium
+
+  * Replace dnsutils by bind9-dnsutils
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Sun, 24 Oct 2021 19:43:17 +0200
+
 kaisen-tools (1.8+kaisen13) kaisen-packages; urgency=medium
 
   * Fix dnsutils not installed with kaisen-dns-tools
