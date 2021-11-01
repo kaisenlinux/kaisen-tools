@@ -1,3 +1,9 @@
+kaisen-tools (1.8+kaisen17) kaisen-packages; urgency=medium
+
+  * Add apparmor-utils package in kaisen-apparmor
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Mon, 01 Nov 2021 04:56:11 +0200
+
 kaisen-tools (1.8+kaisen16) kaisen-packages; urgency=medium
 
   * Readd gtkhash and iptstate tools

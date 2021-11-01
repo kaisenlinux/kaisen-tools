@@ -511,6 +511,7 @@ Recommends: apparmor,
 	    apparmor-profiles,
             apparmor-profiles-extra,
 	    apparmor-notify,
+	    apparmor-utils,
 Description: Apparmor profiles for Kaisen Linux
 
 #Technicians tools section
