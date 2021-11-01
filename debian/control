@@ -153,6 +153,7 @@ Recommends: progress,
             tar,
             unrar,
             zstd,
+	    gtkhash,
 Description: Meta package for miscellaneous useful software (lsof, htop, git, gpg-agent, codium, vim, tree, less...)
 
 #Devops et cloud tools
@@ -374,6 +375,8 @@ Recommends: kaisen-sysadmin-uncategorized,
 		kaisen-dhcp-tools,
                 kaisen-dns-tools,
 		kaisen-tls-tools,
+		kaisen-firewalling,
+		kaisen-apparmor,
 Description: Collection of sysadmin tools for Kaisen Linux
 
 Package: kaisen-sysadmin-uncategorized
@@ -387,7 +390,6 @@ Recommends: xca,
 	    	apache2-utils,
 	    	ssh-askpass,
 	    	sshpass,
-		iptables-persistent,
 Description: All uncategorized sysadmin tools for Kaisen Linux
 
 Package: kaisen-remote-administration
@@ -496,6 +498,20 @@ Recommends: dnsenum,
 	    whois,
 	    bind9-dnsutils,
 Description: All DNS tools for Kaisen Linux
+
+Package: kaisen-firewalling
+Architecture: all
+Recommends: iptstate,
+            iptables-persistent,
+Description: All firewalling tools for Kaisen Linux
+
+Package: kaisen-apparmor
+Architecture: all
+Recommends: apparmor,
+	    apparmor-profiles,
+            apparmor-profiles-extra,
+	    apparmor-notify,
+Description: Apparmor profiles for Kaisen Linux
 
 #Technicians tools section
 Package: kaisen-technicians-tools

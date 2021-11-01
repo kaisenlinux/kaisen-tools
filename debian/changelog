@@ -1,3 +1,11 @@
+kaisen-tools (1.8+kaisen16) kaisen-packages; urgency=medium
+
+  * Readd gtkhash and iptstate tools
+  * Readd kaisen-firewalling metapackage
+  * Add kaisen-apparmor metapackage
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Mon, 01 Nov 2021 01:15:29 +0200
+
 kaisen-tools (1.8+kaisen15) kaisen-packages; urgency=medium
 
   * Remove kaisen-cli-tools metapackage. Not use since 2.0RC2
