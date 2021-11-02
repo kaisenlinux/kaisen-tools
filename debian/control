@@ -432,7 +432,6 @@ Recommends: dirvish,
 	    	backup2l,
             zsync,
             vbackup,
-            zbackup,
             duply,
 	    	grsync,
 Description: All backup tools for Kaisen Linux
