@@ -1,3 +1,10 @@
+kaisen-tools (1.8+kaisen20) kaisen-packages; urgency=medium
+
+  * Change configure in install in kaisen-miscellaneous.postinst
+    to keep user changes
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Wed, 03 Nov 2021 01:46:11 +0200
+
 kaisen-tools (1.8+kaisen19) kaisen-packages; urgency=medium
 
   * Add minikube tool

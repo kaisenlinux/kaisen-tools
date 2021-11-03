@@ -2,7 +2,7 @@
 
 set -e
 
-if [[ "$1" = "configure" ]]; then
+if [[ "$1" = "install" ]]; then
 
 update-alternatives --install /usr/bin/editor editor /usr/bin/vim.basic 500 2> /dev/null || true
 
