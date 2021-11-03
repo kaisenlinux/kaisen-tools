@@ -183,6 +183,7 @@ Recommends: docker,
                 helm,
                 podman,
                 buildah,
+		minikube,
 Description: All DevOps and Cloud tools for Kaisen Linux
 
 #BTRFS snapshots section
