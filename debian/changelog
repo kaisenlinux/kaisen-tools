@@ -1,3 +1,9 @@
+kaisen-tools (1.8+kaisen22) kaisen-packages; urgency=medium
+
+  * Remove kismet tool
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Sun, 07 Nov 2021 16:41:22 +0200
+
 kaisen-tools (1.8+kaisen21) kaisen-packages; urgency=medium
 
   * Remove if to fix alternative not install

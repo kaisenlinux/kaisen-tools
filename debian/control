@@ -286,7 +286,6 @@ Recommends: cbm,
 	    	iftop,
 	    	iperf,
 	    	iperf3,
-	    	kismet,
 	    	nethogs,
 	    	netperfmeter,
 	    	sockstat,
@@ -359,7 +358,6 @@ Architecture: all
 Recommends: aircrack-ng,
 	    	hostapd,
 	    	iw,
-	    	kismet,
 	    	rfkill,
 Description: All Wi-Fi tools for Kaisen Linux
 
