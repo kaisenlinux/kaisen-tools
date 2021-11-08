@@ -184,6 +184,8 @@ Recommends: docker,
                 podman,
                 buildah,
 		minikube,
+		eksctl,
+		trivy,
 Description: All DevOps and Cloud tools for Kaisen Linux
 
 #BTRFS snapshots section

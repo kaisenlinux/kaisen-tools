@@ -1,3 +1,9 @@
+kaisen-tools (1.8+kaisen23) kaisen-packages; urgency=medium
+
+  * Add eksctl and trivy tool
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Mon, 08 Nov 2021 18:06:23 +0200
+
 kaisen-tools (1.8+kaisen22) kaisen-packages; urgency=medium
 
   * Remove kismet tool
