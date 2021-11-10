@@ -1,3 +1,10 @@
+kaisen-tools (1.8+kaisen24) kaisen-packages; urgency=medium
+
+  * Add kaisen-databases-tools metapackage
+  * Remove kaisen-sysops-tools of kaisen-sysadmin-tools metapackages
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Tue, 09 Nov 2021 20:43:42 +0200
+
 kaisen-tools (1.8+kaisen23) kaisen-packages; urgency=medium
 
   * Add eksctl and trivy tool

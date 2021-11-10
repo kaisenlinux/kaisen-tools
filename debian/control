@@ -371,13 +371,13 @@ Recommends: kaisen-sysadmin-uncategorized,
 	    	kaisen-backup-tools,
 	    	kaisen-ftp-clients,
 	    	kaisen-microsoft-tools,
-	    	kaisen-sysops-tools,
 	    	kaisen-virtualization-tools,
 		kaisen-dhcp-tools,
                 kaisen-dns-tools,
 		kaisen-tls-tools,
 		kaisen-firewalling,
 		kaisen-apparmor,
+		kaisen-databases-tools,
 Description: Collection of sysadmin tools for Kaisen Linux
 
 Package: kaisen-sysadmin-uncategorized
@@ -513,6 +513,13 @@ Recommends: apparmor,
 	    apparmor-notify,
 	    apparmor-utils,
 Description: Apparmor profiles for Kaisen Linux
+
+Package: kaisen-databases-tools
+Architecture: all
+Recommends: mariadb-client,
+            etcd-client,
+            postgresql-client,
+Description: Databases clients tools for Kaisen Linux
 
 #Technicians tools section
 Package: kaisen-technicians-tools
