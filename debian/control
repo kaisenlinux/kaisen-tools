@@ -435,6 +435,7 @@ Recommends: dirvish,
             vbackup,
             duply,
 	    	grsync,
+		zbackup,
 Description: All backup tools for Kaisen Linux
 
 Package: kaisen-ftp-clients
