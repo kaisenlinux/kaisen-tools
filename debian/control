@@ -103,6 +103,8 @@ Recommends: firmware-amd-graphics,
             blueman,
             bluez-tools,
             bluez-firmware,
+	    alsa-firmware-loaders,
+	    atmel-firmware,
 Description: GPU/Sound/Wi-Fi/Bluetooth firmwares (improve hardware compatibility)
 
 #Miscellaneous tools metapackage
