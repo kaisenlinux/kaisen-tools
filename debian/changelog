@@ -1,3 +1,10 @@
+kaisen-tools (1.8+kaisen27) kaisen-packages; urgency=medium
+
+  * Add ifenslave tool
+  * Remove memtest86+ in kaisen-hardware metapackage
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Thu, 02 Dec 2021 13:02:09 +0200
+
 kaisen-tools (1.8+kaisen26) kaisen-packages; urgency=medium
 
   * Add alsa-firmware-loaders and atmel-firmware packages
