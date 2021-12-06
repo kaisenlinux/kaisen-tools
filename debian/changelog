@@ -1,3 +1,9 @@
+kaisen-tools (2.0) kaisen-packages; urgency=medium
+
+  * Update in 2.0. No changes needed.
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Mon, 06 Dec 2021 23:11:47 +0100
+
 kaisen-tools (1.8+kaisen27) kaisen-packages; urgency=medium
 
   * Add ifenslave tool
