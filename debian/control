@@ -539,7 +539,6 @@ Recommends: kaisen-cloning,
 	    	kaisen-temperature-analysis,
 	    	kaisen-usb-boot,
 	    	kaisen-virus-analysis,
-	    	kaisen-zip,
 Description: All techicians tools (Data recovery, disks analysis, password tools...) for Kaisen Linux
 
 Package: kaisen-cloning
