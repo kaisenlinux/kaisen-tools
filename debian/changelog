@@ -1,3 +1,9 @@
+kaisen-tools (2.0+kaisen1) kaisen-packages; urgency=medium
+
+  * Move KeePassXC tool in Miscellaneous metapackage
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Sun, 19 Dec 2021 17:39:04 +0100
+
 kaisen-tools (2.0) kaisen-packages; urgency=medium
 
   * Update in 2.0.

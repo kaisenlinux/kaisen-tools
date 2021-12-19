@@ -156,6 +156,7 @@ Recommends: progress,
             unrar,
             zstd,
 	    gtkhash,
+	    keepassxc,
 Description: Meta package for miscellaneous useful software (lsof, htop, git, gpg-agent, codium, vim, tree, less...)
 
 #Devops et cloud tools
@@ -656,7 +657,6 @@ Recommends: apg,
             hashcat,
             hydra,
             john,
-            keepassxc,
             ophcrack,
             ophcrack-cli,
             pdfcrack,
