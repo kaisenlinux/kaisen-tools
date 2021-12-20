@@ -157,6 +157,8 @@ Recommends: progress,
             zstd,
 	    gtkhash,
 	    keepassxc,
+	    apg,
+	    pwgen,
 Description: Meta package for miscellaneous useful software (lsof, htop, git, gpg-agent, codium, vim, tree, less...)
 
 #Devops et cloud tools
@@ -648,8 +650,7 @@ Description: All Kaisen Linux partitioning/erasing tools
 
 Package: kaisen-password-tools
 Architecture: all
-Recommends: apg,
-            bruteforce-luks,
+Recommends: bruteforce-luks,
             chntpw,
             cmospwd,
             crack,
@@ -660,7 +661,6 @@ Recommends: apg,
             ophcrack,
             ophcrack-cli,
             pdfcrack,
-            pwgen,
             rarcrack,
             rephrase,
             samdump2,
