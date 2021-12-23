@@ -61,6 +61,9 @@ Recommends: cryptsetup,
 	    	libvhdi-utils,
         	libvmdk-utils,
 	    	libfsntfs-utils,
+		gvfs-fuse,
+		gvfs,
+	        ntfs-3g,
 Description: Adding a lot filesystems tools for improving systems support on Kaisen Linux
 
 #Firmwares metapackage
@@ -191,6 +194,7 @@ Recommends: docker,
 		minikube,
 		eksctl,
 		trivy,
+		kustomize,
 Description: All DevOps and Cloud tools for Kaisen Linux
 
 #BTRFS snapshots section
