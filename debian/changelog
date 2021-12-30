@@ -1,3 +1,10 @@
+kaisen-tools (2.0+kaisen5) kaisen-packages; urgency=medium
+
+  * Add kaisen-virtualization-tools maintainer script to
+    add virtualbox modules launched at boot
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Thu, 30 Dec 2021 05:28:21 +0100
+
 kaisen-tools (2.0+kaisen4) kaisen-packages; urgency=medium
 
   * Add kaisen-duplicates-files metapackage
