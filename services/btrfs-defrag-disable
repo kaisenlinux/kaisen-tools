@@ -9,7 +9,5 @@ if [[ "$EUID" -ne "0" ]]; then
         exit 1
 fi
 
-systemctl disable btrfs-defrag.service || true
-systemctl stop btrfs-defrag.service || true
-systemctl disable btrfs-defrag.timer || true
-systemctl stop btrfs-defrag.timer || true
+systemctl disable --now btrfs-defrag.service || true
+systemctl disable --now btrfs-defrag.timer || true

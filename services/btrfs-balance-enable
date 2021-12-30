@@ -9,7 +9,5 @@ if [[ "$EUID" -ne "0" ]]; then
         exit 1
 fi
 
-systemctl enable btrfs-balance.service || true
-systemctl start btrfs-balance.service || true
-systemctl enable btrfs-balance.timer || true
-systemctl start btrfs-balance.timer || true
+systemctl enable --now btrfs-balance.service || true
+systemctl enable --now btrfs-balance.timer || true

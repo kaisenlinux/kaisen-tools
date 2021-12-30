@@ -9,7 +9,5 @@ if [[ "$EUID" -ne "0" ]]; then
         exit 1
 fi
 
-systemctl enable snapper-timeline.timer || true
-systemctl start snapper-timeline.timer || true
-systemctl enable snapper-timeline.service || true
-systemctl start snapper-timeline.service || true
+systemctl enable --now snapper-timeline.timer || true
+systemctl enable --now snapper-timeline.service || true

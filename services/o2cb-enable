@@ -9,5 +9,4 @@ if [[ "$EUID" -ne "0" ]]; then
         exit 1
 fi
 
-systemctl enable o2cb || true
-systemctl start o2cb || true
+systemctl enable --now o2cb || true

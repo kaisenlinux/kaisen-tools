@@ -9,5 +9,4 @@ if [[ "$EUID" -ne "0" ]]; then
         exit 1
 fi
 
-systemctl enable gns3-server || true
-systemctl start gns3-server || true
+systemctl enable --now gns3-server || true

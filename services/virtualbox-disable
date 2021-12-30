@@ -9,9 +9,6 @@ if [[ "$EUID" -ne "0" ]]; then
         exit 1
 fi
 
-systemctl disable vboxweb || true
-systemctl stop vboxweb || true
-systemctl disable virtualbox || true
-systemctl stop virtualbox || true
-systemctl disable virtualbox-guest-utils || true
-systemctl stop virtualbox-guest-utils || true
+systemctl disable --now vboxweb || true
+systemctl disable --now virtualbox || true
+systemctl disable --now virtualbox-guest-utils || true

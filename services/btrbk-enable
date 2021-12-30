@@ -9,7 +9,5 @@ if [[ "$EUID" -ne "0" ]]; then
         exit 1
 fi
 
-systemctl enable btrbk.timer || true
-systemctl start btrbk.timer || true
-systemctl enable btrbk.service || true
-systemctl start btrbk.service || true
+systemctl enable --now btrbk.timer || true
+systemctl enable --now btrbk.service || true

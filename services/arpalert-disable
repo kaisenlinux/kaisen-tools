@@ -9,5 +9,4 @@ if [[ "$EUID" -ne "0" ]]; then
         exit 1
 fi
 
-systemctl disable arpalert || true
-systemctl stop arpalert || true
+systemctl disable --now arpalert || true

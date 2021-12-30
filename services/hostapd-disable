@@ -9,5 +9,5 @@ if [[ "$EUID" -ne "0" ]]; then
         exit 1
 fi
 
-systemctl disable hostapd || true
-systemctl stop hostapd || true
+systemctl mask hostapd || true
+systemctl disable --now hostapd || true

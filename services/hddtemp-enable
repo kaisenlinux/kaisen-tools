@@ -9,5 +9,4 @@ if [[ "$EUID" -ne "0" ]]; then
         exit 1
 fi
 
-systemctl enable hddtemp || true
-systemctl start hddtemp || true
+systemctl enable --now hddtemp || true

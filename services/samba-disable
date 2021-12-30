@@ -9,4 +9,5 @@ if [[ "$EUID" -ne "0" ]]; then
         exit 1
 fi
 
-systemctl disable --now zfs-fuse || true
+systemctl disable --now nmbd || true
+systemctl disable --now smbd || true

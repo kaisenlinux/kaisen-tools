@@ -9,5 +9,4 @@ if [[ "$EUID" -ne "0" ]]; then
         exit 1
 fi
 
-systemctl disable 2ping || true
-systemctl stop 2ping || true
+systemctl disable --now 2ping || true

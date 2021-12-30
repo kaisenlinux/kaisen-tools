@@ -9,11 +9,7 @@ if [[ "$EUID" -ne "0" ]]; then
         exit 1
 fi
 
-systemctl enable iptables || true
-systemctl start iptables || true
-systemctl enable ip6tables || true
-systemctl start ip6tables || true
-systemctl enable netfilter-persistent || true
-systemctl start netfilter-persistent || true
-systemctl enable nftables || true
-systemctl start nftables || true
+systemctl enable --now iptables || true
+systemctl enable --now ip6tables || true
+systemctl enable --now netfilter-persistent || true
+systemctl enable --now nftables || true

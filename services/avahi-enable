@@ -9,7 +9,5 @@ if [[ "$EUID" -ne "0" ]]; then
         exit 1
 fi
 
-systemctl enable avahi-daemon || true
-systemctl start avahi-daemon || true
-systemctl enable avahi-daemon.socket || true
-systemctl start avahi-daemon.socket || true
+systemctl enable --now avahi-daemon || true
+systemctl enable --now avahi-daemon.socket || true

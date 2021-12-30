@@ -9,5 +9,4 @@ if [[ "$EUID" -ne "0" ]]; then
         exit 1
 fi
 
-systemctl enable neo4j || true
-systemctl start neo4j || true
+systemctl enable --now neo4j || true

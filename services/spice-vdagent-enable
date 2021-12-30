@@ -9,7 +9,5 @@ if [[ "$EUID" -ne "0" ]]; then
         exit 1
 fi
 
-systemctl enable spice-vdagentd.service || true
-systemctl start spice-vdagentd.service || true
-systemctl enable spice-vdagentd.socket || true
-systemctl start spice-vdagentd.socket || true
+systemctl enable --now spice-vdagentd.service || true
+systemctl enable --now spice-vdagentd.socket || true

@@ -9,5 +9,4 @@ if [[ "$EUID" -ne "0" ]]; then
         exit 1
 fi
 
-systemctl disable irqbalance || true
-systemctl stop irqbalance || true
+systemctl disable --now irqbalance || true

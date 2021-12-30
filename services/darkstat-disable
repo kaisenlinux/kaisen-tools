@@ -10,4 +10,4 @@ if [[ "$EUID" -ne "0" ]]; then
 fi
 
 systemctl mask darkstat || true
-systemctl stop darkstat || true
+systemctl disable --now darkstat || true

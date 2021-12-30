@@ -9,7 +9,5 @@ if [[ "$EUID" -ne "0" ]]; then
         exit 1
 fi
 
-systemctl enable mlocate.timer || true
-systemctl start mlocate.timer || true
-systemctl enable mlocate.service || true
-systemctl start mlocate.service || true
+systemctl enable --now mlocate.timer || true
+systemctl enable --now mlocate.service || true

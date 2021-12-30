@@ -9,191 +9,103 @@ if [[ "$EUID" -ne "0" ]]; then
         exit 1
 fi
 
-systemctl enable 2ping || true
-systemctl start 2ping || true
-systemctl enable arpalert || true
-systemctl start arpalert || true
-systemctl enable arpwatch || true
-systemctl start arpwatch || true
-systemctl enable avahi-daemon || true
-systemctl start avahi-daemon || true
-systemctl enable bacula-fd || true
-systemctl start bacula-fd || true
+systemctl enable --now 2ping || true
+systemctl enable --now arpalert || true
+systemctl enable --now arpwatch || true
+systemctl enable --now avahi-daemon || true
+systemctl enable --now bacula-fd || true
 systemctl enable bacula-sd || true
-systemctl enable bettercap || true
-systemctl start bettercap || true
-systemctl enable bluetooth || true
-systemctl start bluetooth || true
-systemctl enable blueman-mechanism || true
-systemctl start blueman-mechanism || true
-systemctl enable btrbk.timer || true
-systemctl start btrbk.timer || true
-systemctl enable btrbk.service || true
-systemctl start btrbk.service || true
-systemctl enable btrfs-balance.service || true
-systemctl start btrfs-balance.service || true
-systemctl enable btrfs-balance.timer || true
-systemctl start btrfs-balance.timer || true
-systemctl enable btrfs-defrag.service || true
-systemctl start btrfs-defrag.service || true
-systemctl enable btrfs-defrag.timer || true
-systemctl start btrfs-defrag.timer || true
-systemctl enable btrfsmaintenance-refresh.path || true
-systemctl start btrfsmaintenance-refresh.path || true
-systemctl enable btrfsmaintenance-refresh.service || true
-systemctl start btrfsmaintenance-refresh.service || true
-systemctl enable btrfs-scrub.timer || true
-systemctl start btrfs-scrub.timer || true
-systemctl enable btrfs-scrub.service || true
-systemctl start btrfs-scrub.service || true
-systemctl enable btrfs-trim.timer || true
-systemctl start btrfs-trim.timer || true
-systemctl enable btrfs-trim.service || true
-systemctl start btrfs-trim.service || true
-systemctl enable ceph-fuse.target || true
-systemctl start ceph-fuse.target || true
-systemctl enable clamav-daemon || true
-systemctl start clamav-daemon || true
-systemctl enable clamav-freshclam || true
-systemctl start clamav-freshclam || true
-systemctl enable clamav-milter || true
-systemctl start clamav-milter || true
-systemctl enable containerd || true
-systemctl start containerd || true
-systemctl enable cups-browsed || true
-systemctl start cups-browsed || true
-systemctl enable cups || true
-systemctl start cups || true
-systemctl enable cups.path || true
-systemctl start cups.path || true
-systemctl enable cups.socket || true
-systemctl start cups.socket || true
-systemctl enable darkstat || true
-systemctl start darkstat || true
-systemctl enable docker || true
-systemctl start docker || true
-systemctl enable docker.socket || true
-systemctl start docker.socket || true
-systemctl enable e2scrub_reap || true
-systemctl start e2scrub_reap || true
-systemctl enable e2scrub_all.timer || true
-systemctl start e2scrub_all.timer || true
-systemctl enable etc-setserial || true
-systemctl start etc-setserial || true
-systemctl enable iptables || true
-systemctl start iptables || true
-systemctl enable ip6tables || true
-systemctl start ip6tables || true
-systemctl enable netfilter-persistent || true
-systemctl start netfilter-persistent || true
-systemctl enable nftables || true
-systemctl start nftables || true
-systemctl enable gns3-server || true
-systemctl start gns3-server || true
-systemctl enable hddtemp || true
-systemctl start hddtemp || true
+systemctl enable --now bettercap || true
+systemctl enable --now bluetooth || true
+systemctl enable --now blueman-mechanism || true
+systemctl enable --now btrbk.timer || true
+systemctl enable --now btrbk.service || true
+systemctl enable --now btrfs-balance.service || true
+systemctl enable --now btrfs-balance.timer || true
+systemctl enable --now btrfs-defrag.service || true
+systemctl enable --now btrfs-defrag.timer || true
+systemctl enable --now btrfsmaintenance-refresh.path || true
+systemctl enable --now btrfsmaintenance-refresh.service || true
+systemctl enable --now btrfs-scrub.timer || true
+systemctl enable --now btrfs-scrub.service || true
+systemctl enable --now btrfs-trim.timer || true
+systemctl enable --now btrfs-trim.service || true
+systemctl enable --now ceph-fuse.target || true
+systemctl enable --now clamav-daemon || true
+systemctl enable --now clamav-freshclam || true
+systemctl enable --now clamav-milter || true
+systemctl enable --now containerd || true
+systemctl enable --now cups-browsed || true
+systemctl enable --now cups || true
+systemctl enable --now cups.path || true
+systemctl enable --now cups.socket || true
+systemctl unmask darkstat || true
+systemctl enable --now darkstat || true
+systemctl enable --now docker || true
+systemctl enable --now docker.socket || true
+systemctl enable --now e2scrub_reap || true
+systemctl enable --now e2scrub_all.timer || true
+systemctl enable --now etc-setserial || true
+systemctl enable --now iptables || true
+systemctl enable --now ip6tables || true
+systemctl enable --now netfilter-persistent || true
+systemctl enable --now nftables || true
+systemctl enable --now gns3-server || true
+systemctl enable --now hddtemp || true
 systemctl unmask hostapd || true
 systemctl enable hostapd || true
-systemctl enable irqbalance || true
-systemctl start irqbalance || true
-systemctl enable libvirtd.service || true
-systemctl start libvirtd.service || true
-systemctl enable virtlockd.socket || true
-systemctl start virtlockd.socket || true
-systemctl enable virtlogd.socket || true
-systemctl start virtlogd.socket || true
-systemctl enable libvirtd.socket || true
-systemctl start libvirtd.socket || true
-systemctl enable libvirtd-ro.socket || true
-systemctl start libvirtd-ro.socket || true
-systemctl enable libvirt-guests.service || true
-systemctl start libvirt-guests.service || true
-systemctl enable libvirtd-admin.socket || true
-systemctl start libvirtd-admin.socket || true
-systemctl enable virtlockd-admin.socket || true
-systemctl start virtlockd-admin.socket || true
-systemctl enable virtlogd-admin.socket || true
-systemctl start virtlogd-admin.socket || true
-systemctl enable spice-vdagentd.service || true
-systemctl start spice-vdagentd.service || true
-systemctl enable spice-vdagentd.socket || true
-systemctl start spice-vdagentd.socket || true
-systemctl enable spice-webdavd.service || true
-systemctl start spice-webdavd.service || true
-systemctl enable lm-sensors || true
-systemctl start lm-sensors || true
-systemctl enable lxcfs || true
-systemctl start lxcfs || true
-systemctl enable lxc-net || true
-systemctl start lxc-net || true
-systemctl enable lxc || true
-systemctl start lxc || true
-systemctl enable mlocate.timer || true
-systemctl start mlocate.timer || true
-systemctl enable mlocate.service || true
-systemctl start mlocate.service || true
-systemctl enable neo4j || true
-systemctl start neo4j || true
-systemctl enable nfs-client.target || true
-systemctl start nfs-client.target || true
-systemctl enable nfs-kernel-server || true
-systemctl start nfs-kernel-server || true
-systemctl enable nfs-server || true
-systemctl start nfs-server || true
-systemctl enable portmap || true
-systemctl start portmap || true
-systemctl enable rpcbind || true
-systemctl start rpcbind || true
-systemctl enable rpcbind.socket || true
-systemctl start rpcbind.socket || true
-systemctl enable ntp || true
-systemctl start ntp || true
-systemctl enable o2cb || true
-systemctl start o2cb || true
-systemctl enable ocfs2 || true
-systemctl start ocfs2 || true
-systemctl enable openvpn || true
-systemctl start openvpn || true
-systemctl enable rpcbind || true
-systemctl start rpcbind || true
-systemctl enable rpcbind.socket || true
-systemctl start rpcbind.socket || true
-systemctl enable rsync || true
-systemctl start rsync || true
-systemctl enable setserial || true
-systemctl start setserial || true
-systemctl enable smartmontools || true
-systemctl start smartmontools || true
-systemctl enable snapper-boot.timer || true
-systemctl start snapper-boot.timer || true
-systemctl enable snapper-boot.service || true
-systemctl start snapper-boot.service || true
-systemctl enable snapper-cleanup.timer || true
-systemctl start snapper-cleanup.timer || true
-systemctl enable snapper-cleanup.service || true
-systemctl start snapper-cleanup.service || true
-systemctl enable snapperd || true
-systemctl start snapperd || true
-systemctl enable snapper-timeline.timer || true
-systemctl start snapper-timeline.timer || true
-systemctl enable snapper-timeline.service || true
-systemctl start snapper-timeline.service || true
-systemctl enable ssh || true
-systemctl start ssh || true
-systemctl enable sysstat || true
-systemctl start sysstat || true
+systemctl enable --now irqbalance || true
+systemctl enable --now libvirtd.service || true
+systemctl enable --now virtlockd.socket || true
+systemctl enable --now virtlogd.socket || true
+systemctl enable --now libvirtd.socket || true
+systemctl enable --now libvirtd-ro.socket || true
+systemctl enable --now libvirt-guests.service || true
+systemctl enable --now libvirtd-admin.socket || true
+systemctl enable --now virtlockd-admin.socket || true
+systemctl enable --now virtlogd-admin.socket || true
+systemctl enable --now spice-vdagentd.service || true
+systemctl enable --now spice-vdagentd.socket || true
+systemctl enable --now spice-webdavd.service || true
+systemctl enable --now lm-sensors || true
+systemctl enable --now lxcfs || true
+systemctl enable --now lxc-net || true
+systemctl enable --now lxc || true
+systemctl enable --now mlocate.timer || true
+systemctl enable --now mlocate.service || true
+systemctl enable --now neo4j || true
+systemctl enable --now nfs-client.target || true
+systemctl enable --now nfs-kernel-server || true
+systemctl enable --now nfs-server || true
+systemctl enable --now portmap || true
+systemctl enable --now rpcbind || true
+systemctl enable --now rpcbind.socket || true
+systemctl enable --now ntp || true
+systemctl enable --now o2cb || true
+systemctl enable --now ocfs2 || true
+systemctl enable --now openvpn || true
+systemctl enable --now rpcbind || true
+systemctl enable --now rpcbind.socket || true
+systemctl enable --now rsync || true
+systemctl enable --now setserial || true
+systemctl enable --now smartmontools || true
+systemctl enable --now snapper-boot.timer || true
+systemctl enable --now snapper-boot.service || true
+systemctl enable --now snapper-cleanup.timer || true
+systemctl enable --now snapper-cleanup.service || true
+systemctl enable --now snapperd || true
+systemctl enable --now snapper-timeline.timer || true
+systemctl enable --now snapper-timeline.service || true
+systemctl enable --now ssh || true
+systemctl enable --now sysstat || true
 systemctl enable vboxweb || true
 systemctl enable virtualbox || true
-systemctl enable virtualbox-guest-utils || true
-systemctl start virtualbox-guest-utils || true
-systemctl enable vgauth || true
-systemctl start vgauth || true
-systemctl enable open-vm-tools || true
-systemctl start open-vm-tools || true
+systemctl enable --now virtualbox-guest-utils || true
+systemctl enable --now vgauth || true
+systemctl enable --now open-vm-tools || true
 systemctl enable zfs-fuse || true
-systemctl enable podman || true
-systemctl start podman || true
-systemctl enable podman-auto-update || true
-systemctl start podman-auto-update || true
-systemctl enable podman.socket || true
-systemctl start podman.socket || true
+systemctl enable --now podman || true
+systemctl enable --now podman-auto-update || true
+systemctl enable --now podman.socket || true
+systemctl enable --now nmbd || true
+systemctl enable --now smbd || true

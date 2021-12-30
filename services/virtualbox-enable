@@ -11,5 +11,4 @@ fi
 
 systemctl enable vboxweb || true
 systemctl enable virtualbox || true
-systemctl enable virtualbox-guest-utils || true
-systemctl start virtualbox-guest-utils || true
+systemctl enable --now virtualbox-guest-utils || true

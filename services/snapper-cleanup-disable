@@ -9,7 +9,5 @@ if [[ "$EUID" -ne "0" ]]; then
         exit 1
 fi
 
-systemctl disable snapper-cleanup.timer || true
-systemctl stop snapper-cleanup.timer || true
-systemctl disable snapper-cleanup.service || true
-systemctl stop snapper-cleanup.service || true
+systemctl disable --now snapper-cleanup.timer || true
+systemctl disable --now snapper-cleanup.service || true

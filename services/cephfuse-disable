@@ -9,5 +9,4 @@ if [[ "$EUID" -ne "0" ]]; then
         exit 1
 fi
 
-systemctl disable ceph-fuse.target || true
-systemctl stop ceph-fuse.target || true
+systemctl disable --now ceph-fuse.target || true

@@ -9,7 +9,5 @@ if [[ "$EUID" -ne "0" ]]; then
         exit 1
 fi
 
-systemctl disable bluetooth || true
-systemctl stop bluetooth || true
-systemctl disable blueman-mechanism || true
-systemctl stop blueman-mechanism || true
+systemctl disable --now bluetooth || true
+systemctl disable --now blueman-mechanism || true

@@ -9,7 +9,5 @@ if [[ "$EUID" -ne "0" ]]; then
         exit 1
 fi
 
-systemctl enable snapper-boot.timer || true
-systemctl start snapper-boot.timer || true
-systemctl enable snapper-boot.service || true
-systemctl start snapper-boot.service || true
+systemctl enable --now snapper-boot.timer || true
+systemctl enable --now snapper-boot.service || true

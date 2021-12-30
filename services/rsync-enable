@@ -9,5 +9,4 @@ if [[ "$EUID" -ne "0" ]]; then
         exit 1
 fi
 
-systemctl enable rsync || true
-systemctl start rsync || true
+systemctl enable --now rsync || true

@@ -9,5 +9,4 @@ if [[ "$EUID" -ne "0" ]]; then
         exit 1
 fi
 
-systemctl disable spice-webdavd.service || true
-systemctl stop spice-webdavd.service || true
+systemctl disable --now spice-webdavd.service || true

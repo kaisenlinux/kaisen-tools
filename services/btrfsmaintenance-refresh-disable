@@ -9,7 +9,5 @@ if [[ "$EUID" -ne "0" ]]; then
         exit 1
 fi
 
-systemctl disable btrfsmaintenance-refresh.path || true
-systemctl stop btrfsmaintenance-refresh.path || true
-systemctl disable btrfsmaintenance-refresh.service || true
-systemctl stop btrfsmaintenance-refresh.service || true
+systemctl disable --now btrfsmaintenance-refresh.path || true
+systemctl disable --now btrfsmaintenance-refresh.service || true

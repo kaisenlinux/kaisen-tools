@@ -9,7 +9,5 @@ if [[ "$EUID" -ne "0" ]]; then
         exit 1
 fi
 
-systemctl disable btrfs-trim.timer || true
-systemctl stop btrfs-trim.timer || true
-systemctl disable btrfs-trim.service || true
-systemctl stop btrfs-trim.service || true
+systemctl disable --now btrfs-trim.timer || true
+systemctl disable --now btrfs-trim.service || true

@@ -64,6 +64,7 @@ Recommends: cryptsetup,
 		gvfs-fuse,
 		gvfs,
 	        ntfs-3g,
+	        wimtools,
 Description: Adding a lot filesystems tools for improving systems support on Kaisen Linux
 
 #Firmwares metapackage
@@ -118,6 +119,7 @@ Recommends: progress,
 	    less,
 	    mlocate,
 	    dirmngr,
+	    gpa,
 	    gpg,
 	    gnupg2,
 	    curl,
@@ -145,7 +147,6 @@ Recommends: progress,
             qtop,
             lsof,
             rdfind,
-            fdupes,
 	    lzop,
             p7zip-full,
             pigz,
@@ -162,6 +163,9 @@ Recommends: progress,
 	    keepassxc,
 	    apg,
 	    pwgen,
+	    cpio,
+	    isomaster,
+	    fred,
 Description: Meta package for miscellaneous useful software (lsof, htop, git, gpg-agent, codium, vim, tree, less...)
 
 #Devops et cloud tools
@@ -236,6 +240,7 @@ Recommends: 2ping,
 	    	wakeonlan,
 	    	wondershaper,
 		ifenslave,
+	        bridge-utils,
 Description: All uncategorized network tools for Kaisen Linux
 
 Package: kaisen-ethernet-tools
@@ -420,6 +425,7 @@ Recommends: virt-viewer,
             remmina-plugin-kwallet,
             remmina-plugin-spice,
             remmina-plugin-www,
+	    smbclient,
 Description: All remote administration tools for Kaisen Linux
 
 Package: kaisen-backup-tools
@@ -446,6 +452,10 @@ Recommends: dirvish,
             duply,
 	    	grsync,
 		zbackup,
+	    rdiff,
+	    rdiff-backup,
+	    rdiff-backup-fs,
+	    borgbackup,
 Description: All backup tools for Kaisen Linux
 
 Package: kaisen-ftp-clients
@@ -546,13 +556,16 @@ Recommends: kaisen-cloning,
 	    	kaisen-temperature-analysis,
 	    	kaisen-usb-boot,
 	    	kaisen-virus-analysis,
+		kaisen-duplicates-files,
 Description: All techicians tools (Data recovery, disks analysis, password tools...) for Kaisen Linux
 
 Package: kaisen-cloning
 Architecture: all
 Recommends: clonezilla,
             dcfldd,
+	    dc3dd,
             fsarchiver,
+	    qt-fsarchiver,
             guymager,
             partclone,
             partimage,
@@ -607,12 +620,16 @@ Recommends: e2fsprogs,
             di,
 	    	util-linux,
 	    	util-linux-locales,
+	    iotop,
+	    nvme-cli,
+	    wxfixboot,
 Suggests: kaisen-temperature-analysis
 Description: All Kaisen Linux disks analysis tools
 
 Package: kaisen-hardware
 Architecture: all
-Recommends: cpulimit,
+Recommends: kaisen-winkey-recovery,
+	    cpulimit,
             discover,
             discover-data,
             dmidecode,
@@ -630,15 +647,19 @@ Recommends: cpulimit,
             memtester,
             gfio,
             flashrom,
-	    	inxi,
+	    inxi,
 	    cpu-x,
 	    sysstat,
+	    hwdata,
+	    gtkstresstesting,
+	    stressapptest,
 Suggests: kaisen-temperature-analysis
 Description: All Kaisen Linux hardware tools
 
 Package: kaisen-partitioning-erase
 Architecture: all
 Recommends: dcfldd,
+	    dc3dd,
             fatresize,
             fdisk,
             gdisk,
@@ -682,6 +703,7 @@ Package: kaisen-usb-boot
 Architecture: all
 Recommends: balena-etcher-electron,
             dcfldd,
+	    dc3dd,
 Suggests: woeusb
 Description: All Kaisen Linux usb boot tools
 
@@ -709,6 +731,13 @@ Recommends: hddtemp,
 	    	psensor,
 	    	psensor-common,
 Description: All Kaisen Linux temperature/voltage analysis tools
+
+Package: kaisen-duplicates-files
+Architecture: all
+Recommends: czkawka,
+            dupeguru,
+            fdupes,
+Description: All Kaisen Linux tools for duplicate file analysis
 
 Package: kaisen-services-management
 Architecture: all
