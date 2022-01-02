@@ -1,3 +1,9 @@
+kaisen-tools (2.0+kaisen6) kaisen-packages; urgency=medium
+
+  * Add wipefreespace software in the kaisen-partitioning-erase metapackage
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Sun, 02 Jan 2021 15:13:26 +0100
+
 kaisen-tools (2.0+kaisen5) kaisen-packages; urgency=medium
 
   * Add kaisen-virtualization-tools maintainer script to

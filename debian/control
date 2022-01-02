@@ -671,6 +671,7 @@ Recommends: dcfldd,
             zerofree,
             bleachbit,
             scrub,
+	    wipefreespace,
 Description: All Kaisen Linux partitioning/erasing tools
 
 Package: kaisen-password-tools
