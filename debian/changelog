@@ -1,8 +1,14 @@
+kaisen-tools (2.0+kaisen7) kaisen-packages; urgency=medium
+
+  * Add whdd tool
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Fri, 07 Jan 2022 04:07:43 +0100
+
 kaisen-tools (2.0+kaisen6) kaisen-packages; urgency=medium
 
   * Add wipefreespace software in the kaisen-partitioning-erase metapackage
 
- -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Sun, 02 Jan 2021 15:13:26 +0100
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Sun, 02 Jan 2022 15:13:26 +0100
 
 kaisen-tools (2.0+kaisen5) kaisen-packages; urgency=medium
 

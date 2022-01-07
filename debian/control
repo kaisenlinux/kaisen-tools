@@ -623,6 +623,7 @@ Recommends: e2fsprogs,
 	    iotop,
 	    nvme-cli,
 	    wxfixboot,
+	    whdd,
 Suggests: kaisen-temperature-analysis
 Description: All Kaisen Linux disks analysis tools
 
