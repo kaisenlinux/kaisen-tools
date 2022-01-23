@@ -1,3 +1,9 @@
+kaisen-tools (2.0+kaisen8) kaisen-packages; urgency=medium
+
+  * Remove kaisen-virtualization-tools maintainer scripts
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Sun, 23 Jan 2022 15:18:12 +0100
+
 kaisen-tools (2.0+kaisen7) kaisen-packages; urgency=medium
 
   * Add whdd tool
