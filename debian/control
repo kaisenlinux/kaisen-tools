@@ -199,6 +199,13 @@ Recommends: docker,
 		eksctl,
 		trivy,
 		kustomize,
+		kind,
+		krew,
+		kubectx,
+		kyverno,
+		popeye,
+		tfsec,
+		vault,
 Description: All DevOps and Cloud tools for Kaisen Linux
 
 #BTRFS snapshots section
