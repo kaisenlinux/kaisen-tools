@@ -1,3 +1,11 @@
+kaisen-tools (2.0+kaisen11) kaisen-packages; urgency=medium
+
+  * Move iozone3 in kaisen-disks-analysis
+  * Move dstat in kaisen-network-monitoring, kaisen-hardware, kaisen-disks-analysis
+  * Move rdfind in kaisen-duplicates-files
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Sat, 19 Feb 2022 02:02:08 +0100
+
 kaisen-tools (2.0+kaisen10) kaisen-packages; urgency=medium
 
   * Add kind, krew, kubectx, kyverno, popeye, tfsec and vault tools in sysops

@@ -139,14 +139,12 @@ Recommends: progress,
 	    codium,
             cups,
             hexedit,
-	    dstat,
             file,
             memstat,
             psmisc,
 	    htop,
             qtop,
             lsof,
-            rdfind,
 	    lzop,
             p7zip-full,
             pigz,
@@ -313,6 +311,7 @@ Recommends: cbm,
 	    	netperfmeter,
 	    	sockstat,
 	    	tcpstat,
+		dstat,
 Description: All network monitoring tools for Kaisen Linux
 
 Package: kaisen-pcap-tools
@@ -628,9 +627,11 @@ Recommends: e2fsprogs,
 	    	util-linux,
 	    	util-linux-locales,
 	    iotop,
+	    iozone3,
 	    nvme-cli,
 	    wxfixboot,
 	    whdd,
+	    dstat,
 Suggests: kaisen-temperature-analysis
 Description: All Kaisen Linux disks analysis tools
 
@@ -644,7 +645,6 @@ Recommends: kaisen-winkey-recovery,
             fio,
             hardinfo,
             hwinfo,
-            iozone3,
             lshw,
             stress,
             stress-ng,
@@ -661,6 +661,7 @@ Recommends: kaisen-winkey-recovery,
 	    hwdata,
 	    gtkstresstesting,
 	    stressapptest,
+	    dstat,
 Suggests: kaisen-temperature-analysis
 Description: All Kaisen Linux hardware tools
 
@@ -746,6 +747,7 @@ Architecture: all
 Recommends: czkawka,
             dupeguru,
             fdupes,
+	    rdfind,
 Description: All Kaisen Linux tools for duplicate file analysis
 
 Package: kaisen-services-management
