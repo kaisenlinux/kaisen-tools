@@ -1,3 +1,9 @@
+kaisen-tools (2.0+kaisen12) kaisen-packages; urgency=medium
+
+  * Remove qtop, memstat and irqbalance tools
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Tue, 22 Feb 2022 20:20:09 +0100
+
 kaisen-tools (2.0+kaisen11) kaisen-packages; urgency=medium
 
   * Move iozone3 in kaisen-disks-analysis

@@ -133,17 +133,14 @@ Recommends: progress,
 	    strace,
 	    yamllint,
 	    ltrace,
-	    irqbalance,
 	    tree,
 	    vim,
 	    codium,
             cups,
             hexedit,
             file,
-            memstat,
             psmisc,
 	    htop,
-            qtop,
             lsof,
 	    lzop,
             p7zip-full,
@@ -164,6 +161,7 @@ Recommends: progress,
 	    cpio,
 	    isomaster,
 	    fred,
+	    cabextract,
 Description: Meta package for miscellaneous useful software (lsof, htop, git, gpg-agent, codium, vim, tree, less...)
 
 #Devops et cloud tools
@@ -410,6 +408,7 @@ Recommends: xca,
 	    	ctop,
 	    	apache2-utils,
 		ntpdate,
+		python3-ldapdomaindump,
 Description: All uncategorized sysadmin tools for Kaisen Linux
 
 Package: kaisen-remote-administration
@@ -474,9 +473,7 @@ Description: All FTP clients for Kaisen Linux
 Package: kaisen-microsoft-tools
 Architecture: all
 Recommends: bloodhound,
-	    	python3-ldapdomaindump,
-	    	cabextract,
-            powershell,
+	    powershell,
 Description: All tools for Microsoft technologies for Kaisen Linux
 
 Package: kaisen-virtualization-tools

@@ -54,7 +54,6 @@ systemctl enable --now gns3-server || true
 systemctl enable --now hddtemp || true
 systemctl unmask hostapd || true
 systemctl enable hostapd || true
-systemctl enable --now irqbalance || true
 systemctl enable --now libvirtd.service || true
 systemctl enable --now virtlockd.socket || true
 systemctl enable --now virtlogd.socket || true

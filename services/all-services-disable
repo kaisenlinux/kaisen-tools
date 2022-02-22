@@ -54,7 +54,6 @@ systemctl disable --now gns3-server || true
 systemctl disable --now hddtemp || true
 systemctl mask hostapd || true
 systemctl disable --now hostapd || true
-systemctl disable --now irqbalance || true
 systemctl disable --now libvirtd.service || true
 systemctl disable --now virtlockd.socket || true
 systemctl disable --now virtlogd.socket || true
