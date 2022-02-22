@@ -1,3 +1,9 @@
+kaisen-tools (2.0+kaisen13) kaisen-packages; urgency=medium
+
+  * Replace mlocate by plocate
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Wed, 23 Feb 2022 00:25:41 +0100
+
 kaisen-tools (2.0+kaisen12) kaisen-packages; urgency=medium
 
   * Remove qtop, memstat and irqbalance tools

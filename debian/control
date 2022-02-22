@@ -117,7 +117,7 @@ Architecture: all
 Recommends: progress,
 	    pv,
 	    less,
-	    mlocate,
+	    plocate,
 	    dirmngr,
 	    gpa,
 	    gpg,
