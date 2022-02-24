@@ -1,3 +1,9 @@
+kaisen-tools (2.0+kaisen14) kaisen-packages; urgency=medium
+
+  * Remove squashfuse, fuseiso and fuse-zip tools
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Thu, 24 Feb 2022 04:54:27 +0100
+
 kaisen-tools (2.0+kaisen13) kaisen-packages; urgency=medium
 
   * Replace mlocate by plocate
