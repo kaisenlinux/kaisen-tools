@@ -1,3 +1,9 @@
+kaisen-tools (2.0+kaisen15) kaisen-packages; urgency=medium
+
+  * Remove cpio tool (installed by debootstrap)
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Thu, 24 Feb 2022 19:58:14 +0100
+
 kaisen-tools (2.0+kaisen14) kaisen-packages; urgency=medium
 
   * Remove squashfuse, fuseiso and fuse-zip tools
