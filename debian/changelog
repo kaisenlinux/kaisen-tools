@@ -1,3 +1,9 @@
+kaisen-tools (2.0+kaisen16) kaisen-packages; urgency=medium
+
+  * Add btop and notwireshark tools
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Sun, 27 Feb 2022 16:18:16 +0100
+
 kaisen-tools (2.0+kaisen15) kaisen-packages; urgency=medium
 
   * Remove cpio tool (installed by debootstrap)

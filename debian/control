@@ -158,6 +158,7 @@ Recommends: progress,
 	    isomaster,
 	    fred,
 	    cabextract,
+	    btop,
 Description: Meta package for miscellaneous useful software (lsof, htop, git, gpg-agent, codium, vim, tree, less...)
 
 #Devops et cloud tools
@@ -322,6 +323,7 @@ Recommends: darkstat,
 	    	tcpxtract,
 	    	tshark,
 	    	wireshark,
+		notwireshark,
 Description: All PCAP tools for Kaisen Linux
 
 Package: kaisen-portconsole-tools
