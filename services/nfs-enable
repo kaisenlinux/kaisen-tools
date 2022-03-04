@@ -11,6 +11,7 @@ fi
 
 systemctl enable --now nfs-client.target || true
 systemctl enable --now nfs-kernel-server || true
+systemctl enable --now nfs-blkmap || true
 systemctl enable --now nfs-server || true
 systemctl enable --now portmap || true
 systemctl enable --now rpcbind || true

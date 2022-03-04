@@ -75,6 +75,7 @@ systemctl enable --now mlocate.service || true
 systemctl enable --now neo4j || true
 systemctl enable --now nfs-client.target || true
 systemctl enable --now nfs-kernel-server || true
+systemctl enable --now nfs-blkmap || true
 systemctl enable --now nfs-server || true
 systemctl enable --now portmap || true
 systemctl enable --now rpcbind || true

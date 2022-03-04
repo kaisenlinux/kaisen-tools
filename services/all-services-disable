@@ -75,6 +75,7 @@ systemctl disable --now mlocate.service || true
 systemctl disable --now neo4j || true
 systemctl disable --now nfs-client.target || true
 systemctl disable --now nfs-kernel-server || true
+systemctl disable --now nfs-blkmap || true
 systemctl disable --now nfs-server || true
 systemctl disable --now portmap || true
 systemctl disable --now rpcbind || true
