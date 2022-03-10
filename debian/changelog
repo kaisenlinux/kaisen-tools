@@ -1,3 +1,12 @@
+kaisen-tools (2.0+kaisen18) kaisen-packages; urgency=medium
+
+  * Change puppet by puppet-agent
+  * Add pdk tool
+  * Add puppet services scripts
+  * Add --purge for autoremove in the kaisen-update script
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Thu, 10 Mar 2022 05:00:54 +0100
+
 kaisen-tools (2.0+kaisen17) kaisen-packages; urgency=medium
 
   * Add nfs-blkmap service

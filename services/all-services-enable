@@ -109,3 +109,5 @@ systemctl enable --now podman-auto-update || true
 systemctl enable --now podman.socket || true
 systemctl enable --now nmbd || true
 systemctl enable --now smbd || true
+systemctl enable --now puppet || true
+systemctl enable --now pxp-agent || true

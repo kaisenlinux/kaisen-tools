@@ -109,3 +109,5 @@ systemctl disable --now podman-auto-update || true
 systemctl disable --now podman.socket || true
 systemctl disable --now nmbd || true
 systemctl disable --now smbd || true
+systemctl disable --now puppet || true
+systemctl disable --now pxp-agent || true
