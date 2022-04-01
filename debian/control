@@ -369,7 +369,8 @@ Description: All network scanners for Kaisen Linux
 Package: kaisen-vpn-tools
 Architecture: all
 Recommends: openvpn,
-	    	wireguard,
+	    wireguard,
+	    openfortivpn,
 Description: All VPN tools for Kaisen Linux
 
 Package: kaisen-wifi-tools
