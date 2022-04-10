@@ -407,6 +407,7 @@ Recommends: xca,
 	    	krb5-locales,
 	    	ctop,
 	    	apache2-utils,
+		ntp,
 		ntpdate,
 		python3-ldapdomaindump,
 Description: All uncategorized sysadmin tools for Kaisen Linux
