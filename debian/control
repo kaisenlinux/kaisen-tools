@@ -164,8 +164,7 @@ Description: Meta package for miscellaneous useful software (lsof, htop, git, gp
 #Devops et cloud tools
 Package: kaisen-sysops-tools
 Architecture: all
-Recommends: docker,
-            docker-compose,
+Recommends: docker-compose,
             docker.io,
                 ansible,
                 lxc,
@@ -175,8 +174,6 @@ Recommends: docker,
             vagrant-lxc,
             vagrant-sshfs,
             jmeter,
-            jmeter-ftp,
-            jmeter-tcp,
             awscli,
                 azure-cli,
             packer,
