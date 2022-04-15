@@ -1,3 +1,9 @@
+kaisen-tools (2.0+kaisen23) kaisen-packages; urgency=medium
+
+  * Add rclone and velero tools
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Fri, 15 Apr 2022 15:06:33 +0100
+
 kaisen-tools (2.0+kaisen22) kaisen-packages; urgency=medium
 
   * Remove docker package

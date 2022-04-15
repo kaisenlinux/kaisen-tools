@@ -197,6 +197,7 @@ Recommends: docker-compose,
 		popeye,
 		tfsec,
 		vault,
+		velero,
 Description: All DevOps and Cloud tools for Kaisen Linux
 
 #BTRFS snapshots section
@@ -459,6 +460,7 @@ Recommends: dirvish,
 	    rdiff-backup,
 	    rdiff-backup-fs,
 	    borgbackup,
+	    rclone,
 Description: All backup tools for Kaisen Linux
 
 Package: kaisen-ftp-clients
