@@ -161,6 +161,7 @@ Recommends: progress,
 	    btop,
 	    qbittorrent,
 	    vlc,
+	    gimp,
 Description: Meta package for miscellaneous useful software (lsof, htop, git, gpg-agent, codium, vim, tree, less...)
 
 #Devops et cloud tools

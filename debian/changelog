@@ -1,3 +1,9 @@
+kaisen-tools (2.0+kaisen25) kaisen-packages; urgency=medium
+
+  * Add gimp tool
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Fri, 22 Apr 2022 18:26:22 +0100
+
 kaisen-tools (2.0+kaisen24) kaisen-packages; urgency=medium
 
   * Add network-manager-openconnect, network-manager-fortisslvpn,
