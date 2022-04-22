@@ -1,3 +1,11 @@
+kaisen-tools (2.0+kaisen24) kaisen-packages; urgency=medium
+
+  * Add network-manager-openconnect, network-manager-fortisslvpn,
+    network-manager-openvpn tools in the kaisen-vpn-tools metapackage
+  * Add qBittorrent and vlc tools in the kaisen-miscellaneous-tools metapackage
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Fri, 22 Apr 2022 16:48:56 +0100
+
 kaisen-tools (2.0+kaisen23) kaisen-packages; urgency=medium
 
   * Add rclone and velero tools

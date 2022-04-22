@@ -159,6 +159,8 @@ Recommends: progress,
 	    fred,
 	    cabextract,
 	    btop,
+	    qbittorrent,
+	    vlc,
 Description: Meta package for miscellaneous useful software (lsof, htop, git, gpg-agent, codium, vim, tree, less...)
 
 #Devops et cloud tools
@@ -369,6 +371,12 @@ Architecture: all
 Recommends: openvpn,
 	    wireguard,
 	    openfortivpn,
+	    network-manager-openvpn,
+            network-manager-fortisslvpn,
+	    network-manager-openconnect,
+	    network-manager-openvpn-gnome,
+	    network-manager-fortisslvpn-gnome,
+	    network-manager-openconnect-gnome,
 Description: All VPN tools for Kaisen Linux
 
 Package: kaisen-wifi-tools
