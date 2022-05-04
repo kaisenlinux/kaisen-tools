@@ -1,3 +1,13 @@
+kaisen-tools (2.0+kaisen27) kaisen-packages; urgency=medium
+
+  * Replace ntpdate by ntpsec-ntpdate
+  * Udpate ntp service scripts
+  * Install all services in /usr/share/kaisen-services-management
+  * The update-alternatives instruction in the kaisen-miscellaneous.postinst
+    script are now executed only when the package is installed for the first time
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Wed, 04 May 2022 23:28:57 +0100
+
 kaisen-tools (2.0+kaisen26) kaisen-packages; urgency=medium
 
   * Remove vlc, qbittorrent and gimp tools

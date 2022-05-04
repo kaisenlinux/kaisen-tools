@@ -10,3 +10,10 @@ if [[ "$EUID" -ne "0" ]]; then
 fi
 
 systemctl enable --now ntp || true
+systemctl enable --now ntpd || true
+systemctl enable --now ntpsec || true
+systemctl enable --now ntpsec-rotate-stats || true
+systemctl enable --now ntpsec-rotate-stats.timer || true
+systemctl enable --now ntpsec-systemd-netif || true
+systemctl enable --now ntpsec-systemd-netif.path || true
+systemctl enable --now ntpsec-wait || true

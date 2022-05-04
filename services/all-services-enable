@@ -81,6 +81,13 @@ systemctl enable --now portmap || true
 systemctl enable --now rpcbind || true
 systemctl enable --now rpcbind.socket || true
 systemctl enable --now ntp || true
+systemctl enable --now ntpd || true
+systemctl enable --now ntpsec || true
+systemctl enable --now ntpsec-rotate-stats || true
+systemctl enable --now ntpsec-rotate-stats.timer || true
+systemctl enable --now ntpsec-systemd-netif || true
+systemctl enable --now ntpsec-systemd-netif.path || true
+systemctl enable --now ntpsec-wait || true
 systemctl enable --now o2cb || true
 systemctl enable --now ocfs2 || true
 systemctl enable --now openvpn || true

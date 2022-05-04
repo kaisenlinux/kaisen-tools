@@ -4,6 +4,6 @@ set -e
 
 case $1 in
 	remove|autoremove|purge)
-	rm -f /usr/share/applications/{*-disable.desktop,*-enable.desktop}
+	rm -f /usr/share/applications/{kaisen*-disable.desktop,kaisen*-enable.desktop}
 	;;
 esac
