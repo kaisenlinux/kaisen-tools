@@ -333,6 +333,7 @@ Recommends: cu,
 	    	screen,
 	    	setserial,
 	    	statserial,
+		gtkterm,
 Description: All port console tools for Kaisen Linux
 
 Package: kaisen-network-scanners
@@ -383,6 +384,7 @@ Recommends: aircrack-ng,
 	    	hostapd,
 	    	iw,
 	    	rfkill,
+		linssid,
 Description: All Wi-Fi tools for Kaisen Linux
 
 #Sysadmin tools section
