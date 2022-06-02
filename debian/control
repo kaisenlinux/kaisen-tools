@@ -198,6 +198,7 @@ Recommends: docker-compose,
 		tfsec,
 		vault,
 		velero,
+		terragrunt,
 Description: All DevOps and Cloud tools for Kaisen Linux
 
 #BTRFS snapshots section
