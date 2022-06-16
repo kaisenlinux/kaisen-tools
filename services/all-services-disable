@@ -118,3 +118,4 @@ systemctl disable --now nmbd || true
 systemctl disable --now smbd || true
 systemctl disable --now puppet || true
 systemctl disable --now pxp-agent || true
+systemctl disable --now vault || true
