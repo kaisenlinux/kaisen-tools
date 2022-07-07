@@ -1,3 +1,9 @@
+kaisen-tools (2.1+kaisen2) kaisen-packages; urgency=medium
+
+  * Add openstack-client and sshs tools
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Tue, 07 Jul 2022 11:59:49 +0100
+
 kaisen-tools (2.1+kaisen1) kaisen-packages; urgency=medium
 
   * Add vault services scripts

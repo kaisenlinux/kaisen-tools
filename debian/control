@@ -199,6 +199,7 @@ Recommends: docker-compose,
 		vault,
 		velero,
 		terragrunt,
+		python3-openstackclient,
 Description: All DevOps and Cloud tools for Kaisen Linux
 
 #BTRFS snapshots section
@@ -439,6 +440,7 @@ Recommends: virt-viewer,
 	    smbclient,
 		ssh-askpass,
                 sshpass,
+		sshs,
 Description: All remote administration tools for Kaisen Linux
 
 Package: kaisen-backup-tools
