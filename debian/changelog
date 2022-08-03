@@ -1,3 +1,9 @@
+kaisen-tools (2.1+kaisen3) kaisen-packages; urgency=medium
+
+  * Add iperf3 service scripts
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Wed, 03 Aug 2022 15:25:18 +0100
+
 kaisen-tools (2.1+kaisen2) kaisen-packages; urgency=medium
 
   * Add openstack-client and sshs tools
