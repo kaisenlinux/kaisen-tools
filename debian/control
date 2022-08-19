@@ -12,6 +12,7 @@ Vcs-Browser: https://gitlab.com/kaisenlinux/packages/kaisen-tools
 Package: kaisen-filesystems
 Architecture: all
 Recommends: cryptsetup,
+		cryptsetup-initramfs,
 		dmraid,
                 dmsetup,
 		mdadm,
