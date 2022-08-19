@@ -1,3 +1,9 @@
+kaisen-tools (2.1+kaisen4) kaisen-packages; urgency=medium
+
+  * Remove the qemu package in the kaisen-virtualization-tools metapackage
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Fri, 19 Aug 2022 03:00:33 +0100
+
 kaisen-tools (2.1+kaisen3) kaisen-packages; urgency=medium
 
   * Add iperf3 service scripts

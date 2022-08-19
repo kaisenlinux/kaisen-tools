@@ -1,7 +1,0 @@
-#!/bin/bash
-
-set -e
-
-if [ -z $2 ]; then
-	update-alternatives --install /usr/bin/editor editor /usr/bin/vim.basic 500 2> /dev/null || true
-fi
