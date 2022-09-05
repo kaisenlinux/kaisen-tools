@@ -1,3 +1,10 @@
+kaisen-tools (2.1+kaisen6) kaisen-packages; urgency=medium
+
+  * Add NVIDIA drivers in the kaisen-firmwares metapackage
+  * Replace firmware-* packages by home linux-firmware-* packages
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Mon, 05 Sep 2022 05:41:44 +0100
+
 kaisen-tools (2.1+kaisen5) kaisen-packages; urgency=medium
 
   * Add the cryptsetup-initramfs package to fix not functional encrypted persistence
