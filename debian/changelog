@@ -1,3 +1,9 @@
+kaisen-tools (2.1+kaisen7) kaisen-packages; urgency=medium
+
+  * Add new linux-firmware packages
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Mon, 05 Sep 2022 18:36:34 +0100
+
 kaisen-tools (2.1+kaisen6) kaisen-packages; urgency=medium
 
   * Add NVIDIA drivers in the kaisen-firmwares metapackage
