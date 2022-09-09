@@ -5,10 +5,10 @@ set -e
 RED='\e[1;31m'
 
 if [[ "$EUID" -ne "0" ]]; then
-        echo -e $RED "Run this script as root or with sudo command."
+        echo -e $RED "Run this script as root or with the sudo command to continue."
         exit 1
 fi
 
 export DEBIAN_FRONTEND=noninteractive
 
-apt update && apt -y --fix-missing full-upgrade || true && apt -y --fix-broken install && apt -y --fix-missing full-upgrade || true && apt -y autoremove --purge
+apt update && apt full-upgrade -y && apt autoremove --purge -y && dpkg -l | grep ^rc | awk '{ print $2 }' | xargs apt autoremove --purge -y

@@ -1,3 +1,13 @@
+kaisen-tools (2.1+kaisen9) kaisen-packages; urgency=medium
+
+  * Typo in services scripts
+  * Many improvements for the kaisen-update script:
+    - Deletion of the second upgrade instruction
+    - Adding package removal in rc
+    - Few typo
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Fri, 09 Sep 2022 19:41:31 +0100
+
 kaisen-tools (2.1+kaisen8) kaisen-packages; urgency=medium
 
   * Replace ntpsec by chrony as NTP client/server
