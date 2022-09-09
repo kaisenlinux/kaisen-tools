@@ -5,7 +5,7 @@ set -e
 RED='\e[1;31m'
 
 if [[ "$EUID" -ne "0" ]]; then
-        echo -e $RED "Run this script as root or with sudo command."
+        echo -e $RED "Run this script as root or with the sudo command."
         exit 1
 fi
 
@@ -80,14 +80,7 @@ systemctl disable --now nfs-server || true
 systemctl disable --now portmap || true
 systemctl disable --now rpcbind || true
 systemctl disable --now rpcbind.socket || true
-systemctl disable --now ntp || true
-systemctl disable --now ntpd || true
-systemctl disable --now ntpsec || true
-systemctl disable --now ntpsec-rotate-stats || true
-systemctl disable --now ntpsec-rotate-stats.timer || true
-systemctl disable --now ntpsec-systemd-netif || true
-systemctl disable --now ntpsec-systemd-netif.path || true
-systemctl disable --now ntpsec-wait || true
+systemctl disable --now chrony || true
 systemctl disable --now o2cb || true
 systemctl disable --now ocfs2 || true
 systemctl disable --now openvpn || true

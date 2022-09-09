@@ -430,15 +430,14 @@ Description: Collection of sysadmin tools for Kaisen Linux
 Package: kaisen-sysadmin-uncategorized
 Architecture: all
 Recommends: xca,
-	    	krb5-config,
-	    	krb5-pkinit,
-	    	krb5-user,
-	    	krb5-locales,
-	    	ctop,
-	    	apache2-utils,
-		ntpsec,
-		ntpsec-ntpdate,
-		python3-ldapdomaindump,
+	    krb5-config,
+	    krb5-pkinit,
+	    krb5-user,
+	    krb5-locales,
+	    ctop,
+	    apache2-utils,
+	    chrony,
+	    python3-ldapdomaindump,
 Description: All uncategorized sysadmin tools for Kaisen Linux
 
 Package: kaisen-remote-administration

@@ -5,15 +5,8 @@ set -e
 RED='\e[1;31m'
 
 if [[ "$EUID" -ne "0" ]]; then
-        echo -e $RED "Run this script as root or with sudo command."
+        echo -e $RED "Run this script as root or with the sudo command."
         exit 1
 fi
 
-systemctl enable --now ntp || true
-systemctl enable --now ntpd || true
-systemctl enable --now ntpsec || true
-systemctl enable --now ntpsec-rotate-stats || true
-systemctl enable --now ntpsec-rotate-stats.timer || true
-systemctl enable --now ntpsec-systemd-netif || true
-systemctl enable --now ntpsec-systemd-netif.path || true
-systemctl enable --now ntpsec-wait || true
+systemctl enable --now chrony || true

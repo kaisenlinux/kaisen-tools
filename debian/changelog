@@ -1,3 +1,11 @@
+kaisen-tools (2.1+kaisen8) kaisen-packages; urgency=medium
+
+  * Replace ntpsec by chrony as NTP client/server
+  * Replace ntp by chrony in services scripts
+  * Fix typo in echo -e in services scripts
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Fri, 09 Sep 2022 12:44:57 +0100
+
 kaisen-tools (2.1+kaisen7) kaisen-packages; urgency=medium
 
   * Add new linux-firmware packages
