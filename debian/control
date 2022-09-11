@@ -230,6 +230,7 @@ Recommends: apt-btrfs-snapshot,
                 timeshift,
                 btrbk,
             snapper,
+		grub-btrfs,
 Description: All tools to take snapshots with BTRFS
 
 #Network tools section
