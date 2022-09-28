@@ -180,6 +180,7 @@ Recommends: progress,
 	    fred,
 	    cabextract,
 	    btop,
+	    jq,
 Description: Meta package for miscellaneous useful software (lsof, htop, git, gpg-agent, codium, vim, tree, less...)
 
 #Devops et cloud tools
@@ -201,6 +202,7 @@ Recommends: docker-compose,
                 puppet-agent,
 		pdk,
                 terraform,
+		terraform-docs,
                 s3fs,
                 k6,
                 k9s,
@@ -227,10 +229,10 @@ Description: All DevOps and Cloud tools for Kaisen Linux
 Package: kaisen-btrfs-snapshots
 Architecture: all
 Recommends: apt-btrfs-snapshot,
-                timeshift,
-                btrbk,
+            timeshift,
+            btrbk,
             snapper,
-		grub-btrfs,
+	    grub-btrfs,
 Description: All tools to take snapshots with BTRFS
 
 #Network tools section
