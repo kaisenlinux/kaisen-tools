@@ -1,3 +1,11 @@
+kaisen-tools (2.1+kaisen12) kaisen-packages; urgency=medium
+
+  * Remove the remmina-plugin-spice package (the package is not installable)
+  * Add the yq, lazygit and lazydocker tools
+  * Move ctop in the Docker section
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Fri, 30 Sep 2022 17:16:02 +0100
+
 kaisen-tools (2.1+kaisen11) kaisen-packages; urgency=medium
 
   * Adding the terraform-docs and the jq tool
