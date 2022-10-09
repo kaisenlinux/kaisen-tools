@@ -1,3 +1,10 @@
+kaisen-tools (2.1+kaisen14) kaisen-packages; urgency=medium
+
+  * Add the ansible-lint package
+  * Remove the deletion of the ^rc packages in the kaisen-update script
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Thu, 06 Oct 2022 06:24:46 +0100
+
 kaisen-tools (2.1+kaisen13) kaisen-packages; urgency=medium
 
   * Add the tflint package

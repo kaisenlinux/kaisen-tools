@@ -11,4 +11,4 @@ fi
 
 export DEBIAN_FRONTEND=noninteractive
 
-apt update && apt full-upgrade -y && apt autoremove --purge -y && dpkg -l | grep ^rc | awk '{ print $2 }' | xargs apt autoremove --purge -y
+apt update && apt full-upgrade -y && apt autoremove --purge -y

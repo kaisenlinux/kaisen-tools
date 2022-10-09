@@ -191,6 +191,7 @@ Architecture: all
 Recommends: docker-compose,
             docker.io,
                 ansible,
+		ansible-lint,
                 lxc,
                 lxctl,
                 kubernetes-client,
