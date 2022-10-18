@@ -234,7 +234,7 @@ Description: All DevOps and Cloud tools for Kaisen Linux
 #BTRFS snapshots section
 Package: kaisen-btrfs-snapshots
 Architecture: all
-Recommends: apt-btrfs-snapshot,
+Recommends: kaisen-timeshift-apt,
             timeshift,
             btrbk,
             snapper,

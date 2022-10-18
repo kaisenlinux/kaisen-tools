@@ -1,3 +1,9 @@
+kaisen-tools (2.1+kaisen15) kaisen-packages; urgency=medium
+
+  * Replace the apt-btrfs-snapshot package by the kaisen-timeshift-apt package
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Tue, 18 Oct 2022 01:17:12 +0100
+
 kaisen-tools (2.1+kaisen14) kaisen-packages; urgency=medium
 
   * Add the ansible-lint package
