@@ -9,5 +9,4 @@ if [[ "$EUID" -ne "0" ]]; then
         exit 1
 fi
 
-systemctl disable --now puppet || true
-systemctl disable --now pxp-agent || true
+systemctl disable --now puppet-agent || true

@@ -9,4 +9,8 @@ if [[ "$EUID" -ne "0" ]]; then
         exit 1
 fi
 
+systemctl enable --now sysstat-collect.service || true
+systemctl enable --now sysstat-collect.timer || true
 systemctl enable --now sysstat || true
+systemctl enable --now sysstat-summary.service || true
+systemctl enable --now sysstat-summary.timer || true

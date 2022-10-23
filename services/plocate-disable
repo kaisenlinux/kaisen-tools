@@ -9,6 +9,5 @@ if [[ "$EUID" -ne "0" ]]; then
         exit 1
 fi
 
-systemctl enable vboxweb || true
-systemctl enable virtualbox || true
-systemctl enable --now virtualbox-guest-utils || true
+systemctl disable --now plocate-updatedb.service || true
+systemctl disable --now plocate-updatedb.timer || true

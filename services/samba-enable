@@ -10,4 +10,5 @@ if [[ "$EUID" -ne "0" ]]; then
 fi
 
 systemctl enable --now nmbd || true
+systemctl enable --now samba-ad-dc.service || true
 systemctl enable --now smbd || true

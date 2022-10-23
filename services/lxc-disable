@@ -9,6 +9,6 @@ if [[ "$EUID" -ne "0" ]]; then
         exit 1
 fi
 
-systemctl disable --now lxcfs || true
+systemctl disable --now lxc-monitord.service || true
 systemctl disable --now lxc-net || true
 systemctl disable --now lxc || true

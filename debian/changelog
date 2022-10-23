@@ -1,3 +1,38 @@
+kaisen-tools (2.1+kaisen16) kaisen-packages; urgency=medium
+
+  * Deletion of the following scripts:
+    - virtualbox-disable
+    - virtualbox-enable
+    - vmware-disable
+    - vmware-enable
+    - spice-vdagent-disable
+    - spice-vdagent-disable
+    - spice-webdavd-disable
+    - spice-webdavd-enable
+    - mlocate-disable
+    - mlocate-enable
+  * Deletion of the following services in all-*services:
+    - spice-vdagentd.service
+    - spice-vdagentd.socket
+    - spice-webdavd.service
+    - vboxweb
+    - virtualbox
+    - virtualbox-guest-utils
+    - vgauth
+    - open-vm-tools
+    - mlocate
+  * Rename puppet in puppet-agent
+  * Replace mlocate by plocate
+  * Sort and typo
+  * Remove the hostapd tool and service scripts
+  * Add new sysstat unit files
+  * Add new nfs unit files
+  * No mask ans unmask services
+  * Add lxc-monitord.service
+  * Add fio.service
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Sun, 23 Oct 2022 18:35:19 +0100
+
 kaisen-tools (2.1+kaisen15) kaisen-packages; urgency=medium
 
   * Replace the apt-btrfs-snapshot package by the kaisen-timeshift-apt package

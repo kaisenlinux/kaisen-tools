@@ -10,4 +10,5 @@ if [[ "$EUID" -ne "0" ]]; then
 fi
 
 systemctl disable --now nmbd || true
+systemctl disable --now samba-ad-dc.service || true
 systemctl disable --now smbd || true

@@ -18,3 +18,7 @@ systemctl enable --now libvirt-guests.service || true
 systemctl enable --now libvirtd-admin.socket || true
 systemctl enable --now virtlockd-admin.socket || true
 systemctl enable --now virtlogd-admin.socket || true
+systemctl enable --now libvirtd-tcp.socket || true
+systemctl enable --now libvirtd-tls.socket || true
+systemctl enable --now virtlockd.service || true
+systemctl enable --now virtlogd.service || true

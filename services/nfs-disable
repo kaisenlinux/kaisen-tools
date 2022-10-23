@@ -9,10 +9,21 @@ if [[ "$EUID" -ne "0" ]]; then
         exit 1
 fi
 
+systemctl disable --now nfs-blkmap.service || true
 systemctl disable --now nfs-client.target || true
+systemctl disable --now nfs-common.service || true
+systemctl disable --now nfsdcld.service || true
+systemctl disable --now nfs-idmapd.service || true
 systemctl disable --now nfs-kernel-server || true
-systemctl disable --now nfs-blkmap || true
-systemctl disable --now nfs-server || true
+systemctl disable --now nfs-mountd.service || true
+systemctl disable --now nfs-server.service || true
+systemctl disable --now nfs-utils.service || true
 systemctl disable --now portmap || true
-systemctl disable --now rpcbind || true
+systemctl disable --now rpcbind.service || true
 systemctl disable --now rpcbind.socket || true
+systemctl disable --now rpcbind.target || true
+systemctl disable --now rpc-gssd.service || true
+systemctl disable --now rpc_pipefs.target || true
+systemctl disable --now rpc-statd-notify.service || true
+systemctl disable --now rpc-statd.service || true
+systemctl disable --now rpc-svcgssd.service || true

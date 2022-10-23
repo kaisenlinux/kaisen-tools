@@ -9,5 +9,4 @@ if [[ "$EUID" -ne "0" ]]; then
         exit 1
 fi
 
-systemctl enable --now open-vm-tools || true
-systemctl enable --now vgauth || true
+systemctl enable --now lxcfs || true

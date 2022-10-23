@@ -9,5 +9,5 @@ if [[ "$EUID" -ne "0" ]]; then
         exit 1
 fi
 
-systemctl mask hostapd || true
-systemctl disable --now hostapd || true
+systemctl enable --now plocate-updatedb.service || true
+systemctl enable --now plocate-updatedb.timer || true

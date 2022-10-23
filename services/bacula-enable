@@ -10,5 +10,5 @@ if [[ "$EUID" -ne "0" ]]; then
 fi
 
 systemctl enable --now bacula-fd || true
-systemctl enable bacula-sd || true
+systemctl enable --now bacula-sd || true
 
