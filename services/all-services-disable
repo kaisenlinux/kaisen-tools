@@ -87,7 +87,7 @@ systemctl disable --now podman-restart.service || true
 systemctl disable --now podman.service || true
 systemctl disable --now podman.socket || true
 systemctl disable --now portmap || true
-systemctl disable --now puppet-agent || true
+systemctl disable --now puppet || true
 systemctl disable --now pxp-agent || true
 systemctl disable --now rpcbind.socket || true
 systemctl disable --now rpcbind.service || true

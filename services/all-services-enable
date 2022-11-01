@@ -87,7 +87,7 @@ systemctl enable --now podman-restart.service || true
 systemctl enable --now podman.service || true
 systemctl enable --now podman.socket || true
 systemctl enable --now portmap || true
-systemctl enable --now puppet-agent || true
+systemctl enable --now puppet || true
 systemctl enable --now pxp-agent || true
 systemctl enable --now rpcbind.socket || true
 systemctl enable --now rpcbind.service || true
