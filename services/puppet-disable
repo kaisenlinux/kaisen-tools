@@ -10,3 +10,4 @@ if [[ "$EUID" -ne "0" ]]; then
 fi
 
 systemctl disable --now puppet-agent || true
+systemctl disable --now pxp-agent || true

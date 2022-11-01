@@ -1,3 +1,10 @@
+kaisen-tools (2.1+kaisen17) kaisen-packages; urgency=medium
+
+  * Readd the pxp-agent service
+  * Force the installation of the vagrant-libvirt package
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Tue, 01 Nov 2022 23:21:19 +0100
+
 kaisen-tools (2.1+kaisen16) kaisen-packages; urgency=medium
 
   * Deletion of the following scripts:
