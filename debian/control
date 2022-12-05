@@ -799,3 +799,9 @@ Architecture: all
 Priority: optional
 Depends: apt
 Description: Automatic Kaisen Linux update
+
+Package: kaisen-exegol
+Architecture: all
+Recommends: exegol,
+	    exegol-docs,
+Description: All Exegol tools embedded in Kaisen Linux
