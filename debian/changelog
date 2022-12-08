@@ -1,3 +1,10 @@
+kaisen-tools (2.2) kaisen-packages; urgency=medium
+
+  * Bump the version to 2.2
+  * No changes needed
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Thu, 08 Dec 2022 18:34:52 +0100
+
 kaisen-tools (2.1+kaisen19) kaisen-packages; urgency=medium
 
   * Add the kaisen-exegol metapackage
