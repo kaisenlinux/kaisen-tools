@@ -1,3 +1,9 @@
+kaisen-tools (2.2+kaisen2) kaisen-packages; urgency=medium
+
+  * Add the kubeshark tool
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Wed, 04 Jan 2023 03:53:26 +0100
+
 kaisen-tools (2.2+kaisen1) kaisen-packages; urgency=medium
 
   * Add the apfsprogs package

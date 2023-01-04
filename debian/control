@@ -230,6 +230,7 @@ Recommends: docker-compose,
 		python3-openstackclient,
 		ctop,
 		lazydocker,
+		kubeshark,
 Description: All DevOps and Cloud tools for Kaisen Linux
 
 #BTRFS snapshots section
