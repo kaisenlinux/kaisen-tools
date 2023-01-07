@@ -1,3 +1,9 @@
+kaisen-tools (2.2+kaisen3) kaisen-packages; urgency=medium
+
+  * Remove the terraform-docs package
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Sat, 07 Jan 2023 05:11:18 +0100
+
 kaisen-tools (2.2+kaisen2) kaisen-packages; urgency=medium
 
   * Add the kubeshark tool
