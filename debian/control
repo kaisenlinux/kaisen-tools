@@ -356,7 +356,6 @@ Recommends: darkstat,
 	    	tcpxtract,
 	    	tshark,
 	    	wireshark,
-		notwireshark,
 Description: All PCAP tools for Kaisen Linux
 
 Package: kaisen-portconsole-tools
