@@ -1,3 +1,12 @@
+kaisen-tools (2.2+kaisen5) kaisen-packages; urgency=medium
+
+  * Add service scripts for lxd and lxd-agent packages
+  * Add the socket unit file for SSH and Avahi
+  * Add new libvirt drivers
+  * Typo
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Wed, 01 Feb 2023 20:37:14 +0100
+
 kaisen-tools (2.2+kaisen4) kaisen-packages; urgency=medium
 
   * Remove the notwireshark package

@@ -9,6 +9,6 @@ if [[ "$EUID" -ne "0" ]]; then
         exit 1
 fi
 
-systemctl disable --now docker || true
 systemctl disable --now docker.socket || true
+systemctl disable --now docker.service || true
 systemctl disable --now containerd || true

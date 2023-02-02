@@ -9,4 +9,5 @@ if [[ "$EUID" -ne "0" ]]; then
         exit 1
 fi
 
-systemctl disable --now ssh || true
+systemctl disable --now ssh.socket || true
+systemctl disable --now ssh.service || true

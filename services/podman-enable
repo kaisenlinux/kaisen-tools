@@ -9,8 +9,8 @@ if [[ "$EUID" -ne "0" ]]; then
         exit 1
 fi
 
-systemctl enable --now podman.service || true
 systemctl enable --now podman.socket || true
+systemctl enable --now podman.service || true
 systemctl enable --now podman-restart.service || true
 systemctl enable --now podman-auto-update.service || true
 systemctl enable --now podman-auto-update.timer || true

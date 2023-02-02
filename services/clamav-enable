@@ -9,6 +9,7 @@ if [[ "$EUID" -ne "0" ]]; then
         exit 1
 fi
 
-systemctl enable --now clamav-daemon || true
+systemctl enable --now clamav-daemon.socket || true
+systemctl enable --now clamav-daemon.service || true
 systemctl enable --now clamav-freshclam || true
 systemctl enable --now clamav-milter || true

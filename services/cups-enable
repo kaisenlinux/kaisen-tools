@@ -9,7 +9,7 @@ if [[ "$EUID" -ne "0" ]]; then
         exit 1
 fi
 
-systemctl enable --now cups || true
-systemctl enable --now cups.path || true
 systemctl enable --now cups.socket || true
+systemctl enable --now cups.path || true
+systemctl enable --now cups.service || true
 systemctl enable --now cups-browsed || true

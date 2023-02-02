@@ -9,6 +9,6 @@ if [[ "$EUID" -ne "0" ]]; then
         exit 1
 fi
 
-systemctl enable --now docker.socket || true
-systemctl enable --now docker.service || true
-systemctl enable --now containerd || true
+systemctl enable --now lxd.socket || true
+systemctl enable --now lxd.service || true
+systemctl enable --now lxd-containers.service || true

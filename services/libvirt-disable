@@ -9,16 +9,16 @@ if [[ "$EUID" -ne "0" ]]; then
         exit 1
 fi
 
-systemctl disable --now libvirtd.service || true
 systemctl disable --now virtlockd.socket || true
 systemctl disable --now virtlogd.socket || true
 systemctl disable --now libvirtd.socket || true
 systemctl disable --now libvirtd-ro.socket || true
-systemctl disable --now libvirt-guests.service || true
 systemctl disable --now libvirtd-admin.socket || true
 systemctl disable --now virtlockd-admin.socket || true
 systemctl disable --now virtlogd-admin.socket || true
 systemctl disable --now libvirtd-tcp.socket || true
 systemctl disable --now libvirtd-tls.socket || true
+systemctl disable --now libvirtd.service || true
+systemctl disable --now libvirt-guests.service || true
 systemctl disable --now virtlockd.service || true
 systemctl disable --now virtlogd.service || true
