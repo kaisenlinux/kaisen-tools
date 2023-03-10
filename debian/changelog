@@ -1,3 +1,9 @@
+kaisen-tools (2.2+kaisen6) kaisen-packages; urgency=medium
+
+  * Rename libvort in libvirt
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Fri, 10 Mar 2023 12:43:18 +0100
+
 kaisen-tools (2.2+kaisen5) kaisen-packages; urgency=medium
 
   * Add service scripts for lxd and lxd-agent packages
