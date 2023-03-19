@@ -1,3 +1,9 @@
+kaisen-tools (2.2+kaisen7) kaisen-packages; urgency=medium
+
+  * Add the simple-scan package
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Sun, 19 Mar 2023 21:05:02 +0100
+
 kaisen-tools (2.2+kaisen6) kaisen-packages; urgency=medium
 
   * Rename libvort in libvirt
