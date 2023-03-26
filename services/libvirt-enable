@@ -11,13 +11,8 @@ fi
 
 systemctl enable --now virtlockd.socket || true
 systemctl enable --now virtlogd.socket || true
-systemctl enable --now libvirtd.socket || true
-systemctl enable --now libvirtd-ro.socket || true
-systemctl enable --now libvirtd-admin.socket || true
 systemctl enable --now virtlockd-admin.socket || true
 systemctl enable --now virtlogd-admin.socket || true
-systemctl enable --now libvirtd-tcp.socket || true
-systemctl enable --now libvirtd-tls.socket || true
 systemctl enable --now libvirtd.service || true
 systemctl enable --now libvirt-guests.service || true
 systemctl enable --now virtlockd.service || true

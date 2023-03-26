@@ -53,12 +53,7 @@ systemctl enable --now gns3-server || true
 systemctl enable --now hddtemp || true
 systemctl enable --now ip6tables || true
 systemctl enable --now iptables || true
-systemctl enable --now libvirtd-admin.socket || true
-systemctl enable --now libvirtd-ro.socket || true
-systemctl enable --now libvirtd.socket || true
 systemctl enable --now libvirtd.service || true
-systemctl enable --now libvirtd-tcp.socket || true
-systemctl enable --now libvirtd-tls.socket || true
 systemctl enable --now libvirt-guests.service || true
 systemctl enable --now lm-sensors || true
 systemctl enable --now lxcfs || true

@@ -1,3 +1,10 @@
+kaisen-tools (2.2+kaisen8) kaisen-packages; urgency=medium
+
+  * Remove libvirt sockets (cause more conflicts when activated at the same time
+    of the daemon)
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Sun, 26 Mar 2023 06:47:34 +0100
+
 kaisen-tools (2.2+kaisen7) kaisen-packages; urgency=medium
 
   * Add the simple-scan package
