@@ -1,3 +1,9 @@
+kaisen-tools (2.2+kaisen9) kaisen-packages; urgency=medium
+
+  * Add the sedutil tool
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Wed, 12 Apr 2023 16:17:18 +0100
+
 kaisen-tools (2.2+kaisen8) kaisen-packages; urgency=medium
 
   * Remove libvirt sockets (cause more conflicts when activated at the same time

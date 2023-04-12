@@ -638,6 +638,7 @@ Recommends: fscrypt,
 	    zulumount-cli,
 	    zulumount-gui,
 	    veracrypt,
+	    sedutil,
 Description: All Kaisen Linux data protection tools
 
 Package: kaisen-data-recovery
