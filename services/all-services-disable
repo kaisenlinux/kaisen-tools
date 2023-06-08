@@ -120,6 +120,8 @@ systemctl disable --now sysstat-collect.timer || true
 systemctl disable --now sysstat || true
 systemctl disable --now sysstat-summary.service || true
 systemctl disable --now sysstat-summary.timer || true
+systemctl disable tftpd-hpa || true
+systemctl stop tftpd-hpa || true
 systemctl disable --now vault || true
 systemctl disable --now virtlockd-admin.socket || true
 systemctl disable --now virtlockd.socket || true

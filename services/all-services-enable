@@ -115,6 +115,8 @@ systemctl enable --now sysstat-collect.timer || true
 systemctl enable --now sysstat || true
 systemctl enable --now sysstat-summary.service || true
 systemctl enable --now sysstat-summary.timer || true
+systemctl enable tftpd-hpa || true
+systemctl start tftpd-hpa || true
 systemctl enable --now vault || true
 systemctl enable --now virtlockd-admin.socket || true
 systemctl enable --now virtlockd.socket || true

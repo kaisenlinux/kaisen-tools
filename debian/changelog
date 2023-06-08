@@ -1,6 +1,7 @@
 kaisen-tools (2.3) kaisen-packages; urgency=medium
 
   * Bump the version to 2.3
+  * Add the tftpd-hpa service
 
  -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Thu, 18 May 2023 17:44:25 +0100
 
