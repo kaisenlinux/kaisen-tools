@@ -277,6 +277,7 @@ Recommends: 2ping,
 	    wondershaper,
 	    ifenslave,
 	    bridge-utils,
+	    tftpd-hpa,
 Description: All uncategorized network tools for Kaisen Linux
 
 Package: kaisen-ethernet-tools
