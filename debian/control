@@ -268,8 +268,7 @@ Description: All network tools (DHCP, DNS analysis, monitoring, TCP analysis...)
 Package: kaisen-network-uncategorized
 Architecture: all
 Recommends: 2ping,
-	    tftp-hpa,
-	    tftpd-hpa,
+	    atftp,
 	    cdpr,
 	    comgt,
 	    socat,
@@ -278,6 +277,7 @@ Recommends: 2ping,
 	    wondershaper,
 	    ifenslave,
 	    bridge-utils,
+	    tftpd-hpa,
 Description: All uncategorized network tools for Kaisen Linux
 
 Package: kaisen-ethernet-tools
