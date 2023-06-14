@@ -1,7 +1,15 @@
+kaisen-tools (2.3+kaisen1) kaisen-packages; urgency=medium
+
+  * Bump the version to ensure udpates
+  * No changes needed
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Wed, 14 Jun 2023 12:49:06 +0100
+
 kaisen-tools (2.3) kaisen-packages; urgency=medium
 
   * Bump the version to 2.3
   * Add the tftpd-hpa service
+  * Replace atftp by tftp-hpa as TFTP client
 
  -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Thu, 18 May 2023 17:44:25 +0100
 
