@@ -242,6 +242,7 @@ Description: All DevOps and Cloud tools for Kaisen Linux
 Package: kaisen-btrfs-snapshots
 Architecture: all
 Recommends: kaisen-timeshift-apt,
+	    kaisen-systemd-subvolume-delete,
 	    timeshift,
 	    btrbk,
 	    snapper,

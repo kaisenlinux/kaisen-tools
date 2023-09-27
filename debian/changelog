@@ -1,3 +1,9 @@
+kaisen-tools (2.3+kaisen2) kaisen-packages; urgency=medium
+
+  * Add the kaisen-systemd-subvolume-delete package
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Wed, 27 Sep 2023 10:33:31 +0100
+
 kaisen-tools (2.3+kaisen1) kaisen-packages; urgency=medium
 
   * Bump the version to ensure udpates
