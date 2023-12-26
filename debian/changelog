@@ -1,3 +1,10 @@
+kaisen-tools (2.3+kaisen4) kaisen-packages; urgency=medium
+
+  * Replace neofetch by hyfetch
+  * Add the glab tool
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Sun, 24 Dec 2023 20:10:28 +0100
+
 kaisen-tools (2.3+kaisen3) kaisen-packages; urgency=medium
 
   * Remove the firmware-microbit-python package

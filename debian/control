@@ -144,7 +144,7 @@ Recommends: progress,
 	    git,
 	    lazygit,
 	    gpg-agent,
-	    neofetch,
+	    hyfetch,
 	    git-repair,
 	    img2pdf,
 	    mc,
@@ -235,6 +235,7 @@ Recommends: docker-compose,
 	    ctop,
 	    lazydocker,
 	    kubeshark,
+	    glab,
 Description: All DevOps and Cloud tools for Kaisen Linux
 
 #BTRFS snapshots section
