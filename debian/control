@@ -236,6 +236,8 @@ Recommends: docker-compose,
 	    lazydocker,
 	    kubeshark,
 	    glab,
+	    tekton-cli,
+	    argo-cd,
 Description: All DevOps and Cloud tools for Kaisen Linux
 
 #BTRFS snapshots section

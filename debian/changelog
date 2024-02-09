@@ -1,3 +1,9 @@
+kaisen-tools (2.3+kaisen5) kaisen-packages; urgency=medium
+
+  * Add tekton-cli and argo-cd (client) tools
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Fri, 09 Feb 2024 17:57:21 +0100
+
 kaisen-tools (2.3+kaisen4) kaisen-packages; urgency=medium
 
   * Replace neofetch by hyfetch
