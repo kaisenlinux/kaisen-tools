@@ -1,3 +1,14 @@
+kaisen-tools (2.3+kaisen6) kaisen-packages; urgency=medium
+
+  * Remove following packages:
+    - gfio
+    - git-repair
+    - isomaster
+    - clamfs
+    - qemu-efi
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Wed, 14 Feb 2024 05:15:43 +0100
+
 kaisen-tools (2.3+kaisen5) kaisen-packages; urgency=medium
 
   * Add tekton-cli and argo-cd (client) tools
