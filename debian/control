@@ -2,8 +2,8 @@ Source: kaisen-tools
 Priority: optional
 Section: kaisen-metapackages
 Maintainer: Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>
-Standards-Version: 4.6.1
-Build-Depends: debhelper
+Standards-Version: 4.7.0
+Build-Depends: debhelper-compat (= 13)
 Homepage: https://kaisenlinux.org
 Vcs-Git: https://gitlab.com/kaisenlinux/packages/kaisen-tools.git
 Vcs-Browser: https://gitlab.com/kaisenlinux/packages/kaisen-tools
@@ -13,7 +13,6 @@ Package: kaisen-filesystems
 Architecture: all
 Recommends: cryptsetup,
 	    cryptsetup-initramfs,
-	    dmraid,
 	    dmsetup,
 	    mdadm,
 	    lvm2,
@@ -791,8 +790,7 @@ Description: All Kaisen Linux virus analysis tools
 
 Package: kaisen-temperature-analysis
 Architecture: all
-Recommends: hddtemp,
-	    xsensors,
+Recommends: xsensors,
 	    lm-sensors,
 	    psensor,
 	    psensor-common,
