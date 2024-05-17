@@ -385,7 +385,6 @@ Recommends: arp-scan,
 	    driftnet,
 	    dsniff,
 	    ettercap-graphical,
-	    hping3,
 	    lft,
 	    masscan,
 	    mitmproxy,
@@ -574,7 +573,6 @@ Description: All DHCP tools for Kaisen Linux
 Package: kaisen-dns-tools
 Architecture: all
 Recommends: dnsenum,
-	    dnstop,
 	    mdns-scan,
 	    whois,
 	    bind9-dnsutils,
@@ -660,7 +658,6 @@ Recommends: ddrescue-gui,
 	    recoverjpeg,
 	    safecopy,
 	    scalpel,
-	    scrounge-ntfs,
 	    hfsprescue,
 Description: All Kaisen Linux data recovery tools
 
@@ -744,7 +741,6 @@ Architecture: all
 Recommends: bruteforce-luks,
 	    chntpw,
 	    cmospwd,
-	    crack,
 	    fcrackzip,
 	    hashcat,
 	    hydra,

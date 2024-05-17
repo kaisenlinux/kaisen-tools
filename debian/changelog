@@ -1,3 +1,14 @@
+kaisen-tools (2.3+kaisen8) kaisen-packages; urgency=medium
+
+  * Remove following packages:
+    - scrounge-ntfs
+    - dnstop
+    - hping3
+    - crack
+  * Remove hddtemp service scripts
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Fri, 17 May 2024 02:11:36 +0200
+
 kaisen-tools (2.3+kaisen7) kaisen-packages; urgency=medium
 
   * Remove the dmraid and hddtemp packages
