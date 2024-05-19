@@ -1,3 +1,9 @@
+kaisen-tools (2.3+kaisen9) kaisen-packages; urgency=medium
+
+  * Add linux-firmware-powervr and linux-firmware-intel-vsc packages
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Sun, 19 May 2024 04:41:19 +0200
+
 kaisen-tools (2.3+kaisen8) kaisen-packages; urgency=medium
 
   * Remove following packages:
