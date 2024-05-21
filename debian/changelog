@@ -1,3 +1,9 @@
+kaisen-tools (2.3+kaisen10) kaisen-packages; urgency=medium
+
+  * Use the keepassxc-full package instead of keepassxc
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Mon, 20 May 2024 14:54:07 +0200
+
 kaisen-tools (2.3+kaisen9) kaisen-packages; urgency=medium
 
   * Add linux-firmware-powervr and linux-firmware-intel-vsc packages
