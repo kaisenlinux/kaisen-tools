@@ -237,6 +237,8 @@ Recommends: docker-compose,
 	    glab,
 	    tekton-cli,
 	    argo-cd,
+	    opentofu,
+	    openbao,
 Description: All DevOps and Cloud tools for Kaisen Linux
 
 #BTRFS snapshots section

@@ -1,3 +1,9 @@
+kaisen-tools (2.3+kaisen11) kaisen-packages; urgency=medium
+
+  * Add opentofu and openbao tools
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Wed, 24 Jul 2024 12:57:42 +0200
+
 kaisen-tools (2.3+kaisen10) kaisen-packages; urgency=medium
 
   * Use the keepassxc-full package instead of keepassxc
