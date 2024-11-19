@@ -2,7 +2,7 @@ kaisen-tools (2.3+kaisen13) kaisen-packages; urgency=medium
 
   * Add openbao service launchers
 
- -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Tue, 19 Nov 2024 07:01:28 +0200
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Tue, 19 Nov 2024 07:44:46 +0200
 
 kaisen-tools (2.3+kaisen12) kaisen-packages; urgency=medium
 

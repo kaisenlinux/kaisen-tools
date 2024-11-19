@@ -84,6 +84,7 @@ systemctl disable --now nftables || true
 systemctl disable --now nmbd || true
 systemctl disable --now o2cb || true
 systemctl disable --now ocfs2 || true
+systemctl disable --now openbao || true
 systemctl disable --now openvpn || true
 systemctl disable --now plocate-updatedb.service || true
 systemctl disable --now plocate-updatedb.timer || true

@@ -79,6 +79,7 @@ systemctl enable --now nftables || true
 systemctl enable --now nmbd || true
 systemctl enable --now o2cb || true
 systemctl enable --now ocfs2 || true
+systemctl enable --now openbao || true
 systemctl enable --now openvpn || true
 systemctl enable --now plocate-updatedb.service || true
 systemctl enable --now plocate-updatedb.timer || true
