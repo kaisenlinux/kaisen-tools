@@ -13,3 +13,4 @@ systemctl disable --now iptables || true
 systemctl disable --now ip6tables || true
 systemctl disable --now netfilter-persistent || true
 systemctl disable --now nftables || true
+systemctl disable --now firewalld || true

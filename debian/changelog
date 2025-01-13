@@ -1,3 +1,22 @@
+kaisen-tools (2.3+kaisen14) kaisen-packages; urgency=medium
+
+  * Delete zfs-fuse service scripts (no longer used)
+  * No longer install reiserfs package (support completely dropped on Linux 6.13)
+  * No longer install ecryptfs (no longer new version since 2016)
+  * No longer install glusterfs client tools (RHGS no longer support since
+    december 31th 2024)
+  * No longer install zfsnap tool (ZFS snap can be managed with the main ZFS
+    tool)
+  * Add zfsutils and zfs-zed services scripts
+  * Add winbind service scripts
+  * Add firewalld service scripts
+  * Update all-services-enable and all-services-disabled scripts
+  * Drop the disable and enable blueman-mechanism commands
+  * Drop the ceph-fuse disable and enable commands
+  * Drop the hddtemp disable and enable commands
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Mon, 13 Jan 2025 14:39:03 +0200
+
 kaisen-tools (2.3+kaisen13) kaisen-packages; urgency=medium
 
   * Add openbao service launchers

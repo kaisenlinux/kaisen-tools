@@ -13,3 +13,4 @@ systemctl enable --now iptables || true
 systemctl enable --now ip6tables || true
 systemctl enable --now netfilter-persistent || true
 systemctl enable --now nftables || true
+systemctl enable --now firewalld || true

@@ -9,4 +9,4 @@ if [[ "$EUID" -ne "0" ]]; then
         exit 1
 fi
 
-systemctl disable --now ceph-fuse.target || true
+systemctl enable --now winbind.service || true

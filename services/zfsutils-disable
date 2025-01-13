@@ -1,0 +1,28 @@
+#!/bin/bash
+
+set -e
+
+RED='\e[1;31m'
+
+if [[ "$EUID" -ne "0" ]]; then
+        echo -e $RED "Run this script as root or with the sudo command to continue."
+        exit 1
+fi
+
+systemctl disable --now zfs-import-cache.service || true
+systemctl disable --now zfs-import-scan.service || true
+systemctl disable --now zfs-import.target || true
+systemctl disable --now zfs-load-module.service || true
+systemctl disable --now zfs-mount.service || true
+systemctl disable --now zfs-scrub-monthly@.timer || true
+systemctl disable --now zfs-scrub-weekly@.timer || true
+systemctl disable --now zfs-scrub@.service || true
+systemctl disable --now zfs-share.service || true
+systemctl disable --now zfs-trim-monthly@.timer || true
+systemctl disable --now zfs-trim-weekly@.timer || true
+systemctl disable --now zfs-trim@.service || true
+systemctl disable --now zfs-volume-wait.service || true
+systemctl disable --now zfs-volumes.target || true
+systemctl disable --now zfs.target || true
+systemctl disable --now zfs-import.service || true
+systemctl disable --now zfs-load-key.service || true
