@@ -1,9 +1,0 @@
-#!/bin/bash
-
-set -e
-
-case $1 in
-	remove|autoremove|purge)
-	rm -f /usr/share/applications/{kaisen*-disable.desktop,kaisen*-enable.desktop}
-	;;
-esac
