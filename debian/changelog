@@ -2,8 +2,9 @@ kaisen-tools (2.3+kaisen15) kaisen-packages; urgency=medium
 
   * Drop bonnie++
   * Replace hardinfo by hardinfo2
+  * Replace balena-etcher-electron by balena-etcher
 
- -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Thu, 16 Jan 2025 03:03:36 +0200
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Thu, 16 Jan 2025 04:27:25 +0200
 
 kaisen-tools (2.3+kaisen14) kaisen-packages; urgency=medium
 

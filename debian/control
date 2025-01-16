@@ -764,7 +764,7 @@ Description: All Kaisen Linux PST tools
 
 Package: kaisen-usb-boot
 Architecture: all
-Recommends: balena-etcher-electron,
+Recommends: balena-etcher,
 	    dcfldd,
 	    dc3dd,
 Suggests: woeusb
