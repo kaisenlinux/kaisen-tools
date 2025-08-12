@@ -1,3 +1,14 @@
+kaisen-tools (3.0) kaisen-packages; urgency=medium
+
+  * The package is now in 3.0
+  * Remove reiser4progs, network-manager-fortisslvpn,
+    network-manager-fortisslvpn-gnome and wondershaper packages
+  * Replace freerdp2-x11 by freerdp3-x11
+  * Deletion of bloodhound (no longer works)
+  * Deletion of exfat-fuse (no longer used)
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Tue, 12 Aug 2025 15:34:14 +0200
+
 kaisen-tools (2.3+kaisen15) kaisen-packages; urgency=medium
 
   * Drop bonnie++

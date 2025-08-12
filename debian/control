@@ -38,11 +38,9 @@ Recommends: cryptsetup,
 	    zfs-zed,
 	    zfsutils-linux,
 	    exfatprogs,
-	    exfat-fuse,
 	    fuse3,
 	    udfclient,
 	    udftools,
-	    reiser4progs,
 	    vmfs6-tools,
 	    xmount,
 	    archivemount,
@@ -275,7 +273,6 @@ Recommends: 2ping,
 	    socat,
 	    ssmping,
 	    wakeonlan,
-	    wondershaper,
 	    ifenslave,
 	    bridge-utils,
 	    tftp-hpa,
@@ -412,10 +409,8 @@ Recommends: openvpn,
 	    wireguard,
 	    openfortivpn,
 	    network-manager-openvpn,
-	    network-manager-fortisslvpn,
 	    network-manager-openconnect,
 	    network-manager-openvpn-gnome,
-	    network-manager-fortisslvpn-gnome,
 	    network-manager-openconnect-gnome,
 Description: All VPN tools for Kaisen Linux
 
@@ -463,7 +458,7 @@ Architecture: all
 Recommends: virt-viewer,
 	    rdesktop,
 	    grdesktop,
-	    freerdp2-x11,
+	    freerdp3-x11,
 	    ssh,
 	    sshfs,
 	    pssh,
@@ -520,8 +515,7 @@ Description: All FTP clients for Kaisen Linux
 
 Package: kaisen-microsoft-tools
 Architecture: all
-Recommends: bloodhound,
-	    powershell,
+Recommends: powershell,
 Description: All tools for Microsoft technologies for Kaisen Linux
 
 Package: kaisen-virtualization-tools
